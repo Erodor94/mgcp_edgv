@@ -1,0 +1,359 @@
+{"__comment":"UTF-8",
+    "mapeamento_classes": [
+        {"__comment":"ED020 SWAMP -> veg_brejo_pantano",
+            "tipo_tupla":"ida",
+            "tupla_origem": [
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"ED020"
+                }
+            ],
+            "tupla_destino":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"veg_brejo_pantano"
+                },
+                {
+                    "nome_atributo":"classificacaoporte",
+                    "valor": "4", 
+                    "__comment":"Arbórea"
+                }
+            ],
+            "atributos_default_ida":[
+                {
+                    "nome_atributo":"antropizada",
+                    "valor":"0"
+
+                },
+                {
+                    "nome_atributo":"observacao",
+                    "valor": "Arbórea ou Mista" 
+                },
+                {
+                    "nome_atributo":"densidade",
+                    "valor":"0"
+
+                },
+                {
+                    "nome_atributo":"secundaria",
+                    "valor":"0"
+
+                }
+            ]
+        },
+        {"__comment":"ED020 SWAMP <- veg_brejo_pantano",
+            "tipo_tupla":"volta",
+            "tupla_origem":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"veg_brejo_pantano"
+                },
+                {
+                    "nome_atributo":"classificacaoporte",
+                    "valor":"4"
+                }
+            ],
+            "tupla_destino":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"ED020"
+                },
+                {
+                    "nome_atributo":"VEG",
+                    "valor":"50"
+                }
+            ],
+            "atributos_default_volta":[
+                {
+                    "nome_atributo":"TID",
+                    "valor":"1000"
+                },
+                {
+                    "nome_atributo":"TRE",
+                    "valor":"0"
+                },
+                {
+                    "nome_atributo":"VSP",
+                    "valor":"0"
+                }
+            ]
+        },
+        {"__comment":"ED010 MARSH -> veg_brejo_pantano",
+            "tipo_tupla":"ida",
+            "tupla_origem":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"ED010"
+                }
+            ],
+            "tupla_destino":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"veg_brejo_pantano"
+                },
+                {
+                    "nome_atributo":"classificacaoporte",
+                    "valor":"5",
+                    "__comment":"Arbustiva"
+                }
+            ],
+            "atributos_default_ida":[
+                {
+                    "nome_atributo":"antropizada",
+                    "valor":"0"
+
+                },
+                {
+                    "nome_atributo":"densidade",
+                    "valor":"0"
+
+                },
+                {
+                    "nome_atributo":"secundaria",
+                    "valor":"0"
+
+                }
+            ]
+        },
+        {"__comment":"ED010 MARSH <- veg_brejo_pantano",
+            "tipo_tupla":"volta",
+            "tupla_origem":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"veg_brejo_pantano"
+                }
+            ],
+            "tupla_destino":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"ED010"
+                }
+            ],
+            "atributos_default_volta":[
+                {
+                    "nome_atributo":"TID",
+                    "valor":"1000"
+                }
+            ]
+        },
+        {"__comment":"AP010 CART TRACK -> tra_caminho_carrocavel",
+            "tipo_tupla":"ida",
+            "tupla_origem": [
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"AP010"
+                }
+            ],
+            "tupla_destino":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"tra_caminho_carrocavel"
+                }
+            ]
+        },
+        {"__comment":"AP010 CART TRACK <- tra_caminho_carrocavel",
+            "tipo_tupla":"volta",
+            "tupla_origem": [
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"tra_caminho_carrocavel"
+                }
+            ],
+            "tupla_destino":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"AP010"
+                }
+            ],
+            "atributos_default_volta":[
+                {
+                    "nome_atributo":"WTC",
+                    "valor":"0"
+                },
+                {
+                    "nome_atributo":"WD1",
+                    "valor":"-32767.0"
+                }
+            ]
+        },
+        {"__comment":"BH070 FORD -> tra_travessia | Vau natural",
+            "tipo_tupla": "ida",
+            "tupla_origem":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"BH070"
+                }
+            ],
+            "tupla_destino":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"tra_travessia"
+                },
+                {
+                    "nome_atributo":"tipotravessia",
+                    "valor":"1"
+                },
+                {
+                    "nome_atributo":"observacao",
+                    "valor":"Vau natural ou construída"
+                }
+            ],
+            "atributos_default_ida":[
+                {
+                    "nome_atributo":"tipouso",
+                    "valor":"0"
+                },
+                {
+                    "nome_atributo":"tipoembarcacao",
+                    "valor":"97"
+                }
+            ]
+        },
+        {"__comment":"BH070 FORD <- tra_travessia | Vau natural",
+            "tipo_tupla":"volta",
+            "tupla_origem":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"tra_travessia"
+                }
+            ],
+            "tupla_destino":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"BH070"
+                }
+            ],
+            "atributos_default_volta":[
+                {
+                    "nome_atributo":"RST",
+                    "valor":"0"
+                }
+            ]
+        },
+        {"__comment":"AL030 CEMETERY -> cbge_cemiterio",
+            "tipo_tupla":"ida",
+            "tupla_origem":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"AL030"
+                }
+            ],
+            "tupla_destino":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"cbge_cemiterio"
+                }
+            ],
+            "atributos_default_ida":[
+                {
+                    "nome_atributo":"tipocemiterio",
+                    "valor":"95"
+                },
+                {
+                    "nome":"destinacaocemiterio",
+                    "valor":"95"
+                }
+            ]
+        }
+        {"__comment":"AL030 CEMETERY <- cbge_cemiterio",
+            "tipo_tupla":"volta",
+            "tupla_origem":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"cbge_cemiterio"
+                }
+            ],
+            "tupla_destino":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"AL030"
+                }
+            ]
+        },
+        {"__comment":"PBA050 BEACH -> rel_elemento_fisiografico_natural_p | praia",
+            "tipo_tupla":"ida",
+            "tupla_origem":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"PBA050"
+                }
+            ],
+            "tupla_destino":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"rel_elemento_fisiografico_natural_p"
+                },
+                {
+                    "nome_atributo":"tipoelemnat",
+                    "valor":"12"
+                }
+            ]
+        
+        },
+        {"__comment":"PBA050 BEACH <- rel_elemento_fisiografico_natural_p | praia",
+            "tipo_tupla":"ida",
+            "tupla_origem":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"rel_elemento_fisiografico_natural_p"
+                },
+                {
+                "nome_atributo":"tipoelemnat",
+                    "valor":"12"
+                }
+            ],
+            "tupla_destino":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"PBA050"
+                }
+            ],
+            "atributos_default_volta":[
+                {
+                    "nome_atributo":"SMC",
+                    "valor":"0"
+                }
+            ]
+        },
+        {
+            
+        }
+    ],
+    "mapeamento_atributos": [
+        {"__comment":"NAM <-> nome",
+            "attr_origem": "NAM",
+            "attr_destino": "nome"
+        },
+        {"__comment":"ACC <-> geometriaaproximada",
+            "attr_origem": "ACC",
+            "attr_destino": "geometriaaproximada",
+            "mapeamento":{
+                "1":"0",
+                "2":"1"
+            }
+        },
+        {"__comment":"SRT DEFAULT balao",
+            "sentido":"volta",
+            "attr_destino": "SRT",
+            "default": "0"
+        },
+        {"__comment":"REL <-> denominacaoAssociada",
+            "attr_origem": "REL",
+            "attr_destino": "denominacaoassociada",
+            "mapeamento": {
+                "0": "9999",
+                "1": "99",
+                "2": "7",
+                "4": "5",
+                "5": "6",
+                "999": "99"
+            }
+        {"__comment":"NST <-> modalidade",
+            "attr_origem":"NST",
+            "attr_destino":"modalidade",
+            "mapeamento":{
+                "0": "95",
+                "12"
+                
+                        
+}
