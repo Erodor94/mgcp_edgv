@@ -1,4 +1,5 @@
 {"__comment":"UTF-8",
+    "versao_padrao_mapeamento": "2.0",
     "mapeamento_classes": [
         {"__comment":"ED020 SWAMP -> veg_brejo_pantano",
             "tipo_tupla":"ida",
@@ -332,28 +333,54 @@
                 "2":"1"
             }
         },
-        {"__comment":"SRT DEFAULT balao",
-            "sentido":"volta",
-            "attr_destino": "SRT",
-            "default": "0"
-        },
         {"__comment":"REL <-> denominacaoAssociada",
             "attr_origem": "REL",
             "attr_destino": "denominacaoassociada",
-            "mapeamento": {
-                "0": "9999",
-                "1": "99",
-                "2": "7",
-                "4": "5",
-                "5": "6",
-                "999": "99"
-            }
+            "mapeamento": [
+                {
+                    "origem": 0,
+                    "destino": 9999
+                },
+                {
+                    "origem": 1,
+                    "destino": 99
+                },
+                {
+                    "origem": 2,
+                    "destino": 7
+                },
+                {
+                    "origem": 4,
+                    "destino": 5
+                },
+                {
+                    "origem": 5,
+                    "destino": 6
+                },
+                {
+                    "origem": 999,
+                    "destino": 99
+                }
+            ]
+        },
         {"__comment":"NST <-> modalidade",
             "attr_origem":"NST",
             "attr_destino":"modalidade",
             "mapeamento":{
                 "0": "95",
-                "12"
-                
-                        
+                "12": "balao"
+            }
+        }
+    ],
+    "mapeamento_default": [
+        {"__comment":"SRT DEFAULT",
+            "sentido": "volta",
+            "tupla_origem": [
+                {
+                    "nome_atributo": "SRT",
+                    "valor": 0
+                }
+            ]
+        }
+    ]                 
 }

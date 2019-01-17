@@ -16785,28 +16785,90 @@
                 }
             ]
         },
-        {"__comment":"llp_delimitacao_fisica | 999 <- Delimitacao_Fisica | Desconhecido - so volta",
-            "tipo_tupla":"volta",
-            "tupla_origem": [
+        {"__comment":"llp_delimitacao_fisica <- Delimitacao_Fisica",
+            "classe_origem": "edgv.llp_delimitacao_fisica",
+            "classe_destino": "Delimitacao_Fisica",
+            "mapeamento_atributos": [
                 {
-                    "nome_atributo":"class_name",
-                    "valor":"edgv.llp_delimitacao_fisica"
+                    "tupla_origem": [
+                        {
+                            "nome_atributo": "tipo",
+                            "valor": 1
+                        }
+                    ],
+                    "tupla_destino": [
+                        {
+                            "nome_atributo": "tipoDelimFis",
+                            "valor": 1
+                        }
+                    ]
                 },
                 {
-                    "nome_atributo":"tipo",
-                    "valor":"999"
-                }
-            ],
-            "tupla_destino":[
-                {
-                    "nome_atributo":"class_name",
-                    "valor":"Delimitacao_Fisica"
+                    "tupla_origem": [
+                        {
+                            "nome_atributo": "tipo",
+                            "valor": 2
+                        }
+                    ],
+                    "tupla_destino": [
+                        {
+                            "nome_atributo": "tipoDelimFis",
+                            "valor": 2
+                        }
+                    ]
                 },
                 {
-                    "nome_atributo":"tipoDelimFis",
-                    "valor":"0"
+                    "sentido": "volta",
+                    "tupla_origem": [
+                        {
+                            "nome_atributo": "tipo",
+                            "valor": 999
+                        },
+                        {
+                            "nome_atributo": "observacao",
+                            "valor": "tipo inválido",
+                            "concatenar": true
+                        }
+                    ]
+                },
+                {
+                    "sentido": "ida",
+                    "tupla_destino": [
+                        {
+                            "nome_atributo": "tipoDelimFis",
+                            "valor": 0
+                        },
+                        {
+                            "nome_atributo": "observacao",
+                            "valor": "tipo inválido",
+                            "concatenar": true
+                        }
+                    ]
                 }
             ],
+            "mapeamento_default": [
+                {
+                    "sentido": "ida",
+                    "tupla_destino": [
+                        {
+                            "nome_atributo": "geometriaAproximada",
+                            "valor": 2
+                        }
+                    ]
+                },
+                {
+                    "sentido": "ida",
+                    "tupla_destino": [
+                        {
+                            "nome_atributo": "eletrificada",
+                            "valor": 0
+                        }
+                    ]
+                }
+            ]
+
+
+
             "atributos_default_volta":[
                 {
                     "nome_atributo":"nome",
