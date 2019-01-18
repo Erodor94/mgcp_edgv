@@ -255,7 +255,7 @@
                     "valor":"95"
                 }
             ]
-        }
+        },
         {"__comment":"AL030 CEMETERY <- cbge_cemiterio",
             "tipo_tupla":"volta",
             "tupla_origem":[
@@ -315,9 +315,6 @@
                     "valor":"0"
                 }
             ]
-        },
-        {
-            
         }
     ],
     "mapeamento_atributos": [
