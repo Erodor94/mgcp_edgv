@@ -365,7 +365,7 @@
             "attr_destino":"modalidade",
             "mapeamento":{
                 "0": "95",
-                "12": "balao"
+                "12": "balao_furado"
             }
         }
     ],
