@@ -255,7 +255,7 @@
                     "valor":"95"
                 }
             ]
-        }
+        },
         {"__comment":"AL030 CEMETERY <- cbge_cemiterio",
             "tipo_tupla":"volta",
             "tupla_origem":[
@@ -317,7 +317,7 @@
             ]
         },
         {
-            
+            dfgdfgdfgdf
         }
     ],
     "mapeamento_atributos": [
@@ -368,7 +368,7 @@
             "attr_destino":"modalidade",
             "mapeamento":{
                 "0": "95",
-                "12": "balao"
+                "12": "balao_furado"
             }
         }
     ],
