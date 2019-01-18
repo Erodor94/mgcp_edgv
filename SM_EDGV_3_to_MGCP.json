@@ -315,7 +315,54 @@
                     "valor":"0"
                 }
             ]
-        }
+        },
+        {"__comment":"LBA050 BEACH -> rel_elemento_fisiografico_natural_l | praia",
+             "tipo_tupla":"ida",
+             "tupla_origem":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"LBA050"
+                }
+             ],
+             "tupla_destino":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"rel_elemento_fisiografico_natural_l"
+                },
+                {
+                "nome_atributo":"tipoelemnat",
+                "valor":"12"
+                }
+            ]   
+        },
+        {"__comment":"LBA050 BEACH <- rel_elemento_fisiografico_natural_l | praia",
+            "tipo_tupla":"ida",
+            "tupla_origem":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"rel_elemento_fisiografico_natural_l"
+                },
+                {
+                    "nome_atributo":"tipoelemnat",
+                    "valor":"12"
+                }
+            ],
+            "tupla_destino":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"LBA050"
+                }
+            ],
+            "atributos_default_volta":[
+                {
+                    "nome_atributo":"SMC",
+                    "valor":"0"
+                }
+            ]
+        },
+        {
+
+    }
     ],
     "mapeamento_atributos": [
         {"__comment":"NAM <-> nome",
