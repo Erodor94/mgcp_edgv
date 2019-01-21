@@ -417,7 +417,7 @@
                 }
             ]
         },
-        {"__comment": "PBI010 CISTERN <- cbge_deposito_geral_p | Cisterna",
+        {"__comment":"PBI010 CISTERN <- cbge_deposito_geral_p | Cisterna",
             "tipo_tupla":"volta",
             "tupla_origem":[
                 {
@@ -431,6 +431,34 @@
                     "valor":"PBI010"
                 }
             ]
+        },
+        {"__comment":"AT010 DISH AERIAL <-> enc_antena_comunic_p",
+            "tupla_origem":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"AT010"
+                }
+            ],
+            "tupla_destino":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"enc_antena_comunic_p"
+                }
+            ],
+            "atributos_default_ida":[
+                {
+                    "nome_atributo":"posicaoreledific",
+                    "valor":95
+                }
+            ],
+            "atributos_default_volta":[
+                {
+                    "nome_atributo":"HGT",
+                    "valor": -32767.0
+                }
+            ]
+        },
+        {"__comment":""
         }
     ],
     "mapeamento_atributos": [
