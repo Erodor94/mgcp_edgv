@@ -522,8 +522,27 @@
                 }
             ]
         },
-        {"__comment":
-
+        {"__comment":"LBH010 AQUEDUCT <-> dut_trecho_duto_l",
+            "tupla_origem":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"LBH010"
+                }
+            ],
+            "tupla_destino":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"dut_trecho_duto_l"
+                },
+                {
+                    "nome_atributo":"tipotrechoduto",
+                    "valor":1
+                },
+                {
+                    "nome_atributo":"mattransp",
+                    "valor":"agua" balao
+                }
+            ]
         }
     ],
     "mapeamento_atributos": [
