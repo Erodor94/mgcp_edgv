@@ -292,7 +292,7 @@
         
         },
         {"__comment":"PBA050 BEACH <- rel_elemento_fisiografico_natural_p | praia",
-            "tipo_tupla":"ida",
+            "tipo_tupla":"volta",
             "tupla_origem":[
                 {
                     "nome_atributo":"class_name",
@@ -336,7 +336,7 @@
             ]   
         },
         {"__comment":"LBA050 BEACH <- rel_elemento_fisiografico_natural_l | praia",
-            "tipo_tupla":"ida",
+            "tipo_tupla":"volta",
             "tupla_origem":[
                 {
                     "nome_atributo":"class_name",
@@ -360,9 +360,78 @@
                 }
             ]
         },
-        {
-
-    }
+        {"__comment":"PBI010 CISTERN -> cbge_deposito_geral_p | Cisterna",
+            "tipo_tupla":"ida",
+            "tupla_origem":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"PBI010"
+                }
+            ],
+            "tupla_destino":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"cbge_deposito_geral_p"
+                },
+                {
+                    "nome_atributo":"tipodepgeral",
+                    "valor":3 | cisterna balao
+                }
+            ],
+            "atributos_default_ida":[
+                {
+                    "nome_atributo":"operacional",
+                    "valor":95
+                },
+                {
+                    "nome_atributo":"matconstr",
+                    "valor": balao
+                },
+                {
+                    "nome_atributo":"tipoexposicao",
+                    "valor":95
+                },
+                {
+                    "nome_atributo":"tipoprodutoresiduo",
+                    "valor": "agua" balao
+                },
+                {
+                    "nome_atributo":"tipoconteudo",
+                    "valor":"agua" balao
+                },
+                {
+                    "nome_atributo":"unidadevolume",
+                    "valor":95
+                },
+                {
+                    "nome_atributo":"tratamento",
+                    "valor":0
+                },
+                {
+                    "nome_atributo":"estadofisico",
+                    "valor":1
+                },
+                {
+                    "nome_atributo":"finalidadedep",
+                    "valor":8
+                }
+            ]
+        },
+        {"__comment": "PBI010 CISTERN <- cbge_deposito_geral_p | Cisterna",
+            "tipo_tupla":"volta",
+            "tupla_origem":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"cbge_deposito_geral_p"
+                }
+            ],
+            "tupla_destino":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"PBI010"
+                }
+            ]
+        }
     ],
     "mapeamento_atributos": [
         {"__comment":"NAM <-> nome",
@@ -414,6 +483,33 @@
                 "0": "95",
                 "12": "balao_furado"
             }
+        },
+        {"__comment": "FUN Condition of Facility <-> situacaofisica",
+            "attr_origem":"FUN",
+            "attr_destino":"situacaofisica",
+            "mapeamento":[
+                {
+                    "origem":0,
+                    "destino":95
+                },
+                {
+                    "origem":1,
+                    "destino":3
+                },
+                {
+                    "origem":2,
+                    "destino":1
+                },
+                {
+                    "origem":3,
+                    "destino":2
+                },
+                {
+                    "origem":6,
+                    "destino":7
+                } balao
+            ]
+
         }
     ],
     "mapeamento_default": [
