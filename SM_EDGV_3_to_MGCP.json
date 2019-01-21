@@ -458,7 +458,33 @@
                 }
             ]
         },
-        {"__comment":""
+        {"__comment":"BH080 LAKE <-> hid_massa_dagua",
+            "tupla_origem":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"BH080"
+                }
+            ],
+            "tupla_destino":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"hid_massa_dagua"
+                },
+                {
+                    "nome_atributo":"tipomassadagua",
+                    "valor":7
+                }
+            ],
+            "atributos_default_ida":[
+                {
+                    "nome_atributo":"dominalidade",
+                    "valor":95
+                },
+                {
+                    "nome_atributo":"artificial",
+                    "valor":95
+                }
+            ]
         }
     ],
     "mapeamento_atributos": [
