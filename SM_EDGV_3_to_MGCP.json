@@ -458,7 +458,7 @@
                 }
             ]
         },
-        {"__comment":"BH080 LAKE <-> hid_massa_dagua",
+        {"__comment":"BH080 LAKE <-> hid_massa_dagua | lago/lagoa",
             "tupla_origem":[
                 {
                     "nome_atributo":"class_name",
@@ -483,8 +483,47 @@
                 {
                     "nome_atributo":"artificial",
                     "valor":95
+                },
+                {
+                    "nome_atributo":"possuitrechodrenagem",
+                    "valor":0
                 }
             ]
+        },
+        {"__comment":"BH080 LAKE <-> hid_massa_dagua | meandro abandonado",
+            "tupla_origem":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"BH080"
+                }
+            ],
+            "tupla_destino":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"hid_massa_dagua"
+                },
+                {
+                    "nome_atributo":"tipomassadagua",
+                    "valor":6
+                }
+            ],
+            "atributos_default_ida":[
+                {
+                    "nome_atributo":"dominalidade",
+                    "valor":95
+                },
+                {
+                    "nome_atributo":"artificial",
+                    "valor":95
+                },
+                {
+                    "nome_atributo":"possuitrechodrenagem",
+                    "valor":0
+                }
+            ]
+        },
+        {"__comment":
+
         }
     ],
     "mapeamento_atributos": [
