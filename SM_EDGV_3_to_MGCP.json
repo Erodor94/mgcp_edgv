@@ -256,21 +256,6 @@
                 }
             ]
         },
-        {"__comment":"AL030 CEMETERY <- cbge_cemiterio",
-            "tipo_tupla":"volta",
-            "tupla_origem":[
-                {
-                    "nome_atributo":"class_name",
-                    "valor":"cbge_cemiterio"
-                }
-            ],
-            "tupla_destino":[
-                {
-                    "nome_atributo":"class_name",
-                    "valor":"AL030"
-                }
-            ]
-        },
         {"__comment":"PBA050 BEACH -> rel_elemento_fisiografico_natural_p | praia",
             "tipo_tupla":"ida",
             "tupla_origem":[
@@ -288,26 +273,6 @@
                     "nome_atributo":"tipoelemnat",
                     "valor":12
                 }
-            ]
-        
-        },
-        {"__comment":"PBA050 BEACH <- rel_elemento_fisiografico_natural_p | praia",
-            "tipo_tupla":"volta",
-            "tupla_origem":[
-                {
-                    "nome_atributo":"class_name",
-                    "valor":"rel_elemento_fisiografico_natural_p"
-                },
-                {
-                "nome_atributo":"tipoelemnat",
-                    "valor":12
-                }
-            ],
-            "tupla_destino":[
-                {
-                    "nome_atributo":"class_name",
-                    "valor":"PBA050"
-                }
             ],
             "atributos_default_volta":[
                 {
@@ -316,8 +281,7 @@
                 }
             ]
         },
-        {"__comment":"LBA050 BEACH -> rel_elemento_fisiografico_natural_l | praia",
-             "tipo_tupla":"ida",
+        {"__comment":"LBA050 BEACH <-> rel_elemento_fisiografico_natural_l | praia",
              "tupla_origem":[
                 {
                     "nome_atributo":"class_name",
@@ -333,35 +297,15 @@
                 "nome_atributo":"tipoelemnat",
                 "valor":12
                 }
-            ]   
-        },
-        {"__comment":"LBA050 BEACH <- rel_elemento_fisiografico_natural_l | praia",
-            "tipo_tupla":"volta",
-            "tupla_origem":[
-                {
-                    "nome_atributo":"class_name",
-                    "valor":"rel_elemento_fisiografico_natural_l"
-                },
-                {
-                    "nome_atributo":"tipoelemnat",
-                    "valor":12
-                }
-            ],
-            "tupla_destino":[
-                {
-                    "nome_atributo":"class_name",
-                    "valor":"LBA050"
-                }
             ],
             "atributos_default_volta":[
                 {
                     "nome_atributo":"SMC",
                     "valor":0
                 }
-            ]
+            ]   
         },
-        {"__comment":"PBI010 CISTERN -> cbge_deposito_geral_p | Cisterna",
-            "tipo_tupla":"ida",
+        {"__comment":"PBI010 CISTERN <-> cbge_deposito_geral_p | Cisterna",
             "tupla_origem":[
                 {
                     "nome_atributo":"class_name",
@@ -414,21 +358,6 @@
                 {
                     "nome_atributo":"finalidadedep",
                     "valor":8
-                }
-            ]
-        },
-        {"__comment":"PBI010 CISTERN <- cbge_deposito_geral_p | Cisterna",
-            "tipo_tupla":"volta",
-            "tupla_origem":[
-                {
-                    "nome_atributo":"class_name",
-                    "valor":"cbge_deposito_geral_p"
-                }
-            ],
-            "tupla_destino":[
-                {
-                    "nome_atributo":"class_name",
-                    "valor":"PBI010"
                 }
             ]
         },
@@ -646,6 +575,78 @@
                 {
                     "nome_atributo":"class_name",
                     "valor":"hid_barragem_p"
+                }
+            ],
+            "atributos_default_ida":[
+                {
+                    "nome_atributo":"usoprincipal",
+                    "valor":95
+                },
+                {
+                    "nome_atributo":"operacional",
+                    "valor":95
+                }
+            ],
+            "atributos_default_volta":[
+                {
+                    "nome_atributo":"HGT",
+                    "valor":-32767.0
+                },
+                {
+                    "nome_atributo":"TRS",
+                    "valor":0
+                }
+            ]
+        },
+        {"__comment":"LBI020 DAM <-> hid_barragem_l",
+            "tupla_origem":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"LBI020"
+                }
+            ],
+            "tupla_destino":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"hid_barragem_l"
+                }
+            ],
+            "atributos_default_ida":[
+                {
+                    "nome_atributo":"usoprincipal",
+                    "valor":95
+                },
+                {
+                    "nome_atributo":"operacional",
+                    "valor":95
+                }
+            ],
+            "atributos_default_volta":[
+                {
+                    "nome_atributo":"HGT",
+                    "valor":-32767.0
+                },
+                {
+                    "nome_atributo":"TRS",
+                    "valor":0
+                },
+                {
+                    "nome_atributo":"WID",
+                    "valor":-32767.0
+                }
+            ]
+        },
+        {"__comment":"ABI020 DAM <-> hid_barragem_a",
+            "tupla_origem":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"ABI020"
+                }
+            ],
+            "tupla_destino":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"hid_barragem_a"
                 }
             ],
             "atributos_default_ida":[
