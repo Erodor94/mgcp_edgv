@@ -669,6 +669,25 @@
                     "valor":0
                 }
             ]
+        },
+        {"__comment":"AA010 EXTRACTION MINE <-> eco_ext_mineral",
+            "tupla_origem":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"AA010"
+                }
+            ],
+            "tupla_destino":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"eco_ext_mineral"
+                },
+                {
+                    "nome_atributo":"tipoalterantrop",
+                    "valor":32
+                }
+            ]
+
         }
     ],
     "mapeamento_atributos": [
