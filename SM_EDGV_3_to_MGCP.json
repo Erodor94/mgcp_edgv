@@ -596,13 +596,76 @@
                     "valor":95
                 },
                 {
-                    "nome_atributo":"WID",
-                    "valor":-32767.0
+                    "nome_atributo":"tipoquebramolhe",
+                    "valor":9999
                 }
             ],
             "atributos_default_volta":[
                 {
-                    "nome_atributo":
+                    "nome_atributo":"WID",
+                    "valor":-32767.0
+                }
+            ]
+        },
+        {"__comment":"ABB041 BREAKWATER <-> hid_quebramar_molhe_a",
+            "tupla_origem":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"ABB041"
+                }
+            ],
+            "tupla_destino":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"hid_quebramar_molhe_a"
+                },
+                {
+                    "nome_atributo":"tipoquebramolhe",
+                    "valor":9999
+                }
+            ],
+            "atributos_default_ida":[
+                {
+                    "nome_atributo":"operacional",
+                    "valor":95
+                },
+                {
+                    "nome_atributo":"tipoquebramolhe",
+                    "valor":9999
+                }
+            ]
+        },
+        {"__comment":"PBI020 DAM <-> hid_barragem_p",
+            "tupla_origem":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"PBI020"
+                }
+            ],
+            "tupla_destino":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"hid_barragem_p"
+                }
+            ],
+            "atributos_default_ida":[
+                {
+                    "nome_atributo":"usoprincipal",
+                    "valor":95
+                },
+                {
+                    "nome_atributo":"operacional",
+                    "valor":95
+                }
+            ],
+            "atributos_default_volta":[
+                {
+                    "nome_atributo":"HGT",
+                    "valor":-32767.0
+                },
+                {
+                    "nome_atributo":"TRS",
+                    "valor":0
                 }
             ]
         }
