@@ -686,6 +686,12 @@
                     "nome_atributo":"tipoalterantrop",
                     "valor":32
                 }
+            ],
+            "atributos_default_ida":[
+                {
+                    "nome_atributo":"secaoativecon",
+                    "valor":95
+                }
             ]
 
         }
