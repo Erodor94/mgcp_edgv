@@ -16,14 +16,14 @@
                 },
                 {
                     "nome_atributo":"classificacaoporte",
-                    "valor": "4", 
+                    "valor": 4, 
                     "__comment":"Arbórea"
                 }
             ],
             "atributos_default_ida":[
                 {
                     "nome_atributo":"antropizada",
-                    "valor":"0"
+                    "valor":0
 
                 },
                 {
@@ -32,12 +32,12 @@
                 },
                 {
                     "nome_atributo":"densidade",
-                    "valor":"0"
+                    "valor":0
 
                 },
                 {
                     "nome_atributo":"secundaria",
-                    "valor":"0"
+                    "valor":0
 
                 }
             ]
@@ -51,7 +51,7 @@
                 },
                 {
                     "nome_atributo":"classificacaoporte",
-                    "valor":"4"
+                    "valor":4
                 }
             ],
             "tupla_destino":[
@@ -61,7 +61,7 @@
                 },
                 {
                     "nome_atributo":"VEG",
-                    "valor":"50"
+                    "valor":50
                 }
             ],
             "atributos_default_volta":[
@@ -71,11 +71,11 @@
                 },
                 {
                     "nome_atributo":"TRE",
-                    "valor":"0"
+                    "valor":0
                 },
                 {
                     "nome_atributo":"VSP",
-                    "valor":"0"
+                    "valor":0
                 }
             ]
         },
@@ -94,24 +94,24 @@
                 },
                 {
                     "nome_atributo":"classificacaoporte",
-                    "valor":"5",
+                    "valor":5,
                     "__comment":"Arbustiva"
                 }
             ],
             "atributos_default_ida":[
                 {
                     "nome_atributo":"antropizada",
-                    "valor":"0"
+                    "valor":0
 
                 },
                 {
                     "nome_atributo":"densidade",
-                    "valor":"0"
+                    "valor":0
 
                 },
                 {
                     "nome_atributo":"secundaria",
-                    "valor":"0"
+                    "valor":0
 
                 }
             ]
@@ -133,7 +133,7 @@
             "atributos_default_volta":[
                 {
                     "nome_atributo":"TID",
-                    "valor":"1000"
+                    "valor":1000
                 }
             ]
         },
@@ -169,11 +169,11 @@
             "atributos_default_volta":[
                 {
                     "nome_atributo":"WTC",
-                    "valor":"0"
+                    "valor":0
                 },
                 {
                     "nome_atributo":"WD1",
-                    "valor":"-32767.0"
+                    "valor":-32767.0
                 }
             ]
         },
@@ -192,7 +192,7 @@
                 },
                 {
                     "nome_atributo":"tipotravessia",
-                    "valor":"1"
+                    "valor":1
                 },
                 {
                     "nome_atributo":"observacao",
@@ -202,11 +202,11 @@
             "atributos_default_ida":[
                 {
                     "nome_atributo":"tipouso",
-                    "valor":"0"
+                    "valor":0
                 },
                 {
                     "nome_atributo":"tipoembarcacao",
-                    "valor":"97"
+                    "valor":97
                 }
             ]
         },
@@ -227,7 +227,7 @@
             "atributos_default_volta":[
                 {
                     "nome_atributo":"RST",
-                    "valor":"0"
+                    "valor":0
                 }
             ]
         },
@@ -248,11 +248,11 @@
             "atributos_default_ida":[
                 {
                     "nome_atributo":"tipocemiterio",
-                    "valor":"95"
+                    "valor":95
                 },
                 {
                     "nome":"destinacaocemiterio",
-                    "valor":"95"
+                    "valor":95
                 }
             ]
         },
@@ -286,7 +286,7 @@
                 },
                 {
                     "nome_atributo":"tipoelemnat",
-                    "valor":"12"
+                    "valor":12
                 }
             ]
         
@@ -300,7 +300,7 @@
                 },
                 {
                 "nome_atributo":"tipoelemnat",
-                    "valor":"12"
+                    "valor":12
                 }
             ],
             "tupla_destino":[
@@ -312,7 +312,7 @@
             "atributos_default_volta":[
                 {
                     "nome_atributo":"SMC",
-                    "valor":"0"
+                    "valor":0
                 }
             ]
         },
@@ -331,7 +331,7 @@
                 },
                 {
                 "nome_atributo":"tipoelemnat",
-                "valor":"12"
+                "valor":12
                 }
             ]   
         },
@@ -344,7 +344,7 @@
                 },
                 {
                     "nome_atributo":"tipoelemnat",
-                    "valor":"12"
+                    "valor":12
                 }
             ],
             "tupla_destino":[
@@ -356,7 +356,7 @@
             "atributos_default_volta":[
                 {
                     "nome_atributo":"SMC",
-                    "valor":"0"
+                    "valor":0
                 }
             ]
         },
