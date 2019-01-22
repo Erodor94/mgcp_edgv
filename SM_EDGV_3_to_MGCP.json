@@ -542,6 +542,35 @@
                     "nome_atributo":"mattransp",
                     "valor":"agua" balao
                 }
+            ],
+            "atributos_default_ida":[
+                {
+                    "nome_atributo":"setor",
+                    "valor":95
+                },
+                {
+                    "nome_atributo":"posicaorelativa",
+                    "valor":95
+                },
+                {
+                    "nome_atributo":"operacional",
+                    "valor":95
+                },
+                {
+                    "nome_atributo":"operacional",
+                    "valor":95
+                }
+            ],
+            "atributos_default_volta":[
+                {
+                    "nome_atributo":"WID",
+                    "valor":-32767.0,
+                    "__comment":"largura desconhecida"
+                },
+                {
+                    "nome_atributo":"CDA",
+                    "valor":0
+                }
             ]
         }
     ],
