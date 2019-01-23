@@ -710,8 +710,97 @@
             "atributos_default_ida":[
                 {
                     "nome_atributo":"tipoelemnat",
-                    "valor":15,
-                    "__comment":"caverna"
+                    "valor":9999
+                }
+            ]
+
+        },
+        {"__comment":"PAD010 ELECTRIC POWER STATION <-> enc_est_gerad_energia_eletrica_p",
+            "tupla_origem":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"PAD010"
+                }
+            ],
+            "tupla_destino":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"enc_est_gerad_energia_eletrica_p"
+                }
+            ],
+            "atributos_default_ida":[
+                {
+                    "nome_atributo":"operacional",
+                    "valor":95
+                }
+            ]
+        },
+        {"__comment":"AAD010 ELECTRIC POWER STATION <-> enc_est_gerad_energia_eletrica_a",
+            "tupla_origem":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"AAD010"
+                }
+            ],
+            "tupla_destino":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"enc_est_gerad_energia_eletrica_a"
+                }
+            ],
+            "atributos_default_ida":[
+                {
+                    "nome_atributo":"operacional",
+                    "valor":95
+                }
+            ]
+
+        },
+        {"__comment":"GB230 AIRCRAFT HANGAR <-> edf_edif_constr_aeroportuaria",
+            "tupla_origem":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"GB230"
+                }
+            ],
+            "tupla_destino":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"edf_edif_constr_aeroportuaria"
+                }
+            ]
+        },
+        {"__comment":"GB030 HELIPAD <-> aer_pista_pouso_p | Heliponto",
+            "tupla_origem":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"GB030"
+                }
+            ],
+            "tupla_destino":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"aer_pista_pouso_p"
+                },
+                {
+                    "nome_atributo":"tipopista",
+                    "valor":11
+                }
+            ],
+            "atributos_default_ida":[
+                {
+                    "nome_atributo":"homologacao",
+                    "valor":95
+                },
+                {
+                    "nome_atributo":"operacional",
+                    "valor":95
+                }
+            ],
+            "atributos_default_volta":[
+                {
+                    "nome_atributo":"ZVA",
+                    "valor":-32767.0
                 }
             ]
 
