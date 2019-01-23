@@ -670,27 +670,48 @@
                 }
             ]
         },
-        {"__comment":"AA010 EXTRACTION MINE <-> eco_ext_mineral",
+        {"__comment":"AL012 ARCHAEOLOGICAL SITE <-> laz_sitio_arqueologico",
             "tupla_origem":[
                 {
                     "nome_atributo":"class_name",
-                    "valor":"AA010"
+                    "valor":"AL012"
                 }
             ],
             "tupla_destino":[
                 {
                     "nome_atributo":"class_name",
-                    "valor":"eco_ext_mineral"
-                },
-                {
-                    "nome_atributo":"tipoalterantrop",
-                    "valor":32
+                    "valor":"laz_sitio_arqueologico"
                 }
             ],
             "atributos_default_ida":[
                 {
-                    "nome_atributo":"secaoativecon",
+                    "nome_atributo":"turistica",
                     "valor":95
+                },
+                {
+                    "nome_atributo":"cultura",
+                    "valor":1
+                }
+            ]
+        },
+        {"__comment":"DB029 CAVE MOUTH <-> rel_gruta_caverna_p",
+            "tupla_origem":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"DB029"
+                }
+            ],
+            "tupla_destino":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"rel_gruta_caverna_p"
+                }
+            ],
+            "atributos_default_ida":[
+                {
+                    "nome_atributo":"tipoelemnat",
+                    "valor":15,
+                    "__comment":"caverna"
                 }
             ]
 
