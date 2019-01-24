@@ -804,6 +804,103 @@
                 }
             ]
 
+        },
+        {"__comment":"DB070 CUT <-> rel_alteracao_fisiografica_antropica_l",
+            "tupla_origem":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"DB070"
+                }
+            ],
+            "tupla_destino":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"rel_alteracao_fisiografica_antropica_l"
+                }
+            ],
+            "atributos_default_ida":[
+                {
+                    "nome_atributo":"tipoalterantrop",
+                    "valor":26
+                }
+            ],
+            "atributos_default_volta":[
+                {
+                    "nome_atributo":"TRS",
+                    "valor":0
+                },
+                {
+                    "nome_atributo":"WID",
+                    "valor":-32767.0
+                },
+                {
+                    "nome_atributo":"SMC",
+                    "valor":0 balao
+                }
+            ]
+        },
+        {"__comment":"AQ065 CULVERT <-> dut_galeria_bueiro_p" balao,
+            "tupla_origem":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"AQ065"
+                }
+            ],
+            "tupla_destino":[
+                {
+                    "nome_valor":"class_name",
+                    "valor":"dut_galeria_bueiro_p"
+                }
+            ],
+            "atributos_default_ida":[
+                {
+                    "nome_atributo":"tipotrechoduto",
+                    "valor":4
+                },
+                {
+                    "nome_atributo":"mattransp",
+                    "valor": 95 balao
+                },
+                {
+                    "nome_atributo":"setor",
+                    "valor":95
+                },
+                {
+                    "nome_atributo":"posicaorelativa",
+                    "valor":95
+                },
+                {
+                    "nome_atributo":"matconst",
+                    "valor":95
+                },
+                {
+                    "nome_atributo":"situacaoespacial",
+                    "valor":95
+                },
+                {
+                    "nome_atributo":"operacional",
+                    "valor":95
+                },
+                {
+                    "nome_atributo":"situacaofisica",
+                    "valor":95
+                },
+                {
+                    "nome_atributo":"finalidade",
+                    "valor":95
+                }
+            ],
+            "atributos_default_volta":[
+                {
+                    "nome_atributo":"AOO",
+                    "valor":-32767.0,
+                    "__comment":"Angle of Orientation"
+                },
+                {
+                    "nome_atributo":"WID",  
+                    "valor":-32767.0
+                }
+            ]
         }
     ],
     "mapeamento_atributos": [
