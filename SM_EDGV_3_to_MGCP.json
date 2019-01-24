@@ -1062,6 +1062,44 @@
                 }
             ]
 
+        },
+        {"__comment":"AT060 COMMUNICATION LINE <-> enc_trecho_comunic",
+            "tupla_origem":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"AT060"
+                }
+            ],
+            "tupla_destino":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"enc_trecho_comunic"
+                }
+            ],
+            "atributos_default_ida":[
+                {
+                    "nome_atributo":"tipotrechocomunic",
+                    "valor":95
+                },
+                {
+                    "nome_atributo":"posicaorelativa",
+                    "valor":95
+                },
+                {
+                    "nome_atributo":"operacional",
+                    "valor":95
+                },
+                {
+                    "nome_atributo":"matcondutor",
+                    "valor":95
+                }
+            ],
+            "atributos_default_volta":[
+                {
+                    "nome_atributo":"HGT",
+                    "valor":-32767.0
+                }
+            ]
         }
     ],
     "mapeamento_atributos": [
