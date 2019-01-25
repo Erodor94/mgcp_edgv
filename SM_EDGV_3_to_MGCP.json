@@ -465,7 +465,7 @@
                 },
                 {
                     "nome_atributo":"tipotrechoduto",
-                    "valor":1
+                    "valor":2
                 },
                 {
                     "nome_atributo":"mattransp",
@@ -479,10 +479,6 @@
                 },
                 {
                     "nome_atributo":"posicaorelativa",
-                    "valor":95
-                },
-                {
-                    "nome_atributo":"operacional",
                     "valor":95
                 },
                 {
@@ -1100,6 +1096,122 @@
                     "valor":-32767.0
                 }
             ]
+        },
+        {"__comment":"AQ113 Pipeline <-> dut_trecho_duto",
+            "tupla_origem":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"AQ113"
+                }
+            ],
+            "tupla_destino":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"dut_trecho_duto"
+                },
+                {
+                    "nome_atributo":"tipotrechoduto",
+                    "valor":1
+                }
+            ],
+            "atributos_default_ida":[
+                {
+                    "nome_atributo":"setor",
+                    "valor":95
+                },
+                {
+                    "nome_atributo":"operacional",
+                    "valor":95
+                },
+                {
+                    "nome_atributo":"situacaoespacial",
+                    "valor":95
+                }
+            ],
+            "atributos_default_volta":[
+                {
+                    "nome_atributo":"RTA",
+                    "valor":0
+                }
+            ]
+        },
+        {"__comment":"AQ070 FERRY CROSSING <-> tra_travessia",
+            "tupla_origem":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"AQ070"
+                }
+            ],
+            "tupla_destino":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"tra_travessia"
+                },
+                {
+                    "nome_atributo":"tipotravessia",
+                    "valor":4
+                }
+            ],
+            "atributos_default_ida":[
+                {
+                    "nome_atributo":"tipouso",
+                    "valor":95
+                },
+                {
+                    "nome_atributo":"tipoembarcacao",
+                    "valor":2
+                }
+            ],
+            "atributos_default_volta":[
+                {
+                    "nome_atributo":"TRS",
+                    "valor":0
+                }
+            ]
+
+        },
+        {"__comment":"BB005 HARBOUR <-> hdv_atracadouro_terminal_a",
+            "tupla_origem":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"BB005"
+                }
+            ],
+            "tupla_destino":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"hdv_atracadouro_terminal_a"
+                },
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"hdv_atracadouro_terminal_a"
+                }
+            ],
+            "atributos_default_ida":[
+                {
+                    "nome_atributo":"tipoatracad",
+                    "valor":95
+                },
+                {
+                    "nome_atributo":"administracao",
+                    "valor":95
+                },
+                {
+                    "nome_atributo":"operacional",
+                    "valor":95
+                },
+                {
+                    "nome_atributo":"aptidaooperacional",
+                    "valor":95 balao
+                }
+            ],
+            "atributos_default_volta":[
+                {
+                    "nome_atributo":"FHC",
+                    "valor":0
+                }
+            ]
+
         }
     ],
     "mapeamento_atributos": [
