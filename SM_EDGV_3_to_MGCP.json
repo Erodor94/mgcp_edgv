@@ -1211,7 +1211,58 @@
                     "valor":0
                 }
             ]
-
+        },
+        {"__comment":"AA052 HYDROCARBONS FIELDS <-> eco_ext_mineral_a | petróleo",
+            "tupla_origem":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"AA052"
+                }
+            ],
+            "tupla_destino":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"eco_ext_mineral_a"
+                },
+                {
+                    "nome_atributo":"tipoextmin",
+                    "valor":8
+                }
+            ],
+            "atributos_default_ida":[
+                {
+                    "nome_atributo":"tipoproduto",
+                    "valor":"pertoleo" balao
+                },
+                {
+                    "nome_atributo":"secaoativecon",
+                    "valor":95
+                },
+                {
+                    "nome_atributo":"tipoalterantrop",
+                    "valor":32
+                },
+                {
+                    "nome_atributo":"operacional",
+                    "valor":95
+                },
+                {
+                    "nome_atributo":"tipopocomina",
+                    "valor":3
+                },
+                {
+                    "nome_atributo":"procextracao",
+                    "valor":95
+                },
+                {
+                    "nome_atributo":"formaextracao",
+                    "valor":95
+                },
+                {
+                    "nome_artibuto":"atividade",
+                    "valor":9
+                }
+            ]
         }
     ],
     "mapeamento_atributos": [
