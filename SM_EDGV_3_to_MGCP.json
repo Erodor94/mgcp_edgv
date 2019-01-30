@@ -1355,6 +1355,34 @@
                     "vaor":9999
                 }
             ]
+        },
+        {"__comment":"AAL020 BUILT-UP AREA <-> lml_area_densamente_edificada",
+            "tupla_origem":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"AAL020"
+                }
+            ],
+            "tupla_destino":[
+                {
+                    "nome_atributo":"class_name",
+                    "valor":"lml_area_densamente_edificada"
+                },
+                {
+                    "nome_atributo":"BAC",
+                    "valor":"2"
+                }
+            ],
+            "atributos_default_volta":[
+                {
+                    "nome_atributo":"FUC",
+                    "valor":0
+                },
+                {
+                    "nome_atributo":"ORD",
+                    "valor":0
+                }
+            ]
         }
     ],
     "mapeamento_atributos": [

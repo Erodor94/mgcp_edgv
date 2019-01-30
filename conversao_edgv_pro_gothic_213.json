@@ -1,0 +1,1454 @@
+{"__comment":"UTF-8",
+  "mapeamento_classes": [
+    {"__comment":"cobter_area_edificada <-> Area_Edificada",
+      "classe_ida": "edgv.cobter_area_edificada",
+      "classe_volta": "Area_Edificada",
+      "atributos_default_ida": [
+        {
+          "nome_atributo": "geometriaAproximada",
+          "valor": 1
+        }    
+      ]
+    },
+    {"__comment":"cobter_corpo_dagua <-> Massa_Dagua",
+      "classe_ida": "edgv.cobter_corpo_dagua",
+      "classe_volta": "Massa_Dagua",
+      "filtro_ida": 
+        {
+          "$or": [
+            {
+              "nome_atributo": "tipo",
+              "valor": 3
+            },
+            {
+              "nome_atributo": "tipo",
+              "valor": 4
+            },
+            {
+              "nome_atributo": "tipo",
+              "valor": 5
+            },
+            {
+              "nome_atributo": "tipo",
+              "valor": 6
+            },
+            {
+              "nome_atributo": "tipo",
+              "valor": 7
+            },
+            {
+              "nome_atributo": "tipo",
+              "valor": 11
+            }
+          ]
+        },
+      "traducao_atributos": [
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "tipoMassaDagua",
+          "traducao": [
+            {
+              "valor_ida": 11,
+              "valor_volta": 10
+            },
+            {
+              "valor_ida": 999,
+              "valor_volta": 0,
+              "sentido": "volta"
+            },
+            {
+              "valor_ida": 7,
+              "valor_volta": 9,
+              "sentido": "volta"
+            },
+            {
+              "valor_ida": 999,
+              "valor_volta": 99,
+              "sentido": "volta"
+            }
+          ]
+        }
+      ],
+      "atributos_default_ida": [
+        {
+          "nome_atributo": "geometriaAproximada",
+          "valor": 1
+        },
+        {
+          "nome_atributo":"salinidade",
+          "valor": 0
+      }
+      ]
+    },
+    {"__comment":"cobter_corpo_dagua <-> Trecho_Massa_Dagua",
+      "classe_ida": "edgv.cobter_corpo_dagua",
+      "classe_volta": "Trecho_Massa_Dagua",
+      "filtro_ida": 
+        {
+          "$or": [
+            {
+              "nome_atributo": "tipo",
+              "valor": 1
+            },
+            {
+              "nome_atributo": "tipo",
+              "valor": 2
+            },
+            {
+              "nome_atributo": "tipo",
+              "valor": 9
+            },
+            {
+              "nome_atributo": "tipo",
+              "valor": 10
+            }
+          ]
+        },
+      "traducao_atributos": [
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "tipoMassaDagua",
+          "traducao": [
+            {
+              "valor_ida": 999,
+              "valor_volta": 99,
+              "sentido": "volta"
+            }
+          ]
+        }
+      ],
+      "atributos_default_ida": [
+        {
+          "nome_atributo": "geometriaAproximada",
+          "valor": 1
+        },
+        {
+          "nome_atributo":"salinidade",
+          "valor": 0
+      }
+      ]
+    },
+    {"__comment":"cobter_vegetacao | tipo 1101  <-> Veg_Area_Contato",
+      "classe_ida": "edgv.cobter_vegetacao",
+      "filtro_ida":
+        {
+          "nome_atributo": "tipo",
+          "valor": 1101
+        },
+      "classe_volta": "Veg_Area_Contato",
+      "atributos_default_ida": [
+          {
+              "nome_atributo":"geometriaAproximada",
+              "valor": 1
+          },
+          {
+              "nome_atributo":"classificacaoPorte",
+              "valor": 0
+          },
+          {
+              "nome_atributo":"denso",
+              "valor": 0
+          },
+          {
+              "nome_atributo":"antropizada",
+              "valor": 0
+          }   
+      ]
+    },
+    {"__comment":"cobter_vegetacao | tipo 901  <-> Campo",
+      "classe_ida": "edgv.cobter_vegetacao",
+      "filtro_ida":
+        {
+          "nome_atributo": "tipo",
+          "valor": 1101
+        },
+      "classe_volta": "Campo",
+      "atributos_default_ida": [
+          {
+              "nome_atributo":"geometriaAproximada",
+              "valor": 1
+          },
+          {
+              "nome_atributo":"classificacaoPorte",
+              "valor": 4
+          },
+          {
+              "nome_atributo":"denso",
+              "valor": 0
+          },
+          {
+              "nome_atributo":"antropizada",
+              "valor": 0
+          }   
+      ]
+    },
+    {"__comment":"cobter_vegetacao | tipo 801  <-> Caatinga",
+      "classe_ida": "edgv.cobter_vegetacao",
+      "filtro_ida":
+        {
+          "nome_atributo": "tipo",
+          "valor": 801
+        },
+      "classe_volta": "Campo",
+      "atributos_default_ida": [
+          {
+              "nome_atributo":"geometriaAproximada",
+              "valor": 2
+          },
+          {
+              "nome_atributo":"classificacaoPorte",
+              "valor": 0
+          },
+          {
+              "nome_atributo":"denso",
+              "valor": 0
+          },
+          {
+              "nome_atributo":"antropizada",
+              "valor": 0
+          }   
+      ]
+    },
+    {"__comment":"cobter_vegetacao | tipo 701 702  <-> Cerrado_Cerradao",
+      "classe_ida": "edgv.cobter_vegetacao",
+      "filtro_ida":
+        {
+          "$or": [
+              {
+                "nome_atributo": "tipo",
+                "valor": 701
+              },
+              {
+                "nome_atributo": "tipo",
+                "valor": 702
+              }
+          ]
+        },
+      "classe_volta": "Cerrado_Cerradao",
+      "traducao_atributos": [
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "classificacaoPorte",
+          "traducao": [
+            {
+              "valor_ida": 701,
+              "valor_volta": 1
+            },
+            {
+              "valor_ida": 702,
+              "valor_volta": 2
+            },
+            {
+              "valor_ida": 701,
+              "valor_volta": 0
+            },
+            {
+              "valor_ida": 701,
+              "valor_volta": 98
+            }
+          ]
+        }
+      ],
+      "atributos_default_ida": [
+          {
+              "nome_atributo":"geometriaAproximada",
+              "valor": 2
+          },
+          {
+              "nome_atributo":"denso",
+              "valor": 0
+          },
+				  {
+              "nome_atributo":"tipoCerr",
+              "valor": 0
+          },
+          {
+              "nome_atributo":"antropizada",
+              "valor": 0
+          }   
+      ]
+    },
+    {"__comment":"cobter_vegetacao | tipo 601  <-> Floresta",
+      "classe_ida": "edgv.cobter_vegetacao",
+      "filtro_ida":
+        {
+          "nome_atributo": "tipo",
+          "valor": 601
+        },
+      "classe_volta": "Floresta",
+      "atributos_default_ida": [
+          {
+              "nome_atributo":"geometriaAproximada",
+              "valor": 2
+          },
+          {
+              "nome_atributo":"caracteristicaFloresta",
+              "valor": 1
+          },
+          {
+              "nome_atributo":"denso",
+              "valor": 0
+          },
+          {
+              "nome_atributo":"antropizada",
+              "valor": 0
+          }   
+      ]
+    },
+    {"__comment":"cobter_vegetacao | tipo 501  <-> Campinarana",
+      "classe_ida": "edgv.cobter_vegetacao",
+      "filtro_ida":
+        {
+          "nome_atributo": "tipo",
+          "valor": 501
+        },
+      "classe_volta": "Campinarana",
+      "atributos_default_ida": [
+          {
+              "nome_atributo":"geometriaAproximada",
+              "valor": 2
+          },
+          {
+              "nome_atributo":"classificacaoPorte",
+              "valor": 0
+          },
+          {
+              "nome_atributo":"denso",
+              "valor": 0
+          },
+          {
+              "nome_atributo":"antropizada",
+              "valor": 0
+          }   
+      ]
+    },
+    {"__comment":"cobter_vegetacao | tipo 401  <-> Veg_Restinga",
+      "classe_ida": "edgv.cobter_vegetacao",
+      "filtro_ida":
+        {
+          "nome_atributo": "tipo",
+          "valor": 401
+        },
+      "classe_volta": "Veg_Restinga",
+      "atributos_default_ida": [
+          {
+              "nome_atributo":"geometriaAproximada",
+              "valor": 2
+          },
+          {
+              "nome_atributo":"classificacaoPorte",
+              "valor": 0
+          },
+          {
+              "nome_atributo":"denso",
+              "valor": 0
+          },
+          {
+              "nome_atributo":"antropizada",
+              "valor": 0
+          }   
+      ]
+    },
+    {"__comment":"cobter_vegetacao | tipo 301 302  <-> Brejo_Pantano",
+      "classe_ida": "edgv.cobter_vegetacao",
+      "filtro_ida":
+        {
+          "$or": [
+              {
+                "nome_atributo": "tipo",
+                "valor": 301
+              },
+              {
+                "nome_atributo": "tipo",
+                "valor": 302
+              }
+          ]
+        },
+      "classe_volta": "Brejo_Pantano",
+      "traducao_atributos": [
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "classificacaoPorte",
+          "traducao": [
+            {
+              "valor_ida": 301,
+              "valor_volta": 1
+            },
+            {
+              "valor_ida": 302,
+              "valor_volta": 2
+            },
+            {
+              "valor_ida": 301,
+              "valor_volta": 0
+            },
+            {
+              "valor_ida": 301,
+              "valor_volta": 98
+            }
+          ]
+        }
+      ],
+      "atributos_default_ida": [
+          {
+              "nome_atributo":"geometriaAproximada",
+              "valor":2
+          },
+          {
+              "nome_atributo":"tipoBrejoPantano",
+              "valor":0
+          },
+          {
+              "nome_atributo":"denso",
+              "valor":0
+          },
+          {
+              "nome_atributo":"antropizada",
+              "valor":0
+          }   
+      ]
+    },
+    {"__comment":"cobter_vegetacao | tipo 201 202  <-> Mangue",
+      "classe_ida": "edgv.cobter_vegetacao",
+      "filtro_ida":
+        {
+          "$or": [
+              {
+                "nome_atributo": "tipo",
+                "valor": 201
+              },
+              {
+                "nome_atributo": "tipo",
+                "valor": 202
+              }
+          ]
+        },
+      "classe_volta": "Mangue",
+      "traducao_atributos": [
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "classificacaoPorte",
+          "traducao": [
+            {
+              "valor_ida": 201,
+              "valor_volta": 1
+            },
+            {
+              "valor_ida": 202,
+              "valor_volta": 2
+            },
+            {
+              "valor_ida": 201,
+              "valor_volta": 0
+            },
+            {
+              "valor_ida": 201,
+              "valor_volta": 98
+            }
+          ]
+        }
+      ],
+      "atributos_default_ida": [
+          {
+              "nome_atributo":"geometriaAproximada",
+              "valor": 2
+          },
+          {
+              "nome_atributo":"denso",
+              "valor": 0
+          },
+          {
+              "nome_atributo":"antropizada",
+              "valor": 0
+          }   
+      ]
+    },
+    {"__comment":"cobter_vegetacao | tipo 1000 <-> Terreno_Exposto",
+      "classe_ida": "edgv.cobter_vegetacao",
+      "filtro_ida":
+        {
+          "nome_atributo": "tipo",
+          "valor": 1000
+        },
+      "classe_volta": "Terreno_Exposto",
+      "atributos_default_ida": [
+          {
+              "nome_atributo":"geometriaAproximada",
+              "valor": 2
+          },
+          {
+              "nome_atributo":"tipoTerrExp",
+              "valor": 0
+          } 
+      ]
+    },
+    {"__comment":"cobter_vegetacao | cultivada  <-> Veg_Cultivada",
+      "classe_ida": "edgv.cobter_vegetacao",
+      "filtro_ida":
+        {
+          "$or": [
+              {
+                "nome_atributo": "tipo",
+                "valor": 102
+              },
+              {
+                "nome_atributo": "$GEOM_TYPE",
+                "valor": "LINESTRING"
+              },
+              {
+                "nome_atributo": "tipo",
+                "valor": 103
+              },
+              {
+                "nome_atributo": "tipo",
+                "valor": 107
+              },
+              {
+                "nome_atributo": "tipo",
+                "valor": 114
+              },
+              {
+                "nome_atributo": "tipo",
+                "valor": 115
+              },
+              {
+                "nome_atributo": "tipo",
+                "valor": 116
+              },
+              {
+                "nome_atributo": "tipo",
+                "valor": 117
+              },
+              {
+                "nome_atributo": "tipo",
+                "valor": 118
+              },
+              {
+                "nome_atributo": "tipo",
+                "valor": 119
+              },
+              {
+                "nome_atributo": "tipo",
+                "valor": 124
+              },
+              {
+                "nome_atributo": "tipo",
+                "valor": 142
+              },
+              {
+                "nome_atributo": "tipo",
+                "valor": 150
+              },
+              {
+                "nome_atributo": "tipo",
+                "valor": 151
+              },
+              {
+                "nome_atributo": "tipo",
+                "valor": 152
+              },
+              {
+                "nome_atributo": "tipo",
+                "valor": 153
+              },
+              {
+                "nome_atributo": "tipo",
+                "valor": 195
+              },
+              {
+                "nome_atributo": "tipo",
+                "valor": 198
+              },
+              {
+                "nome_atributo": "tipo",
+                "valor": 196
+              },
+              {
+                "nome_atributo": "tipo",
+                "valor": 1296
+              }
+          ]
+        },
+      "classe_volta": "Veg_Cultivada",
+      "traducao_atributos": [
+        {
+          "attr_ida": "tipo",
+          "attr_volta": "cultivoPredominante",
+          "traducao": [
+            {
+              "valor_ida": 102,
+              "valor_volta": 2
+            },
+            {
+              "valor_ida": 103,
+              "valor_volta": 3
+            },
+            {
+              "valor_ida": 107,
+              "valor_volta": 7
+            },
+            {
+              "valor_ida": 114,
+              "valor_volta": 14
+            },
+            {
+              "valor_ida": 115,
+              "valor_volta": 15
+            },
+            {
+              "valor_ida": 116,
+              "valor_volta": 16
+            },
+            {
+              "valor_ida": 117,
+              "valor_volta": 17
+            },
+            {
+              "valor_ida": 118,
+              "valor_volta": 18
+            },
+            {
+              "valor_ida": 119,
+              "valor_volta": 19
+            },
+            {
+              "valor_ida": 124,
+              "valor_volta": 24
+            },
+            {
+              "valor_ida": 142,
+              "valor_volta": 42
+            },
+            {
+              "valor_ida": 150,
+              "valor_volta": 13,
+              "sentido": "ida"
+            },
+            {
+              "valor_ida": 151,
+              "valor_volta": 30
+            },
+            {
+              "valor_ida": 152,
+              "valor_volta": 31
+            },
+            {
+              "valor_ida": 153,
+              "valor_volta": 29
+            },
+            {
+              "valor_ida": 195,
+              "valor_volta": 98,
+              "sentido": "ida"
+            },
+            {
+              "valor_ida": 198,
+              "valor_volta": 99,
+              "sentido": "ida"
+            },
+            {
+              "valor_ida": 196,
+              "valor_volta": 96,
+              "sentido": "ida"
+            },
+            {
+              "valor_ida": 198,
+              "valor_volta": 34,
+              "sentido": "volta"
+            },
+            {
+              "valor_ida": 198,
+              "valor_volta": 35,
+              "sentido": "volta"
+            },
+            {
+              "valor_ida": 198,
+              "valor_volta": 36,
+              "sentido": "volta"
+            },
+            {
+              "valor_ida": 198,
+              "valor_volta": 37,
+              "sentido": "volta"
+            },
+            {
+              "valor_ida": 198,
+              "valor_volta": 39,
+              "sentido": "volta"
+            },
+            {
+              "valor_ida": 196,
+              "valor_volta": 1,
+              "sentido": "volta"
+            },
+            {
+              "valor_ida": 196,
+              "valor_volta": 4,
+              "sentido": "volta"
+            },
+            {
+              "valor_ida": 196,
+              "valor_volta": 6,
+              "sentido": "volta"
+            },
+            {
+              "valor_ida": 196,
+              "valor_volta": 8,
+              "sentido": "volta"
+            },
+            {
+              "valor_ida": 196,
+              "valor_volta": 9,
+              "sentido": "volta"
+            },
+            {
+              "valor_ida": 196,
+              "valor_volta": 10,
+              "sentido": "volta"
+            },
+            {
+              "valor_ida": 196,
+              "valor_volta": 11,
+              "sentido": "volta"
+            },
+            {
+              "valor_ida": 196,
+              "valor_volta": 12,
+              "sentido": "volta"
+            },
+            {
+              "valor_ida": 196,
+              "valor_volta": 25,
+              "sentido": "volta"
+            },
+            {
+              "valor_ida": 196,
+              "valor_volta": 32,
+              "sentido": "volta"
+            },
+            {
+              "valor_ida": 196,
+              "valor_volta": 33,
+              "sentido": "volta"
+            },
+            {
+              "valor_ida": 1296,
+              "valor_volta": 39
+            }
+          ]
+        }
+      ],
+      "mapeamento_atributos": [
+          {
+              "sentido": "ida",
+              "tupla_ida": [
+                  {
+                      "nome_atributo": "tipo",
+                      "valor": 102
+                  }
+              ],
+              "tupla_volta": [
+                  {
+                      "nome_atributo":"tipoLavoura",
+                      "valor": 1
+                  },
+                  {
+                      "nome_atributo":"classificacaoPorte",
+                      "valor": 1
+                  }
+              ]
+          },
+          {
+              "sentido": "ida",
+              "tupla_ida": [
+                  {
+                      "nome_atributo": "tipo",
+                      "valor": 103
+                  }
+              ],
+              "tupla_volta": [
+                  {
+                      "nome_atributo":"tipoLavoura",
+                      "valor": 1
+                  },
+                  {
+                      "nome_atributo":"classificacaoPorte",
+                      "valor": 1
+                  }
+              ]
+          },
+          {
+              "sentido": "ida",
+              "tupla_ida": [
+                  {
+                      "nome_atributo": "tipo",
+                      "valor": 107
+                  }
+              ],
+              "tupla_volta": [
+                  {
+                      "nome_atributo":"tipoLavoura",
+                      "valor": 2
+                  },
+                  {
+                      "nome_atributo":"classificacaoPorte",
+                      "valor": 1
+                  }
+              ]
+          },
+          {
+              "sentido": "ida",
+              "tupla_ida": [
+                  {
+                      "nome_atributo": "tipo",
+                      "valor": 114
+                  }
+              ],
+              "tupla_volta": [
+                  {
+                      "nome_atributo":"tipoLavoura",
+                      "valor": 1
+                  },
+                  {
+                      "nome_atributo":"classificacaoPorte",
+                      "valor": 1
+                  }
+              ]
+          },
+          {
+              "sentido": "ida",
+              "tupla_ida": [
+                  {
+                      "nome_atributo": "tipo",
+                      "valor": 115
+                  }
+              ],
+              "tupla_volta": [
+                  {
+                      "nome_atributo":"tipoLavoura",
+                      "valor": 1
+                  },
+                  {
+                      "nome_atributo":"classificacaoPorte",
+                      "valor": 1
+                  }
+              ]
+          },
+          {
+              "sentido": "ida",
+              "tupla_ida": [
+                  {
+                      "nome_atributo": "tipo",
+                      "valor": 116
+                  }
+              ],
+              "tupla_volta": [
+                  {
+                      "nome_atributo":"tipoLavoura",
+                      "valor": 1
+                  },
+                  {
+                      "nome_atributo":"classificacaoPorte",
+                      "valor": 1
+                  }
+              ]
+          },
+          {
+              "sentido": "ida",
+              "tupla_ida": [
+                  {
+                      "nome_atributo": "tipo",
+                      "valor": 117
+                  }
+              ],
+              "tupla_volta": [
+                  {
+                      "nome_atributo":"tipoLavoura",
+                      "valor": 1
+                  },
+                  {
+                      "nome_atributo":"classificacaoPorte",
+                      "valor": 1
+                  }
+              ]
+          },
+          {
+              "sentido": "ida",
+              "tupla_ida": [
+                  {
+                      "nome_atributo": "tipo",
+                      "valor": 118
+                  }
+              ],
+              "tupla_volta": [
+                  {
+                      "nome_atributo":"tipoLavoura",
+                      "valor": 1
+                  },
+                  {
+                      "nome_atributo":"classificacaoPorte",
+                      "valor": 1
+                  }
+              ]
+          },
+          {
+              "sentido": "ida",
+              "tupla_ida": [
+                  {
+                      "nome_atributo": "tipo",
+                      "valor": 119
+                  }
+              ],
+              "tupla_volta": [
+                  {
+                      "nome_atributo":"tipoLavoura",
+                      "valor": 1
+                  },
+                  {
+                      "nome_atributo":"classificacaoPorte",
+                      "valor": 1
+                  }
+              ]
+          },
+          {
+              "sentido": "ida",
+              "tupla_ida": [
+                  {
+                      "nome_atributo": "tipo",
+                      "valor": 124
+                  }
+              ],
+              "tupla_volta": [
+                  {
+                      "nome_atributo":"tipoLavoura",
+                      "valor": 1
+                  },
+                  {
+                      "nome_atributo":"classificacaoPorte",
+                      "valor": 4
+                  }
+              ]
+          },
+          {
+              "sentido": "ida",
+              "tupla_ida": [
+                  {
+                      "nome_atributo": "tipo",
+                      "valor": 142
+                  }
+              ],
+              "tupla_volta": [
+                  {
+                      "nome_atributo":"tipoLavoura",
+                      "valor": 1
+                  },
+                  {
+                      "nome_atributo":"classificacaoPorte",
+                      "valor": 1
+                  }
+              ]
+          },
+          {
+              "sentido": "ida",
+              "tupla_ida": [
+                  {
+                      "nome_atributo": "tipo",
+                      "valor": 150
+                  }
+              ],
+              "tupla_volta": [
+                  {
+                      "nome_atributo":"tipoLavoura",
+                      "valor": 1
+                  },
+                  {
+                      "nome_atributo":"classificacaoPorte",
+                      "valor": 1
+                  },
+                  {
+                      "nome_atributo":"terreno",
+                      "valor": 3
+                  }
+              ]
+          },
+          {
+              "sentido": "ida",
+              "tupla_ida": [
+                  {
+                      "nome_atributo": "tipo",
+                      "valor": 151
+                  }
+              ],
+              "tupla_volta": [
+                  {
+                      "nome_atributo":"tipoLavoura",
+                      "valor": 1
+                  },
+                  {
+                      "nome_atributo":"classificacaoPorte",
+                      "valor": 1
+                  }
+              ]
+          },
+          {
+              "sentido": "ida",
+              "tupla_ida": [
+                  {
+                      "nome_atributo": "tipo",
+                      "valor": 152
+                  }
+              ],
+              "tupla_volta": [
+                  {
+                      "nome_atributo":"tipoLavoura",
+                      "valor": 1
+                  },
+                  {
+                      "nome_atributo":"classificacaoPorte",
+                      "valor": 1
+                  }
+              ]
+          },
+          {
+              "sentido": "ida",
+              "tupla_ida": [
+                  {
+                      "nome_atributo": "tipo",
+                      "valor": 153
+                  }
+              ],
+              "tupla_volta": [
+                  {
+                      "nome_atributo":"tipoLavoura",
+                      "valor": 1
+                  },
+                  {
+                      "nome_atributo":"classificacaoPorte",
+                      "valor": 1
+                  }
+              ]
+          },
+          {
+              "sentido": "ida",
+              "tupla_ida": [
+                  {
+                      "nome_atributo": "tipo",
+                      "valor": 195
+                  }
+              ],
+              "tupla_volta": [
+                  {
+                      "nome_atributo":"tipoLavoura",
+                      "valor": 1
+                  },
+                  {
+                      "nome_atributo":"classificacaoPorte",
+                      "valor": 0
+                  }
+              ]
+          },
+          {
+              "sentido": "ida",
+              "tupla_ida": [
+                  {
+                      "nome_atributo": "tipo",
+                      "valor": 198
+                  }
+              ],
+              "tupla_volta": [
+                  {
+                      "nome_atributo":"tipoLavoura",
+                      "valor": 1
+                  },
+                  {
+                      "nome_atributo":"classificacaoPorte",
+                      "valor": 0
+                  }
+              ]
+          },
+          {
+              "sentido": "ida",
+              "tupla_ida": [
+                  {
+                      "nome_atributo": "tipo",
+                      "valor": 196
+                  }
+              ],
+              "tupla_volta": [
+                  {
+                      "nome_atributo":"tipoLavoura",
+                      "valor": 3
+                  },
+                  {
+                      "nome_atributo":"classificacaoPorte",
+                      "valor": 0
+                  }
+              ]
+          },
+          {
+              "sentido": "volta",
+              "tupla_ida": [
+                  {
+                      "nome_atributo": "tipo",
+                      "valor": 195
+                  }
+              ],
+              "tupla_volta": [
+                  {
+                      "nome_atributo":"cultivoPredominante",
+                      "valor": 98
+                  },
+                  {
+                      "nome_atributo":"tipoLavoura",
+                      "valor": 1
+                  }
+              ]
+          },
+          {
+              "sentido": "volta",
+              "tupla_ida": [
+                  {
+                      "nome_atributo": "tipo",
+                      "valor": 198
+                  }
+              ],
+              "tupla_volta": [
+                  {
+                      "nome_atributo":"cultivoPredominante",
+                      "valor": 99
+                  },
+                  {
+                      "nome_atributo":"tipoLavoura",
+                      "valor": 1
+                  }
+              ]
+          },
+          {
+              "sentido": "volta",
+              "tupla_ida": [
+                  {
+                      "nome_atributo": "tipo",
+                      "valor": 196
+                  }
+              ],
+              "tupla_volta": [
+                  {
+                      "nome_atributo":"cultivoPredominante",
+                      "valor": 96
+                  },
+                  {
+                      "nome_atributo":"tipoLavoura",
+                      "valor": 3
+                  }
+              ]
+          },
+          {
+              "sentido": "volta",
+              "tupla_ida": [
+                  {
+                      "nome_atributo": "tipo",
+                      "valor": 196
+                  }
+              ],
+              "tupla_volta": [
+                  {
+                      "nome_atributo":"cultivoPredominante",
+                      "valor": 13
+                  },
+                  {
+                      "nome_atributo":"terreno",
+                      "valor": 1
+                  }
+              ]
+          },
+          {
+              "sentido": "volta",
+              "tupla_ida": [
+                  {
+                      "nome_atributo": "tipo",
+                      "valor": 196
+                  }
+              ],
+              "tupla_volta": [
+                  {
+                      "nome_atributo":"cultivoPredominante",
+                      "valor": 13
+                  },
+                  {
+                      "nome_atributo":"terreno",
+                      "valor": 2
+                  }
+              ]
+          },
+          {
+              "sentido": "ida",
+              "tupla_ida": [
+                  {
+                      "nome_atributo": "tipo",
+                      "valor": 1296
+                  }
+              ],
+              "tupla_volta": [
+                  {
+                      "nome_atributo":"tipoLavoura",
+                      "valor": 1
+                  },
+                  {
+                      "nome_atributo":"classificacaoPorte",
+                      "valor": 1
+                  }
+              ]
+          }
+      ],
+      "atributos_default_ida": [
+          {
+              "nome_atributo":"geometriaAproximada",
+              "valor": 2
+          },
+          {
+              "nome_atributo":"denso",
+              "valor": 0
+          },
+          {
+              "nome_atributo":"finalidade",
+              "valor": 0
+          },
+          {
+              "nome_atributo":"terreno",
+              "valor": 1
+          }     
+      ]
+    }
+  ],
+  "mapeamento_atributos":[
+      {
+        "attr_ida": "jurisdicao",
+        "attr_volta": "jurisdicao",
+        "traducao": [
+          {
+            "valor_ida": 6,
+            "valor_volta": 8
+          }
+        ]
+    },
+    {
+        "attr_ida": "regime",
+        "attr_volta": "regime",
+        "traducao": [
+          {
+            "valor_ida": 1,
+            "valor_volta": 2,
+            "sentido": "volta"
+          },
+          {
+            "valor_ida": 3,
+            "valor_volta": 4,
+            "sentido": "volta"
+          }
+        ]
+    },
+    {
+        "attr_ida": "situacao_fisica",
+        "attr_volta": "situacaoFisica",
+        "traducao": [
+          {
+            "valor_ida": 3,
+            "valor_volta": 5
+          },
+          {
+            "valor_ida": 4,
+            "valor_volta": 3
+          }
+        ]
+    },
+    {
+        "attr_ida": "material_construcao",
+        "attr_volta": "matConstr"
+    },
+    {
+        "attr_ida": "tipo_exposicao",
+        "attr_volta": "tipoExposicao",
+        "traducao": [
+          {
+            "valor_ida": 999,
+            "valor_volta": 0,
+            "sentido": "volta"
+          },
+          {
+            "valor_ida": 999,
+            "valor_volta": 99,
+            "sentido": "volta"
+          }
+        ]
+    },
+    {
+        "attr_ida": "tipo_produto_residuo",
+        "attr_volta": "tipoProdutoResiduo"
+    },
+    {
+        "attr_ida": "tipo_esposicao",
+        "attr_volta": "construcao",
+        "traducao": [
+          {
+            "valor_ida": 3,
+            "valor_volta": 1
+          },
+          {
+            "valor_ida": 5,
+            "valor_volta": 2
+          }
+        ]
+    },
+    {
+        "attr_ida": "tipo_produto_residuo",
+        "attr_volta": "tipoResiduo"
+    },
+    {
+        "attr_ida": "forma_extracao",
+        "attr_volta": "formaExtracao",
+        "traducao": [
+          {
+            "valor_ida": 999,
+            "valor_volta": 0,
+            "sentido": "volta"
+          }
+        ]
+    },
+    {
+        "attr_ida": "cota_comprovada",
+        "attr_volta": "cotaComprovada"
+    },
+    {
+        "attr_ida": "posicao_relativa",
+        "attr_volta": "posicaoRelativa",
+        "traducao": [
+          {
+            "valor_ida": 999,
+            "valor_volta": 0,
+            "sentido": "volta"
+          }
+        ]
+    },
+    {
+        "attr_ida": "posicao_relativa",
+        "attr_volta": "posicaoRelEdific"
+    },
+    {
+        "attr_ida": "modal_uso",
+        "attr_volta": "modalUso",
+        "traducao": [
+          {
+            "valor_ida": 999,
+            "valor_volta": 7,
+            "sentido": "volta"
+          }
+        ]
+    },
+    {
+        "attr_ida": "posicao_pista",
+        "attr_volta": "posicaoPista",
+        "traducao": [
+          {
+            "valor_ida": 999,
+            "valor_volta": 0,
+            "sentido": "volta"
+          },
+          {
+            "valor_ida": 999,
+            "valor_volta": 16,
+            "sentido": "volta"
+          }
+        ]
+    },
+    {
+        "attr_ida": "nr_faixas",
+        "attr_volta": "nrFaixas"
+    },
+    {
+        "attr_ida": "nr_pistas",
+        "attr_volta": "nrPistas"
+    },
+    {
+        "attr_ida": "nr_linhas",
+        "attr_volta": "nrLinhas"
+    },
+    {
+        "attr_ida": "em_arruamento",
+        "attr_volta": "emArruamento"
+    },
+    {
+        "attr_ida": "uso_pista",
+        "attr_volta": "usoPista"
+    },
+    {
+        "attr_ida": "canteiro_divisorio",
+        "attr_volta": "canteiroDivisorio"
+    },
+    {
+        "attr_ida": "geometria_aproximada",
+        "attr_volta": "geometriaAproximada"
+    },
+    {
+        "attr_ida": "tipo_ref",
+        "attr_volta": "tipoRef"
+    },
+    {
+        "attr_ida": "sistema_geodesico",
+        "attr_volta": "sistemaGeodesico",
+        "traducao": [
+          {
+            "valor_ida": 999,
+            "valor_volta": 6,
+            "sentido": "volta"
+          }
+        ]
+    },
+    {
+        "attr_ida": "referencial_altim",
+        "attr_volta": "referencialAltim"
+    },
+    {
+        "attr_ida": "referencial_grav",
+        "attr_volta": "referencialGrav",
+        "traducao": [
+          {
+            "valor_ida": 999,
+            "valor_volta": 0,
+            "sentido": "volta"
+          }
+        ]
+    },
+    {
+        "attr_ida": "situacao_marco",
+        "attr_volta": "situacaoMarco",
+        "traducao": [
+          {
+            "valor_ida": 999,
+            "valor_volta": 0,
+            "sentido": "volta"
+          },
+          {
+            "valor_ida": 999,
+            "valor_volta": 7,
+            "sentido": "volta"
+          }          
+        ]
+    },
+    {
+        "attr_ida": "orgao_responsavel",
+        "attr_volta": "orgResp"
+    },
+    {
+        "attr_ida": "tipo_delimitacao",
+        "attr_volta": "coincideComDentroDe"
+    },
+    {
+        "attr_ida": "controle_id",
+        "attr_volta": "controleId"
+    },
+    {
+        "attr_ida": "observacao",
+        "attr_volta": "obsAquisicao"
+    }
+  ]
+}
