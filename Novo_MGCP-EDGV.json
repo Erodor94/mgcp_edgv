@@ -1,0 +1,378 @@
+{"__comment":"UTF-8",
+  "mapeamento_classes": [
+    {"__comment":"AL020 Built-UP Area <-> lml_area_densamente_edificada",
+      "classe_ida": "AL020",
+      "classe_volta": "lml_area_densamente_edificada",
+      "filtro_ida":
+        {
+            "$and": [
+                {
+                    "$or": [
+                        {
+                            "nome_atributo":"FUC",
+                            "valor": 0
+                        },
+                        {
+                            "nome_atributo":"FUC",
+                            "valor": 4
+                        },
+                        {
+                            "nome_atributo":"FUC",
+                            "valor": 19
+                        }
+                    ]
+                },
+                {
+                    "nome_atributo":"$GEOM_TYPE",
+                    "valor": "POLYGON"
+                }
+            ]
+        },
+      "atributos_default_volta":[
+      {
+        "nome_atributo":"BAC",
+        "valor":0
+      },
+      {
+        "nome_atributo":"FUC",
+        "valor":0
+      },
+      {
+        "nome_atributo":"FUN",
+        "valor":0
+      },
+      {
+        "nome_atributo":"ORD",
+        "valor":0
+      }
+    ]
+    },   
+    {"__comment":"AL020 Built-UP Area <-> cbge_area_construida",
+        "classe_ida": "AL020",
+        "classe_volta": "cbge_area_construida",
+        "filtro_ida":
+          {
+              "$and": [
+                  {
+                      "$or": [
+                          {
+                              "nome_atributo":"FUC",
+                              "valor": 1
+                          },
+                          {
+                              "nome_atributo":"FUC",
+                              "valor": 2
+                          },
+                          {
+                              "nome_atributo":"FUC",
+                              "valor": 999
+                          }
+                      ]
+                  },
+                  {
+                      "nome_atributo":"$GEOM_TYPE",
+                      "valor": "POLYGON"
+                  }
+              ]
+          },
+        "atributos_default_volta":[
+        {
+          "nome_atributo":"BAC",
+          "valor":0
+        },
+        {
+          "nome_atributo":"FUC",
+          "valor":0
+        },
+        {
+          "nome_atributo":"FUN",
+          "valor":0
+        },
+        {
+          "nome_atributo":"ORD",
+          "valor":0
+        }
+      ]
+    },   
+    {"__comment":"AL020 Built-UP Area <-> lml_localidade",
+        "classe_ida":"AL020",
+        "classe_volta":"lml_localidade",
+        "filtro_ida":{
+            "$and": [
+                {
+                    "$or": [
+                        {
+                            "nome_atributo":"FUC",
+                            "valor": 0
+                        },
+                        {
+                            "nome_atributo":"FUC",
+                            "valor": 4
+                        },
+                        {
+                            "nome_atributo":"FUC",
+                            "valor": 19
+                        }
+                    ]
+                },
+                {
+                    "nome_atributo":"$GEOM_TYPE",
+                    "valor": "POINT"
+                }
+            ]
+        },
+        "atributos_default_volta":[
+            {
+              "nome_atributo":"BAC",
+              "valor":0
+            },
+            {
+              "nome_atributo":"FUC",
+              "valor":0
+            },
+            {
+              "nome_atributo":"FUN",
+              "valor":0
+            },
+            {
+              "nome_atributo":"ORD",
+              "valor":0
+            }
+        ]
+    },
+    {"__comment":"AL020 Built-UP Area <-> lml_capital",
+        "classe_ida":"AL020",
+        "classe_volta":"lml_capital",
+        "filtro_ida":{
+            "$and": [
+                {
+                    "$or": [
+                        {
+                            "nome_atributo":"FUC",
+                            "valor": 0
+                        },
+                        {
+                            "nome_atributo":"FUC",
+                            "valor": 4
+                        },
+                        {
+                            "nome_atributo":"FUC",
+                            "valor": 19
+                        }
+                    ]
+                },
+                {
+                    "nome_atributo":"$GEOM_TYPE",
+                    "valor": "POINT"
+                },
+                {
+                    "nome_atributo":"ORD",
+                    "valor":1
+                }
+            ]
+        },
+        "atributos_default_ida":
+            {
+                "nome_atributo":"tipocapital",
+                "valor":1,
+                "__comment":"capital federal balao"
+            },
+
+        "atributos_default_volta":[
+            {
+              "nome_atributo":"BAC",
+              "valor":0
+            },
+            {
+              "nome_atributo":"FUC",
+              "valor":0
+            },
+            {
+              "nome_atributo":"FUN",
+              "valor":0
+            }
+        ]
+    },
+    {"__comment":"BA030 ISLAND <-> hid_ilha",
+        "classe_ida":"BA030",
+        "classe_volta":"hid_ilha",
+        "filtro_ida":
+        {
+            "nome_atributo":"$GEOM_TYPE",
+            "valor":"POLYGON"
+        },
+        "atributos_default_ida":[
+            {
+                "nome_atributo":"tipoelemnat",
+                "valor":"21"
+            },
+            {
+                "nome_atributo":"tipoilha",
+                "valor":9999
+            }
+        ]
+    },
+    {"__comment":"BA040 TIDAL WATER <-> hid_massa_dagua",
+        "classe_ida":"BA040",
+        "classe_volta":"hid_massa_dagua",
+        "atributos_default_ida":[
+            {
+                "nome_atributo":"tipomassadagua",
+                "valor":3
+            },
+            {
+                "nome_atributo":"regime",
+                "valor":1
+            },
+            {
+                "nome_atributo":"salgada",
+                "valor":1
+            },
+            {
+                "nome_atributo":"dominalidade",
+                "valor":0
+            },
+            {
+                "nome_atributo":"artificial",
+                "valor":0
+            },
+            {
+                "nome_atributo":"possuitrechodrenagem",
+                "valor":0
+            }
+        ],
+        "filtro_volta":
+        {
+            "nome_atributo":"tipomassadagua",
+            "valor":3
+        }
+    },
+    {"__comment":"BA050 BEACH <-> rel_elemento_fisiografico_natural",
+        "classe_ida":"BA050",
+        "classe_volta":"rel_elemento_fisiografico_natural",
+        "atributo_default_ida":{
+            "nome_atributo":"tipoelemnat",
+            "valor":12
+        },
+        "atributos_default_volta":{
+            "nome_atributo":"SMC",
+            "valor":0
+        }
+    },
+    {"__comment":"BD120 REEF <-> hid_recife",
+        "classe_ida":"BD120",
+        "classe_volta":"hid_recife",
+        "traducao_atributos":[
+            {
+                "attr_ida":"situacaoemagua",
+                "attr_volta":"WLE",
+                "traducao":[
+                    {
+                        "valor_ida":95,
+                        "valor_volta":0
+                    },
+                    {
+                        "valor_ida":95,
+                        "valor_volta":1,
+                        "sentido":"ida"
+                    },
+                    {
+                        "valor_ida":4,
+                        "valor_volta":2
+                    },
+                    {
+                        "valor_ida":5,
+                        "valor_volta":3
+                    },
+                    {
+                        "valor_ida":7,
+                        "valor_volta":4
+                    },
+                    {
+                        "valor_ida":95,
+                        "valor_volta":1,
+                        "sentido":"ida"
+                    },
+                    {
+                        "valor_ida":95,
+                        "valor_volta":8,
+                        "sentido":"ida"
+                    },
+                    {
+                        "valor_ida":95,
+                        "valor_volta":998,
+                        "sentido":"ida"
+                    },
+                    {
+                        "valor_ida":95,
+                        "valor_volta":999,
+                        "sentido":"ida"
+                    }
+                ]
+            }
+        ],
+        "atributo_default_ida":[
+            {
+                "nome_atributo":"situacaocosta",
+                "valor":9999
+            },
+            {
+                "nome_atributo":"tiporecife",
+                "valor":95
+            }
+        ],
+        "atributos_default_volta":{
+            "nome_atributo":"COD",
+            "valor":9999
+        }
+    },
+    {"__comment":"BH020 CANAL <-> hid_canal",
+        "classe_ida":"BH020",
+        "classe_volta":"hid_canal",
+        "atributos_default_ida":[
+            {
+                "nome_atributo":"operacional",
+                "valor":95
+            },
+            {
+                "nome_atributo":"tipoalterantrop",
+                "valor":30
+            },
+            {
+                "nome_atributo":"usoprincipal",
+                "valor":95
+            },
+            {
+                "nome_atributo":"matconstr",
+                "valor":95
+            },
+            {
+                "nome_atributo":"finalidade",
+                "valor":95
+            }
+        ],
+        "atributos_default_volta":[
+            {
+                "nome_atributo":"CDA",
+                "valor":0
+            },
+            {
+                "nome_atributo":"HYP",
+                "valor":0
+            },
+            {
+                "nome_atributo":"LOC",
+                "valor":0
+            },
+            {
+                "nome_atributo":"WID",
+                "valor":-32767.0
+            }
+        ]
+    },
+    {"__comment":"BH070 FORD <-> tra_travessia",
+        "classe_ida":"BH070",
+        "classe_volta":"tra_travessia"
+    }
+
+    
