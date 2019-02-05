@@ -398,11 +398,9 @@
         "classe_ida":"BH140",
         "classe_volta":"hid_massa_dagua",
         "filtro_ida":{
-            "$not":{
                 "nome_atributo":"$GEOM_TYPE",
-                "valor":"LINESTRING"
-            }
-        },
+                "valor":"POLYGON"
+            },
         "atributo_default_ida":[
             {
                 "nome_atributo":"tipomassadagua",
@@ -487,6 +485,298 @@
                 ]
             }
         ]
+    },
+    {"__comment":"BH140 RIVER <-> hid_trecho_drenagem",
+        "classe_ida":"BH140",
+        "classe_volta":"hid_trecho_drenagem",
+        "filtro_ida":{
+                "nome_atributo":"$GEOM_TYPE",
+                "valor":"LINESTRING"
+            },
+        "atributo_default_ida":[
+            {
+                "nome_atributo":"tipotrechodrenagem",
+                "valor":5
+            },
+            {
+                "nome_atributo":"navegavel",
+                "valor":95
+            }
+        ],
+        "filtro_volta":[
+            {
+                "$or":[
+                    {
+                        "nome_atributo":"tipotrechodrenagem",
+                        "valor":5
+                    }
+                ]
+            }
+        ],
+        "atributos_default_volta":[
+            {
+                "nome_atributo":"TID",
+                "valor":0
+            },
+            {
+                "nome_atributo":"WCC",
+                "valor":0
+            },
+            {
+                "nome_atributo":"WST",
+                "valor":0
+            },
+            {
+                "nome_atributo":"WID",
+                "valor":-32767.0
+            }
+        ],
+        "traducao_atributos":[
+            {
+                "attr_ida":"regime",
+                "attr_volta":"HYP",
+                "traducao":[
+                    {
+                        "valor_ida":95,
+                        "valor_volta":0
+                    },
+                    {
+                        "valor_ida":3,
+                        "valor_volta":2
+                    },
+                    {
+                        "valor_ida":5,
+                        "valor_volta":4
+                    },
+                    {
+                        "valor_ida": 2,
+                        "valor_volta": 1,
+                        "sentido": "volta"
+                    },
+                    {
+                        "valor_ida": 4,
+                        "valor_volta": 2,
+                        "sentido": "volta"
+                    }
+                ],
+                "attr_ida":"encoberto",
+                "attr_volta":"CDA",
+                "traducao":[
+                    {
+                        "valor_ida":0,
+                        "valor_volta":1000
+                    },
+                    {
+                        "valor_ida":1,
+                        "valor_volta":1001
+                    },
+                    {
+                        "valor_ida":9999,
+                        "valor_volta":0
+                    }
+                ]
+            }
+        ]
+    },
+    {"__comment":"BH080 LAKE <-> hid_massa_dagua",
+        "classe_ida":"BH080",
+        "classe_volta":"hid_massa_dagua",
+        "atributo_default_ida":[
+            {
+                "nome_atributo":"tipomassadagua",
+                "valor":7
+            },
+            {
+                "nome_atributo":"dominalidade",
+                "valor":95
+            },
+            {
+                "nome_atributo":"artificial",
+                "valor":95
+            },
+            {
+                "nome_atributo":"possuitrechodrenagem",
+                "valor":0
+            }
+        ],
+        "filtro_volta":[
+            {
+                "$or":[
+                    {
+                        "nome_atributo":"tipomassadagua",
+                        "valor":7
+                    },
+                    {
+                        "nome_atributo":"tipomassadagua",
+                        "valor":9
+                    },
+                    {
+                        "nome_atributo":"tipomassadagua",
+                        "valor":6
+                    }
+                ]
+            }
+        ],
+        "traducao_atributos":[
+            {
+                "attr_ida":"regime",
+                "attr_volta":"HYP",
+                "traducao":[
+                    {
+                        "valor_ida":95,
+                        "valor_volta":0
+                    },
+                    {
+                        "valor_ida":3,
+                        "valor_volta":2
+                    },
+                    {
+                        "valor_ida":5,
+                        "valor_volta":4
+                    },
+                    {
+                        "valor_ida": 2,
+                        "valor_volta": 1,
+                        "sentido": "volta"
+                    },
+                    {
+                        "valor_ida": 4,
+                        "valor_volta": 2,
+                        "sentido": "volta"
+                    }
+                ]
+            },
+            {
+                "attr_ida":"salgada",
+                "attr_volta":"SCC",
+                "traducao":[
+                    {
+                        "valor_ida":95,
+                        "valor_volta":0
+                    },
+                    {
+                        "valor_ida":0,
+                        "valor_volta":11
+                    },
+                    {
+                        "valor_ida":1,
+                        "valor_volta":10
+                    },
+                    {
+                        "valor_ida":9999,
+                        "valor_volta":12
+                    }
+                ]
+            }
+        ]
+    },
+    {"__comment":"BB005 HARBOUR <-> hdv_atracadouro_terminal", balao
+        "classe_ida":"BB005",
+        "classe_volta":"hdv_atracadouro_terminal",
+        "filtro_ida":{
+            "nome_atributo":"$GEOM_TYPE",
+            "valor":"POLYGON"
+        },
+        "atributos_default_ida":[
+            {
+                "nome_atributo":"administracao",
+                "valor":95
+            },
+            {
+                "nome_atributo":"matconstr",
+                "valor":95
+            },
+            {
+                "nome_atributo":"operacional",
+                "valor":95
+            },
+            {
+                "nome_atributo":"aptidaooperacional",
+                "valor":9999
+            },
+            {
+                "nome_atributo":"tipoatracad",
+                "valor":95
+            }
+        ],
+        "atributos_default_volta":[
+            {
+                "nome_atributo":"FHC",
+                "valor":0
+            }
+        ]
+    },
+    {"__comment":"AN010 RAILWAY <-> fer_trecho_ferroviario",
+        "classe_ida":"AN010",
+        "classe_volta":"fer_trecho_ferroviario",
+        "atributo_default_ida":[
+            {
+                "nome_atributo":"bitola", balao
+                "valor":95,
+                "__comment":"verificar real com codelist"
+            },
+            {
+                "nome_atributo":"jurisdicao",
+                "valor":95
+            },
+            {
+                "nome_atributo":"administracao",
+                "valor":95
+            },
+            {
+                "nome_atributo":"operacional",
+                "valor":95
+            }
+        ],
+        "atributos_default_volta":[
+            {
+                "nome_atributo":"RGC",
+                "valor":0
+            },
+            {
+                "nome_atributo":"RWC",
+                "valor":9999 balao
+            },
+            {
+                "nome_atributo":"LTN",
+                "valor":-32767.0
+            }
+        ],
+        "traducao_atributos":[
+            {
+                "attr_ida":"posicaorelativa",
+                "attr_volta":"LOC",
+                "traducao":[
+                    {
+                        "valor_ida":95,
+                        "valor_volta":0
+                    },
+                    {
+                        "valor_ida":3,
+                        "valor_volta":45
+                    },
+                    {
+                        "valor_ida":4,
+                        "valor_volta":44,
+                        "sentido":"volta"
+                    },
+                    {
+                        "valor_ida":5,
+                        "valor_volta":40,
+                        "sentido":"volta"
+                    },
+                    {
+                        "valor_ida":6,
+                        "valor_volta":40
+                    },
+                    {
+                        "valor_ida":2,
+                        "valor_volta":44
+                    }
+                ]
+            }
+        ]
+
     }
 
     
