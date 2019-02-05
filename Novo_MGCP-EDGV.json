@@ -709,6 +709,14 @@
     {"__comment":"AN010 RAILWAY <-> fer_trecho_ferroviario",
         "classe_ida":"AN010",
         "classe_volta":"fer_trecho_ferroviario",
+        "filtro_ida":[
+            {
+                "$not":{
+                    "nome_atributo":"RRC",
+                    "valor":15
+                }
+            }
+        ],
         "atributo_default_ida":[
             {
                 "nome_atributo":"bitola", balao
@@ -740,41 +748,145 @@
             {
                 "nome_atributo":"LTN",
                 "valor":-32767.0
+            },
+            {
+                "nome_atributo":"GAW",
+                "valor":-32767.0
             }
         ],
         "traducao_atributos":[
             {
-                "attr_ida":"posicaorelativa",
-                "attr_volta":"LOC",
+                "attr_ida":"LOC",
+                "attr_volta":"posicaorelativa",
                 "traducao":[
                     {
-                        "valor_ida":95,
-                        "valor_volta":0
+                        "valor_ida":0,
+                        "valor_volta":95
                     },
                     {
-                        "valor_ida":3,
-                        "valor_volta":45
+                        "valor_ida":45,
+                        "valor_volta":3
                     },
                     {
-                        "valor_ida":4,
-                        "valor_volta":44,
-                        "sentido":"volta"
+                        "valor_ida":44,
+                        "valor_volta":4,
+                        "sentido":"ida"
                     },
                     {
-                        "valor_ida":5,
-                        "valor_volta":40,
-                        "sentido":"volta"
+                        "valor_ida":40,
+                        "valor_volta":5,
+                        "sentido":"ida"
                     },
                     {
-                        "valor_ida":6,
-                        "valor_volta":40
+                        "valor_ida":40,
+                        "valor_volta":6
+                    },
+                    {
+                        "valor_ida":44,
+                        "valor_volta":2
+                    }
+                ]
+            },
+            {
+                "attr_ida":"RCC",
+                "attr_volta":"tipotrechoferrov",
+                "traducao":[
+                    {
+                        "valor_ida":0,
+                        "valor_volta":95
+                    },
+                    {
+                        "valor_ida":14,
+                        "valor_volta":5
                     },
                     {
                         "valor_ida":2,
-                        "valor_volta":44
+                        "valor_volta":5,
+                        "sentido":"ida"
+                    },
+                    {
+                        "valor_ida":6,
+                        "valor_volta":8
+                    },
+                    {
+                        "valor_ida":8,
+                        "valor_volta":7,
+                        "sentido":"volta"
+                    },
+                    {
+                        "valor_ida":32,
+                        "valor_volta":7,
+                        "sentido":"volta"
+                    },
+                    {
+                        "valor_ida":33,
+                        "valor_volta":7,
+                        "sentido":"volta"
+                    },
+                    {
+                        "valor_ida":999,
+                        "valor_volta":0,
+                        "sentido":"volta"
                     }
                 ]
-            }
+            },
+            {
+                "attr_ida":"RIR",
+                "attr_volta":"emarruamento",
+                "traducao":[
+                    {
+                        "valor_ida":0,
+                        "valor_volta":95
+                    },
+                    {
+                        "valor_ida":1000,
+                        "valor_volta":0
+                    },
+                    {
+                        "valor_ida":1001,
+                        "valor_volta":1
+                    }
+                ]
+            },
+            {
+                "attr_ida":"RRA",
+                "attr_volta":"eletrificada",
+                "traducao":[
+                    {
+                        "valor_ida":0,
+                        "valor_volta":95
+                    },
+
+                    {
+                        "valor_ida":4,
+                        "valor_volta":0
+                    },
+                    {
+                        "valor_ida":1,
+                        "valor_volta":1
+                    },
+                    {
+                        "valor_ida":3,
+                        "valor_volta":1,
+                        "sentido":"ida"
+                    }
+                ]
+            },
+            {
+                "attr_ida":"nrlinhas",
+                "attr_volta":"RTA",
+                "traducao":[
+                    {
+                        "valor_ida":0,
+                        "valor_volta":95
+                    },
+                    {
+                        "valor_ida":4,
+                        "valor_volta":9999 balao
+                    }
+                ]
+            },
+            
         ]
 
     }
