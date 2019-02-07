@@ -179,7 +179,7 @@
             ]
         }
     },
-    {"__comment":"BA040 TIDAL WATER <-> hid_massa_dagua",
+    {"__comment":"BA040 TIDAL WATER <-> hid_massa_dagua | Oceano",
         "classe_ida":"BA040",
         "classe_volta":"hid_massa_dagua",
         "atributos_default_ida":[
@@ -227,7 +227,7 @@
             "valor":"LINESTRING"
         }
     ],
-        "atributo_default_ida":{
+        "atributos_default_ida":{
             "nome_atributo":"tipoelemnat",
             "valor":12
         },
@@ -296,7 +296,7 @@
                 }
             }
         ],
-        "atributo_default_ida":[
+        "atributos_default_ida":[
             {
                 "nome_atributo":"situacaocosta",
                 "valor":9999
@@ -311,7 +311,7 @@
             "valor":9999
         }
     },
-    {"__comment":"BH020 CANAL -> hid_canal",
+    {"__comment":"BH020 CANAL -> hid_canal | canal navegação",
         "sentido":"ida",
         "classe_ida":"BH020",
         "classe_volta":"hid_canal",
@@ -359,7 +359,7 @@
     {"__comment":"BH070 FORD <-> tra_travessia",
         "classe_ida":"BH070",
         "classe_volta":"tra_travessia",
-        "atributo_default_ida":[
+        "atributos_default_ida":[
             {
                 "nome_atributo":"tipotravessia",
                 "valor":1
@@ -394,14 +394,14 @@
             }
         ]
     },
-    {"__comment":"BH140 RIVER <-> hid_massa_dagua",
+    {"__comment":"BH140 RIVER <-> hid_massa_dagua | Rio",
         "classe_ida":"BH140",
         "classe_volta":"hid_massa_dagua",
         "filtro_ida":{
                 "nome_atributo":"$GEOM_TYPE",
                 "valor":"POLYGON"
             },
-        "atributo_default_ida":[
+        "atributos_default_ida":[
             {
                 "nome_atributo":"tipomassadagua",
                 "valor":1
@@ -486,14 +486,14 @@
             }
         ]
     },
-    {"__comment":"BH140 RIVER <-> hid_trecho_drenagem",
+    {"__comment":"BH140 RIVER <-> hid_trecho_drenagem | Rio",
         "classe_ida":"BH140",
         "classe_volta":"hid_trecho_drenagem",
         "filtro_ida":{
                 "nome_atributo":"$GEOM_TYPE",
                 "valor":"LINESTRING"
             },
-        "atributo_default_ida":[
+        "atributos_default_ida":[
             {
                 "nome_atributo":"tipotrechodrenagem",
                 "valor":5
@@ -578,10 +578,10 @@
             }
         ]
     },
-    {"__comment":"BH080 LAKE <-> hid_massa_dagua",
+    {"__comment":"BH080 LAKE <-> hid_massa_dagua | Lago",
         "classe_ida":"BH080",
         "classe_volta":"hid_massa_dagua",
-        "atributo_default_ida":[
+        "atributos_default_ida":[
             {
                 "nome_atributo":"tipomassadagua",
                 "valor":7
@@ -717,7 +717,7 @@
                 }
             }
         ],
-        "atributo_default_ida":[
+        "atributos_default_ida":[
             {
                 "nome_atributo":"bitola", balao
                 "valor":95,
@@ -889,6 +889,228 @@
             
         ]
 
+    },
+    {"__comment":"BH130 RESERVOIR <-> hid_massa_dagua | Açude",
+        "classe_ida":"BH130",
+        "classe_volta":"hid_massa_dagua",
+        "atributos_default_ida":[
+            {
+                "nome_atributo":"tipomassadagua",
+                "valor":10
+            },
+            {
+                "nome_atributo":"salgada",
+                "valor":95
+            },
+            {
+                "nome_atributo":"dominalidade",
+                "valor":95
+            },
+            {
+                "nome_atributo":"artificial",
+                "valor":1
+            },
+            {
+                "nome_atributo":"possuitrechodrenagem",
+                "valor":0
+            }
+        ],
+        "filtro_volta":[
+            {
+                "nome_atributo":"tipomassadagua",
+                "valor":10
+            }
+        ],
+        "traducao_atributos":[
+            {
+                "attr_ida":"HYP",
+                "attr_volta":"regime",
+                "traducao":[
+                    {
+                        "valor_ida":0,
+                        "valor_volta":95
+                    },
+                    {
+                        "valor_ida":2,
+                        "valor_volta":3
+                    },
+                    {
+                        "valor_ida":4,
+                        "valor_volta":5
+                    },
+                    {
+                        "valor_ida":1,
+                        "valor_volta":2,
+                        "sentido":"volta"
+                    },
+                    {
+                        "valor_ida":2,
+                        "valor_volta":4,
+                        "sentido":"volta"
+                    }
+                ]
+            }
+        ]
+    },
+    {"__comment":"BH030 DITCH <-> hid_canal_vala | vala",
+        "classe_ida":"BH030",
+        "classe_volta":"hid_canal_vala",
+        "atributos_default_ida":[
+            {
+                "nome_atributo":"tipoalterantrop",
+                "valor":30
+            },
+            {
+                "nome_atributo":"operacional",
+                "valor":95
+            },
+            {
+                "nome_atributo":"matconstr",
+                "valor":95
+            },
+            {
+                "nome_atributo":"usoprincipal",
+                "valor":95
+            },
+            {
+                "nome_atributo":"finalidade",
+                "valor":95
+            }
+        ],
+        "atributos_default_volta":[
+            {
+                "nome_atributo":"CDA",
+                "valor":0
+            },
+            {
+                "nome_atributo":"WID",
+                "valor":-32767.0
+            },
+            {
+                "nome_atributo":"HYP",
+                "valor":0
+            }
+        ]
+
+    },
+    {"__comment":"BH090 LAND SUBJECT TO INUNDATION <-> hid_terreno_sujeito_inundacao",
+        "classe_ida":"BH090",
+        "classe_volta":"hid_terreno_sujeito_inundacao",
+        "atributos_default_volta":[
+            {
+                "nome_atributo":"AZC",
+                "valor":0
+            },
+            {
+                "nome_atributo":"CNS",
+                "valor":0
+            }
+        ]
+    },
+    {"__comment":"BH120 RAPIDS <-> hid_corredeira | outros",
+        "classe_ida":"BH120",
+        "classe_volta":"hid_corredeira"
+    },
+    {"__comment":"BH180 WATERFALL <-> hid_queda_dagua",
+        "classe_ida":"BH1180",
+        "classe_volta":"hid_queda_dagua",
+        "atributos_default_ida":[
+            {
+                "nome_atributo":"tipoqueda",
+                "valor":95
+            }
+        ]
+    },
+    {"__comment":"BH145 VANISHING POINT <-> hid_sumidouro_vertedouro",
+        "classe_ida":"BH145",
+        "classe_volta":"hid_sumidouro_vertedouro",
+        "atributos_default_ida":[
+            {
+                "nome_atributo":"tiposumvert",
+                "valor":1
+            },
+            {
+                "nome_atributo":"causa",
+                "valor":95
+            }
+        ],
+        "filtro_volta":[
+            {
+                "$not":{
+                    "nome_atributo":"tiposumvert",
+                    "valor":2
+                }
+            }
+        ],
+        "atributos_default_volta":[
+            {
+                "nome_atributo":"WST",
+                "valor":0
+            }
+        ]
+
+    },
+    {"__comment":"BH060 FLUME <-> dut_trecho_duto",
+        "classe_ida":"BH060",
+        "classe_volta":"dut_trecho_duto",
+        "atributos_default_ida":[
+            {
+                "nome_atributo":"tipotrechoduto",
+                "valor":2
+            },
+            {
+                "nome_atributo":"mattransp",
+                "valor":"agua" balao
+            },
+            {
+                "nome_atributo":"setor",
+                "valor":95
+            },
+            {
+                "nome_atributo":"matconstr",
+                "valor":95
+            },
+            {
+                "nome_atributo":"situacaoespacial",
+                "valor":95
+            },
+            {
+                "nome_atributo":"operacional",
+                "valor":95
+            }
+        ],
+        "traducao_atributos":[
+            {
+                "attr_ida":"LOC",
+                "attr_volta":"posicaorelativa",
+                "traducao":[
+                    {
+                        "valor_ida":0,
+                        "valor_volta":95
+                    },
+                    {
+                        "valor_ida":40,
+                        "valor_volta":6
+                    },
+                    {
+                        "valor_ida":44,
+                        "valor_volta":2
+                    },
+                    {
+                        "valor_ida":0,
+                        "valor_volta":3
+                    },
+                    {
+                        "valor_ida":0,
+                        "valor_volta":5
+                    },
+                    {
+                        "valor_ida":0,
+                        "valor_volta":4
+                    }
+                ]
+            }
+        ]
     }
 
     
