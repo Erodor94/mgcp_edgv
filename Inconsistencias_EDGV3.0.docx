@@ -1,0 +1,4 @@
+Os atributos multivalorados estão inconsistentes no banco de dados, não podendo ser feita uma correlação com os valores. 
+A classe “rel_alteracao_fisiografica_antropica_l” possui o campo material de construção na EDGV, porém não há esse campo no banco de dados.
+O campo “proprioadm” da EDGV 3.0 não possui valor desconhecido e aceita valor nulo, porém como é codelist não deveria aceitar.
+Aglomerado_Rural, Aglomerado_Rural_De_Extensao_Urbana, Aglomerado_Rural_Isolado, Aldeia_Indigena, Capital, Cidade, Localidade, Vila; são classes da EDGV 3.0 que estão classificadas como complexo. Deverão ser alteradas para ponto.
