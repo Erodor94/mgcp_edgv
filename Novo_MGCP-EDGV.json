@@ -1444,15 +1444,176 @@
                                 "valor":8
                             },
                             {
+                                "nome_atributo":"tipoextmin",
+                                "valor":6
+                            },
+                            {
+                                "nome_atributo":"tipoextmin",
+                                "valor":1
+                            },
+                            {
                                 "nome_atributo":"tipoproduto",
                                 "valor":3
+                            },
+                            {
+                                "nome_atributo":"tipoproduto",
+                                "valor":5
+                            },
+                            {
+                                "nome_atributo":"tipoproduto",
+                                "valor":28
+                            },
+                            {
+                                "nome_atributo":"tipoproduto",
+                                "valor":29
+                            },
+                            {
+                                "nome_atributo":"tipoproduto",
+                                "valor":31
                             }
                         ]
                     }
                 ]
             }
+        ],
+        "traducao_atributos":[
+            {
+                "attr_ida":"MZN",
+                "attr_volta":"tipoextmin",
+                "traducao":[
+                    {
+                        "valor_ida":3,
+                        "valor_volta":5
+                    },
+                    {
+                        "valor_ida":9,
+                        "valor_volta":4
+                    },
+                    {
+                        "valor_ida":0,
+                        "valor_volta":95
+                    },
+                    {
+                        "valor_ida":4,
+                        "valor_volta":95,
+                        "sentido":"ida"
+                    },
+                    {
+                        "valor_ida":5,
+                        "valor_volta":6,
+                        "sentido":"ida"
+                    },
+                    {
+                        "valor_ida":8,
+                        "valor_volta":95,
+                        "sentido":"ida"
+                    },
+                    {
+                        "valor_ida":0,
+                        "valor_volta":99,
+                        "sentido":"volta"
+                    }
+                ]
+            },
+            {
+                "attr_ida":"PPO",
+                "attr_volta":"tipoproduto",
+                "traducao":[
+                    {
+                        "valor_ida":0,
+                        "valor_volta":95
+                    },
+                    {
+                        "valor_ida":9,
+                        "valor_volta":25
+                    },
+                    {
+                        "valor_ida":18,
+                        "valor_volta":33
+                    },
+                    {
+                        "valor_ida":26,
+                        "valor_volta":32
+                    },
+                    {
+                        "valor_ida":33,
+                        "valor_volta":38
+                    },
+                    {
+                        "valor_ida":48,
+                        "valor_volta":37
+                    },
+                    {
+                        "valor_ida" :58,
+                        "valor_volta":35
+                    },
+                    {
+                        "valor_ida":59,
+                        "valor_volta":59
+                    },
+                    {
+                        "valor_ida":65,
+                        "valor_volta":26
+                    },
+                    {
+                        "valor_ida":95,
+                        "valor_volta":34
+                    },
+                    {
+                        "valor_ida":105,
+                        "valor_volta":39
+                    },
+                    {
+                        "valor_ida":120,
+                        "valor_volta":92
+                    },
+                    {
+                        "valor_ida":126,
+                        "valor_volta":92
+                    },
+                    {
+                        "valor_ida":999,
+                        "valor_volta":99
+                    }
+                ]
+            }
+        ],
+        "mapeamento_artibutos":[
+            {
+                "sentido":"ida",
+                "tupla_ida":[
+                    {
+                        "nome_atributo":"PPO",
+                        "valor":89
+                    }
+                ],
+                "tupla_volta":[
+                    {
+                        "nome_atributo":"tipoproduto",
+                        "valor":99
+                    },
+                    {
+                        "nome_atributo":"observacao",
+                        "valor":"quartzo"
+                    }
+                ]
+            }
         ]
-        
+    },
+    {"__comment":"AA052 HYDROCARBONS FIELD <-> eco_ext_mineral | Petroleo",
+        "classe_ida":"AA052",
+        "classe_volta":"eco_ext_mineral",
+        "atributos_default_ida":[
+            {
+                "nome_atributo":"tipoextmin",
+                "valor":8
+            },
+            {
+                "nome_atributo":"tipoproduto",
+                "valor":9999
+            }
+        ]
+
     }
 
     
