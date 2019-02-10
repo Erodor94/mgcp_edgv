@@ -1611,6 +1611,9 @@
             {
                 "nome_atributo":"tipoproduto",
                 "valor":9999
+            },
+            {
+                "nome_atributo":"$GEOM_TYPE".çg
             }
         ]
 
