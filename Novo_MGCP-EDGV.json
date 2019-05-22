@@ -1605,7 +1605,7 @@
         "classe_volta":"eco_ext_mineral",
         "atributos_default_ida":[
             {
-                "nome_atributo":"tipoextmin",
+                "nome_atributo":"tipoextmin", balao = não seria filtro?
                 "valor":8
             },
             {
@@ -1613,10 +1613,97 @@
                 "valor":9999
             },
             {
-                "nome_atributo":"$GEOM_TYPE".çg
+                "nome_atributo":"$GEOM_TYPE",
+                "valor": "POLYGON" 
+            },
+            {
+                "nome_atributo":"atividade",
+                "valor":9
+            },
+            {
+                "nome_atributo":"formaextracao",
+                "valor":95
+            },
+            {
+                "nome_atributo":"operacional",
+                "valor":95
+            },
+            {
+                "nome_atributo":"procextracao",
+                "valor":95
+            },
+            {   "nome_atributo":"secaoativecon",
+                "valor":1
+            },
+            {
+                "nome_atributo":"situacaofisica",
+                "valor":95
+            },
+            {
+                "nome_atributo":"tipoalterantrop",
+                "valor":32
+            },
+            {
+                "nome_atributo":"tipopocomina",
+                "valor":95
             }
+        ],
+        "filtro_volta":[
+            {
+                "nome_atributo":"$GEOM_TYPE",
+                "valor":"POLYGON"
+            } balao
+        ]
+    },
+    {"__comment":"AL019 SHED <-> cbge_deposito_geral",
+        "classe_ida":"AL019",
+        "classe_volta":"cbge_deposito_geral",
+        "atributos_default_ida":[
+            {
+                "nome_atributo":"estadofisico",
+                "valor":95
+            },
+            {
+                "nome_atributo":"finalidadedep",
+                "valor":8
+            },
+            {
+                "nome_atributo":"matconstr",
+                "valor":95
+            },
+            {
+                "nome_atributo":"operacional",
+                "valor":95
+            },
+            {
+                "nome_atributo":"situacaofisica",
+                "valor":95
+            },
+            {
+                "nome_atributo":"tipoconteudo",
+                "valor":95
+            },
+            {
+                "nome_atributo":"tipodepgeral",
+                "valor":8
+            },
+            {
+                "nome_atributo":"tipoexposicao",
+                "valor":9999 balao fechado ou coberto
+            },
+            {
+                "nome_atributo":"tiporesiduo",
+                "valor":95
+            },
+            {
+                "nome_atributo":"tratamento",
+                "valor":0
+            },
+            {
+                "nome_atributo":"unidadevolume",
+                "valor":2
+            }
+            
         ]
 
     }
-a
-         asdasdasdas
