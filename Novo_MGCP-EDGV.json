@@ -1707,9 +1707,46 @@
         ]
 
     },
-    {"__comment":"teste"
+    {"__comment":"AL241 TOWER <-> enc_torre_comunic",
+        "classe_ida":"AL241",
+        "classe_volta":"enc_torre_comunic",
+        "filtro_ida":[
+            {
+                "nome_atributo":"TTC",
+                "valor":18
+            }
+        ],
+        "atributos_default_ida":[
+            {
+                "nome_atributo":"mobilidade",
+                "valor":95
+            },
+            {
+                "nome_atributo":"operacional",
+                "valor":95
+            },
+            {
+                "nome_atributo":"ovgd",
+                "valor":95
+            },
+            {
+                "nome_atributo":"posicaoreledif",
+                "valor":9999
+            },
+            {
+                "nome_atributo":"situacaofisica",
+                "valor":95
+            }
+        ],
+        "atributos_default_volta":[
+            {
+                "nome_atributo":"FUN",
+                "valor":0
+            },
+            {
+                "nome_atributo":"TTC",
+                "valor":8
+            }
+        ]
     }
-<<<<<<< HEAD
-"hid_terreno_sujeito_inundacao"
-=======
->>>>>>> 1463383531a08bb0a8223e46ed942340ef9a6238
+
