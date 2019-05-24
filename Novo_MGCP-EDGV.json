@@ -1707,13 +1707,21 @@
         ]
 
     },
-    {"__comment":"AL241 TOWER <-> enc_torre_comunic",
+    {"__comment":"AL241 TOWER | comunicação ou celular <-> enc_torre_comunic",
         "classe_ida":"AL241",
         "classe_volta":"enc_torre_comunic",
         "filtro_ida":[
             {
-                "nome_atributo":"TTC",
-                "valor":18
+                "$OR":[
+                {
+                   "nome_atributo":"TTC",
+                    "valor":18
+                },
+                {
+                    "nome_atributo":"TTC",
+                    "valor":19
+                }
+                ]
             }
         ],
         "atributos_default_ida":[
@@ -1745,7 +1753,7 @@
             },
             {
                 "nome_atributo":"TTC",
-                "valor":8
+                "valor":18
             },
             {
                 "nome_atributo":"HGT",
@@ -1779,5 +1787,44 @@
             }
         ]
 
-    }
-
+    },
+    {"__comment":"AL241 TOWER | turística <-> edf_edif_constr_turistica",
+        "classe_ida":"AL241",
+        "classe_volta":"enc_torre_comunic",
+         "atributos_default_ida":[
+            {
+                "nome_atributo":"administracao",
+                "valor":95
+            },
+            {
+                "nome_atributo":"classeativecon",
+                "valor":99
+            },
+            {
+                "nome_atributo":"ovgd",
+                "valor":95
+            },
+            {
+                "nome_atributo":"posicaoreledif",
+                "valor":9999
+            },
+            {
+                "nome_atributo":"situacaofisica",
+                "valor":95
+            }
+        ],
+        "atributos_default_volta":[
+            {
+                "nome_atributo":"FUN",
+                "valor":0
+            },
+            {
+                "nome_atributo":"TTC",
+                "valor":18
+            },
+            {
+                "nome_atributo":"HGT",
+                "valor":-32767.0
+            }
+        ]
+    },
