@@ -1746,7 +1746,38 @@
             {
                 "nome_atributo":"TTC",
                 "valor":8
+            },
+            {
+                "nome_atributo":"HGT",
+                "valor":-32767.0
             }
         ]
+    },
+    {"__comment":"AT042 PYLON <-> enc_torre_energia",
+        "atributos_default_ida":[
+            {
+                "nome_atributo":"operacional",
+                "valor":95
+            },
+            {
+                "nome_atributo":"ovgd",
+                "valor":95
+            },
+            {
+                "nome_atributo":"situacaofisica",
+                "valor":95
+            }
+        ],
+        "atributos_default_volta":[
+            {
+                "nome_atributo":"FUN",
+                "valor":0
+            },
+            {
+                "nome_atributo":"HGT",
+                "valor":-32767.0
+            }
+        ]
+
     }
 
