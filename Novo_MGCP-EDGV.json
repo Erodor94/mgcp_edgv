@@ -1788,7 +1788,8 @@
         ]
 
     },
-    {"__comment":"AL241 TOWER | turística <-> edf_edif_constr_turistica",
+    {"__comment":"AL241 TOWER | turística <- edf_edif_constr_turistica",
+        "sentido":"volta",
         "classe_ida":"AL241",
         "classe_volta":"enc_torre_comunic",
          "atributos_default_ida":[
@@ -1820,7 +1821,7 @@
             },
             {
                 "nome_atributo":"TTC",
-                "valor":18
+                "valor":999
             },
             {
                 "nome_atributo":"HGT",
@@ -1828,3 +1829,129 @@
             }
         ]
     },
+    {"__comment":"AL241 TOWER | FAROL <-> hdv_sinalizacao",
+        "filtro":[
+            {
+                "nome_atributo":"TTC",
+                "valor":5   
+            }
+        ],
+        "atributos_default_ida":[
+            {
+                "nome_atributo":"operacional",
+                "valor":95
+            },
+            {
+                "nome_atributo":"situacaofisica",
+                "valor":95
+            },
+            {
+                "nome_atributo":"tiposinal",
+                "valor":4 
+            }
+        ],
+        "atributos_default_volta":[
+            {
+                "nome_atributo":"FUN",
+                "valor":0
+            },
+            {
+                "nome_atributo":"HGT",
+                "valor":-32767.0
+            }
+        ]
+    },
+    {"__comment":"AM070 STORAGE TANK | WATER <-> snb_dep_abast_agua",
+        "filtro_ida":[
+            {
+                "nome_atributo":"PPO",
+                "valor":122
+            }
+        ],
+        "atributos_default_ida":[
+            {
+                "nome_atributo":"estadofisico",
+                "valor":1
+            },
+            {
+                "nome_atributo":"finalidadedep",
+                "valor":95
+            },
+            {
+                "nome_atributo":"matconstr",
+                "valor":95
+            },
+            {
+                "nome_atributo":"operacional",
+                "valor":95
+            },
+            {
+                "nome_atributo":"situacaoagua",
+                "valor":95
+            },
+            {
+                "nome_atributo":"situacaofisica",
+                "valor":95
+            },
+            {
+                "nome_atributo":"tipoconteudo",
+                "valor":95
+            },
+            {
+                "nome_atributo":"tipodepgeral",
+                "valor":1
+            },
+            {
+                "nome_atributo":"tipoexposicao",
+                "valor":95
+            },
+            {
+                "nome_atributo":"tiporesiduo",
+                "valor":9999
+            },
+            {
+                "nome_atributo":"tratamento",
+                "valor":0 balao
+            },
+            {
+                "nome_atributo":"unidadevolume",
+                "valor":95
+            }
+        ],
+        "filtro_volta":[
+            {
+                "$or":[
+                    {
+                        "nome_atributo":"tipodepgeral",
+                        "valor":2
+                    },
+                    {
+                        "nome_atributo":"tipodepgeral",
+                        "valor":1
+                    }
+                ]
+            }
+        ],
+        "atributos_default_volta":[
+            {
+                "nome_atributo":"FUN",
+                "valor":0
+            },
+            {
+                "nome_atributo":"HGT",
+                "valor":-32767.0
+            },
+            {
+                "nome_atributo":"LOC",
+                "valor":0
+            },
+            {
+                "nome_atributo":"PPO",
+                "valor":122
+            },
+            {
+                "nome_atributo":"SSC",
+                "valor":0
+            }
+        ]
+    }
