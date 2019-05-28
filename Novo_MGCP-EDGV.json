@@ -1655,9 +1655,15 @@
             } balao
         ]
     },
-    {"__comment":"AL019 SHED <-> cbge_deposito_geral",
+    {"__comment":"AL019 SHED | GALPÃO <-> cbge_deposito_geral",
         "classe_ida":"AL019",
         "classe_volta":"cbge_deposito_geral",
+        "filtro":[
+            {
+                "nome_atribute":"tipodepgeral",
+                "valor":8
+            }
+        ],
         "atributos_default_ida":[
             {
                 "nome_atributo":"estadofisico",
@@ -1682,10 +1688,6 @@
             {
                 "nome_atributo":"tipoconteudo",
                 "valor":95
-            },
-            {
-                "nome_atributo":"tipodepgeral",
-                "valor":8
             },
             {
                 "nome_atributo":"tipoexposicao",
@@ -1954,4 +1956,6 @@
                 "valor":0
             }
         ]
+    },
+    {"__comment":"AM070 STORAGE TANK | DEPOSITO GERAL <->"
     }
