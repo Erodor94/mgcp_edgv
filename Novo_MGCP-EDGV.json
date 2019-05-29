@@ -2024,7 +2024,7 @@
                 "valor":0
             }
         ],
-        "traducao_artibutos":[
+        "traducao_atributos":[
             {
                 "attr_ida":"tipoprodutoresiduo",
                 "attr_volta":"PPO",
@@ -2116,3 +2116,146 @@
             }
         ]
     },
+    {"__comment":"BH170 NATURAL POOL <-> hid_massa_dagua | LAGO",
+        "filtro_ida":[
+            {
+                "$NOT":
+                {
+                    "nome_atributo":"SWT",
+                    "valor":4
+                }
+            }
+        ],
+        "atributos_default_ida":[
+            {
+                "nome_atributo":"artificial",
+                "valor":0
+            },
+            {
+                "nome_atributo":"dominalidade",
+                "valor":95
+            },
+            {
+                "nome_atributo":"$GEOM_TYPE",
+                "valor":"POINT" balao
+            },
+            {
+                "nome_atributo":"possuitrechodrenagem",
+                "valor":0
+            },
+            {
+                "nome_atributo":"salgada",
+                "valor":95
+            },
+            {
+                "nome_atributo":"tipomassadagua",
+                "valor":7
+            }
+        ],
+        "filtro_volta":[
+            {
+                "nome_atributo":"artificial",
+                "valor":0
+            },
+            {
+                "nome_atributo":"tipomassadagua",
+                "valor":7
+            }
+        ],
+        "atributos_default_volta":[
+            {
+                "nome_atributo":"SWT",
+                "valor":0
+            }
+        ],
+        "traducao_atributos":[
+            { balao (sentidos de ida e volta)
+                "attr_ida":"regime",
+                "attr_volta":"HYP",
+                "traducao":[
+                    {
+                        "valor_ida":0, MGCP
+                        "valor_volta":95 EDGV
+                    },
+                    {
+                        "valor_ida":2, MGCP
+                        "valor_volta":3 EDGV
+                    },
+                    {
+                        "valor_ida":4, MGCP
+                        "valor_volta":5 EDGV
+                    },
+                    {
+                        "valor_ida": 2, EDGV
+                        "valor_volta": 1, MGCP
+                        "sentido": "volta"
+                    },
+                    {
+                        "valor_ida": 4, EDGV
+                        "valor_volta": 2, MGCP
+                        "sentido": "volta"
+                    }
+                ]
+            }
+        ]
+    },
+    {"__comment":"BH170 NATURAL POOL | VERTEDOURO <->  hid_sumidouro_vertedouro",
+        "filtro_ida":[
+            {
+                "nome_atributo":"SWT",
+                "valor":4
+            }
+        ],
+        "atributos_default_ida":[
+            {
+                "nome_atributo":"causa",
+                "valor":4
+            },
+            {
+                "nome_atributo":"tiposumvert",
+                "valor":2
+            }
+        ],
+        "filtro_volta":[
+            {
+                "nome_atributo":"tiposumvert",
+                "valor":2
+            }
+        ],
+        "atributos_default_volta":[
+            {
+                "nome_atributo":"SWT",
+                "valor":4
+            }
+        ],
+        "traducao_atributos":[
+            { balao (sentidos de ida e volta)
+                "attr_ida":"regime",
+                "attr_volta":"HYP",
+                "traducao":[
+                    {
+                        "valor_ida":0, MGCP
+                        "valor_volta":95 EDGV
+                    },
+                    {
+                        "valor_ida":2, MGCP
+                        "valor_volta":3 EDGV
+                    },
+                    {
+                        "valor_ida":4, MGCP
+                        "valor_volta":5 EDGV
+                    },
+                    {
+                        "valor_ida": 2, EDGV
+                        "valor_volta": 1, MGCP
+                        "sentido": "volta"
+                    },
+                    {
+                        "valor_ida": 4, EDGV
+                        "valor_volta": 2, MGCP
+                        "sentido": "volta"
+                    }
+                ]
+            }
+        ]
+    }
