@@ -2499,4 +2499,85 @@
                 "valor":-32767.0
             }
         ]
+    },
+    {"__comment":"ED010 MARSH <-> veg_brejo_pantano",
+        "atributos_default_ida":[
+            {
+                "nome_atributo":"antropizada",
+                "valor":95
+            },
+            {
+                "nome_atributo":"classificacaoporte",
+                "valor":3,
+                "comment":"herbácea" balao
+            },
+            {
+                "nome_atributo":"densidade",
+                "valor":95
+            },
+            {
+                "nome_atributo":"secundaria",
+                "valor":95
+            }
+        ],
+        "filtro_volta":[
+            {
+                "nome_atributo":"classificacaoporte",
+                "valor":3
+            }
+        ],
+        "atributos_default_volta":[
+            {
+                "nome_atributo":"TID",
+                "valor":0
+            }
+        ]
+    },
+    {"__comment":"EA010 CROP LAND <-> veg_veg_cultivada",
+        "atributos_default_ida":[
+            {
+                "nome_atributo":"terreno",
+                "valor":95
+            },
+            {
+                "nome_atributo":"classificacaoporte",
+                "valor":95
+            },
+            {
+                "nome_atributo":"finalidade",
+                "valor":95
+            }
+        ],
+        "atributos_default_volta":[
+            {
+                "nome_atributo":"DMT",
+                "valor":-32767.0
+            },
+            {
+                "nome_atributo":"FFP",
+                "valor":0
+            }
+        ],
+        "traducao_atributos":[
+            {
+                "attr_ida":"cultivopredominante",
+                "attr_volta":"CSP",
+                "traducao":[
+                    {
+                        "valor_ida":49,
+                        "valor_volta":45
+                    },
+                    {
+                        "valor_ida":6,
+                        "valor_volta":45,
+                        "sentido":"volta"
+                    },
+                    {
+                        "valor_ida"
+                    }
+                ]
+            }
+        ]
     }
+]
+}
