@@ -1208,7 +1208,7 @@
                 ]
             }
         ],
-        "mapeamento_artibutos":[
+        "mapeamento_atributos":[
             {
                 "sentido":"ida",
                 "tupla_ida":[
@@ -1578,7 +1578,7 @@
                 ]
             }
         ],
-        "mapeamento_artibutos":[
+        "mapeamento_atributos":[
             {
                 "sentido":"ida",
                 "tupla_ida":[
@@ -2256,6 +2256,247 @@
                         "sentido": "volta"
                     }
                 ]
+            }
+        ]
+    },
+    {"__comment":"BI010 CISTERN <-> cbge_deposito_geral | CISTERNA",
+        "atributos_default_ida":[
+            {
+                "nome_atributo":"estadofisico",
+                "valor":1
+            },
+            {
+                "nome_atributo":"finalidadedep",
+                "valor":95
+            },
+            {
+                "nome_atributo":"matconstr",
+                "valor":95
+            },
+            {
+                "nome_atributo":"operacional",
+                "valor":95
+            },
+            {
+                "nome_atributo":"situacaofisica",
+                "valor":95
+            },
+            {
+                "nome_atributo":"tipoconteudo",
+                "valor":95
+            },
+            {
+                "nome_atributo":"tipodepgeral",
+                "valor":3
+            },
+            {
+                "nome_atributo":"tipoexposicao",
+                "valor":95
+            },
+            {
+                "nome_atributo":"tratamento",
+                "valor":95
+            },
+            {
+                "nome_atributo":"unidadevolume",
+                "valor":95
+            }
+        ],
+        "filtro_volta":[
+            {
+                "nome_atributo":"tipodepgeral",
+                "valor":3
+            }
+        ]
+    },
+    {"__comment":"AP050 TRAIL <-> tra_trilha_picada",
+        "atributos_default_volta":[
+            {
+                "nome_atributo":"WTC",
+                "valor":0
+            }
+        ]
+    },
+    {"__comment":"AQ070 FERRY CROSSING <-> tra_travessia",
+        "atributos_default_ida":[
+            {
+                "nome_atributo":"tipotravessia",
+                "valor":95
+            },
+            {
+                "nome_atributo":"tipoembarcacao",
+                "valor":95
+            },
+            {
+                "nome_atributo":"tipouso",
+                "valor":95
+            }
+        ],
+        "atributos_default_volta":[
+            {
+                "nome_atributo":"FUN",
+                "valor":0
+            },
+            {
+                "nome_atributo":"TRS",
+                "valor":0
+            }
+        ]
+    },
+    {"__comment":"GB055 RUNWAY <-> aer_pista_ponto_pouso",
+        "atributos_default_ida":[
+            {
+                "nome_atributo":"homologacao",
+                "valor":95
+            },
+            {
+                "nome_atributo":"operacional",
+                "valor":95
+            },
+            {
+                "nome_atributo":"situacaofisica",
+                "valor":95
+            },
+            {
+                "nome_atributo":"tipopista",
+                "valor":9999
+            },
+            {
+                "nome_atributo":"usopista",
+                "valor":95
+            }
+        ],
+        "atributos_default_volta":[
+            {
+                "nome_atributo":"AOO",
+                "valor":-32767.0
+            },
+            {
+                "nome_atributo":"FUN",
+                "valor":0
+            },
+            {
+                "nome_atributo":"$GEOM_TYPE",
+                "valor":"POLYGON"
+            },
+            {
+                "nome_atributo":"LEN",
+                "valor": balao
+            },
+            {
+                "nome_atributo":"PRM",
+                "valor":0
+            },
+            {
+                "nome_atributo":"SFS",
+                "valor":0
+            },
+            {
+                "nome_atributo":"ZVA",
+                "valor":-32767.0
+            }
+        ],
+        "traducao_atributos":[
+            {
+                "attr_ida":"revestimento",
+                "attr_volta":"RST",
+                "traducao":[
+                    {
+                        "valor_ida":95,
+                        "valor_volta":0
+                    },
+                    {
+                        "valor_ida":4,
+                        "valor_volta":6
+                    },
+                    {
+                        "valor_ida":99,
+                        "valor_volta":999
+                    },
+                    {
+                        "valor_ida":3,
+                        "valor_volta":1
+                    },
+                    {
+                        "valor_ida":2,
+                        "valor_volta":2
+                    },
+                    {
+                        "valor_ida":1,
+                        "valor_volta":5
+                    }
+                ]
+            }
+        ]
+    },
+    {"__comment":"EB010 GRASSLAND <-> veg_campo",
+        "atributos_default_ida":[
+            {
+                "nome_atributo":"antropizada",
+                "valor":95
+            },
+            {
+                "nome_atributo":"classificacaoporte",
+                "valor":95
+            },
+            {
+                "nome_atributo":"densidade",
+                "valor":2
+            },
+            {
+                "nome_atributo":"secundaria",
+                "valor":95
+            }
+        ],
+        "traducao_atributos":[
+            {
+                "attr_ida":"tipocampo",
+                "attr_volta":"VEG",
+                "traducao":[
+                    {
+                        "valor_ida":95,
+                        "valor_volta":0
+                    },
+                    {
+                        "valor_ida":2,
+                        "valor_volta":8
+                    },
+                    {
+                        "valor_ida":1,
+                        "valor_volta":9
+                    },
+                    {
+                        "valor_ida":3,
+                        "valor_volta":999,
+                        "sentido":"volta"
+                    }
+                ]
+            }
+        ]
+    },
+    {"__comment":"EB020 THICKET <-> veg_campinarana | balao (campinarana é amazonica segundo a edgv, pode ser campo sujo)",
+        "atributos_default_ida":[
+            {
+                "nome_atributo":"antropizada",
+                "valor":95
+            },
+            {
+                "nome_atributo":"classificacaoporte",
+                "valor":95 "balao"
+            },
+            {
+                "nome_atributo":"densidade",
+                "valor":95
+            },
+            {
+                "nome_atributo":"secundaria",
+                "valor":95
+            }
+        ],
+        "atributos_default_volta":[
+            {
+                "nome_atributo":"DBM",
+                "valor":-32767.0
             }
         ]
     }
