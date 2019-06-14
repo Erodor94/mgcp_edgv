@@ -1764,6 +1764,8 @@
         ]
     },
     {"__comment":"AT042 PYLON <-> enc_torre_energia",
+        "classe_ida":"AT042",
+        "classe_volta":"enc_torre_energia",
         "atributos_default_ida":[
             {
                 "nome_atributo":"operacional",
@@ -1832,6 +1834,8 @@
         ]
     },
     {"__comment":"AL241 TOWER | FAROL <-> hdv_sinalizacao",
+        "classe_ida":"AL241",
+        "classe_volta":"hdv_sinalizacao",
         "filtro":[
             {
                 "nome_atributo":"TTC",
@@ -1864,6 +1868,8 @@
         ]
     },
     {"__comment":"AM070 STORAGE TANK | WATER <-> snb_dep_abast_agua",
+        "classe_ida":"AM070",
+        "classe_volta":"snb_dep_abast_agua",
         "filtro_ida":[
             {
                 "nome_atributo":"PPO",
@@ -1958,6 +1964,8 @@
         ]
     },
     {"__comment":"AM070 STORAGE TANK | DEPOSITO GERAL <-> cbge_deposito_geral", "balao (faltou a geometria do deposito no mgcp)" 
+        "classe_ida":"AM070",
+        "classe_volta":"cbge_deposito_geral",
         "atributos_default_ida":[
             {
                 "nome_atributo":"estadofisico",
@@ -2063,6 +2071,8 @@
         ]
     },
     {"__comment":"AQ065 CULVERT <-> dut_galeria_bueiro",
+        "classe_ida":"AQ065",
+        "classe_volta":"dut_galeria_bueiro",
         "atributos_default_ida":[
             {
                 "nome_atributo":"$GEOM_TYPE",
@@ -2117,6 +2127,8 @@
         ]
     },
     {"__comment":"BH170 NATURAL POOL <-> hid_massa_dagua | LAGO",
+        "classe_ida":"BH170",
+        "classe_volta":"hid_massa_dagua",
         "filtro_ida":[
             {
                 "$NOT":
@@ -2200,6 +2212,8 @@
         ]
     },
     {"__comment":"BH170 NATURAL POOL | VERTEDOURO <->  hid_sumidouro_vertedouro",
+        "classe_ida":"BH170",
+        "classe_volta":"hid_sumidouro_vertedouro",
         "filtro_ida":[
             {
                 "nome_atributo":"SWT",
@@ -2260,6 +2274,8 @@
         ]
     },
     {"__comment":"BI010 CISTERN <-> cbge_deposito_geral | CISTERNA",
+        "classe_ida":"BI010",
+        "classe_volta":"cbge_deposito_geral",
         "atributos_default_ida":[
             {
                 "nome_atributo":"estadofisico",
@@ -2310,6 +2326,8 @@
         ]
     },
     {"__comment":"AP050 TRAIL <-> tra_trilha_picada",
+        "classe_ida":"AP050",
+        "classe_volta":"tra_trilha_picada",
         "atributos_default_volta":[
             {
                 "nome_atributo":"WTC",
@@ -2318,6 +2336,8 @@
         ]
     },
     {"__comment":"AQ070 FERRY CROSSING <-> tra_travessia",
+        "classe_ida":"AQ070",
+        "classe_volta":"tra_travessia",
         "atributos_default_ida":[
             {
                 "nome_atributo":"tipotravessia",
@@ -2344,6 +2364,8 @@
         ]
     },
     {"__comment":"GB055 RUNWAY <-> aer_pista_ponto_pouso",
+        "classe_ida":"GB055",
+        "classe_volta":"aer_pista_pouso",
         "atributos_default_ida":[
             {
                 "nome_atributo":"homologacao",
@@ -2430,6 +2452,8 @@
         ]
     },
     {"__comment":"EB010 GRASSLAND <-> veg_campo",
+        "classe_ida":"EB010",
+        "classe_volta":"veg_campo",
         "atributos_default_ida":[
             {
                 "nome_atributo":"antropizada",
@@ -2474,7 +2498,9 @@
             }
         ]
     },
-    {"__comment":"EB020 THICKET <-> veg_campinarana | balao (campinarana é amazonica segundo a edgv, pode ser campo sujo)",
+    {"__comment":"EB020 THICKET <-> veg_cerrado",
+        "classe_ida":"EB020",
+        "classe_volta":"veg_cerrado",
         "atributos_default_ida":[
             {
                 "nome_atributo":"antropizada",
@@ -2482,7 +2508,7 @@
             },
             {
                 "nome_atributo":"classificacaoporte",
-                "valor":95 "balao"
+                "valor":95 
             },
             {
                 "nome_atributo":"densidade",
@@ -2491,6 +2517,10 @@
             {
                 "nome_atributo":"secundaria",
                 "valor":95
+            },
+            {
+                "nome_atributo":"vereda",
+                "valor":9999
             }
         ],
         "atributos_default_volta":[
@@ -2501,6 +2531,8 @@
         ]
     },
     {"__comment":"ED010 MARSH <-> veg_brejo_pantano",
+        "classe_ida":"ED010",
+        "classe_volta":"veg_brejo_pantano",
         "atributos_default_ida":[
             {
                 "nome_atributo":"antropizada",
@@ -2534,6 +2566,8 @@
         ]
     },
     {"__comment":"ED020 SWAMP <-> veg_brejo_pantano",
+        "classe_ida":"ED020",
+        "classe_volta":"veg_brejo_pantano",
         "atributos_default_ida":[
             {
                 "nome_atributo":"antropizada",
@@ -2576,8 +2610,10 @@
                 "valor":0
             }
         ]
-    }
+    },
     {"__comment":"EA010 CROP LAND <-> veg_veg_cultivada",
+        "classe_ida":"EA010",
+        "classe_volta":"veg-veg_cultivada",
         "atributos_default_ida":[
             {
                 "nome_atributo":"terreno",
@@ -2620,6 +2656,62 @@
                         "valor_ida"
                     }
                 ]
+            }
+        ]
+    },
+    {"__comment":"AJ030 HOLDING PEN <-> edf_edif_agropec_ext_veg_pesca",
+        "classe_ida":"AJ030",
+        "classe_volta":"edf_edif_agropec_ext_veg_pesca",
+        "atributos_default_ida":[
+            {
+                "nome_atributo":"administracao",
+                "valor":95
+            },
+            {
+                "nome_atributo":"classeativecon",
+                "valor":95
+            },
+            {
+                "nome_atributo":"cultura",
+                "valor":95
+            },
+            {
+                "nome_atributo":"divisaoativecon",
+                "valor":1
+            },
+            {
+                "nome_atributo":"grupoativecon",
+                "valor":95
+            },
+            {
+                "nome_atributo":"matconstr",
+                "valor":95
+            },
+            {
+                "nome_atributo":"operacional",
+                "valor":95
+            },
+            {
+                "nome_atributo":"proprioadm",
+                "valor":95
+            },
+            {
+                "nome_atributo":"situacaofisica",
+                "valor":95
+            },
+            {
+                "nome_atributo":"tipoedifagropec",
+                "valor":18
+            },
+            {
+                "nome_atributo":"turistica",
+                "valor":95
+            }
+        ],
+        "filtro_volta":[
+            {
+                "nome_atributo":"tipoedifagropec",
+                "valor":18
             }
         ]
     }
