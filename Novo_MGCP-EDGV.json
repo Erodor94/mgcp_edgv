@@ -670,7 +670,7 @@
             }
         ]
     },
-    {"__comment":"BB005 HARBOUR <-> hdv_atracadouro_terminal", balao
+    {"__comment":"BB005 HARBOUR <-> hdv_atracadouro_terminal", balao ver txt
         "classe_ida":"BB005",
         "classe_volta":"hdv_atracadouro_terminal",
         "filtro_ida":{
@@ -719,7 +719,7 @@
         ],
         "atributos_default_ida":[
             {
-                "nome_atributo":"bitola", balao
+                "nome_atributo":"bitola", balao null para desconhecido
                 "valor":95,
                 "__comment":"verificar real com codelist"
             },
@@ -743,7 +743,7 @@
             },
             {
                 "nome_atributo":"RWC",
-                "valor":9999 balao
+                "valor":9999 
             },
             {
                 "nome_atributo":"LTN",
@@ -882,7 +882,7 @@
                     },
                     {
                         "valor_ida":4,
-                        "valor_volta":9999 balao
+                        "valor_volta":9999 balao mapear direito, os valores existem
                     }
                 ]
             },
@@ -1060,7 +1060,7 @@
             },
             {
                 "nome_atributo":"mattransp",
-                "valor":"agua" balao
+                "valor":95 
             },
             {
                 "nome_atributo":"setor",
@@ -1223,7 +1223,7 @@
                         "valor":99
                     },
                     {
-                        "nome_atributo":"observacao",
+                        "nome_atributo":"obs",
                         "valor":"asfalto"
                     }
                 ]
@@ -1242,7 +1242,7 @@
                         "valor":99
                     },
                     {
-                        "nome_atributo":"observacao",
+                        "nome_atributo":"obs",
                         "valor":"argila"
                     }
                 ]
@@ -1261,7 +1261,7 @@
                         "valor":99
                     },
                     {
-                        "nome_atributo":"observacao",
+                        "nome_atributo":"obs",
                         "valor":"conglomerado"
                     }
                 ]
@@ -1280,7 +1280,7 @@
                         "valor":99
                     },
                     {
-                        "nome_atributo":"observacao",
+                        "nome_atributo":"obs",
                         "valor":"brita"
                     }
                 ]
@@ -1299,7 +1299,7 @@
                         "valor":99
                     },
                     {
-                        "nome_atributo":"observacao",
+                        "nome_atributo":"obs",
                         "valor":"macadame"
                     }
                 ]
@@ -1318,7 +1318,7 @@
                         "valor":99
                     },
                     {
-                        "nome_atributo":"observacao",
+                        "nome_atributo":"obs",
                         "valor":"parcialmente metal"
                     }
                 ]
@@ -1337,7 +1337,7 @@
                         "valor":99
                     },
                     {
-                        "nome_atributo":"observacao",
+                        "nome_atributo":"obs",
                         "valor":"seixo"
                     }
                 ]
@@ -1356,7 +1356,7 @@
                         "valor":99
                     },
                     {
-                        "nome_atributo":"observacao",
+                        "nome_atributo":"obs",
                         "valor":"destroços"
                     }
                 ]
@@ -1375,7 +1375,7 @@
                         "valor":99
                     },
                     {
-                        "nome_atributo":"observacao",
+                        "nome_atributo":"obs",
                         "valor":"areia"
                     }
                 ]
@@ -1394,7 +1394,7 @@
                         "valor":99
                     },
                     {
-                        "nome_atributo":"observacao",
+                        "nome_atributo":"obs",
                         "valor":"tijolo"
                     }
                 ]
@@ -1593,7 +1593,7 @@
                         "valor":99
                     },
                     {
-                        "nome_atributo":"observacao",
+                        "nome_atributo":"obs",
                         "valor":"quartzo"
                     }
                 ]
@@ -1605,7 +1605,7 @@
         "classe_volta":"eco_ext_mineral",
         "atributos_default_ida":[
             {
-                "nome_atributo":"tipoextmin", balao = não seria filtro?
+                "nome_atributo":"tipoextmin", balao = não seria filtro? sim, na volta
                 "valor":8
             },
             {
@@ -1652,7 +1652,7 @@
             {
                 "nome_atributo":"$GEOM_TYPE",
                 "valor":"POLYGON"
-            } balao
+            } 
         ]
     },
     {"__comment":"AL019 SHED | GALPÃO <-> cbge_deposito_geral",
@@ -1691,7 +1691,7 @@
             },
             {
                 "nome_atributo":"tipoexposicao",
-                "valor":9999 balao fechado ou coberto
+                "valor":9999 balao coberto verificar filtro fechado para warehouse
             },
             {
                 "nome_atributo":"tiporesiduo",
@@ -1764,6 +1764,8 @@
         ]
     },
     {"__comment":"AT042 PYLON <-> enc_torre_energia",
+        "classe_ida":"AT042",
+        "classe_volta":"enc_torre_energia",
         "atributos_default_ida":[
             {
                 "nome_atributo":"operacional",
@@ -1832,6 +1834,8 @@
         ]
     },
     {"__comment":"AL241 TOWER | FAROL <-> hdv_sinalizacao",
+        "classe_ida":"AL241",
+        "classe_volta":"hdv_sinalizacao",
         "filtro":[
             {
                 "nome_atributo":"TTC",
@@ -1864,6 +1868,8 @@
         ]
     },
     {"__comment":"AM070 STORAGE TANK | WATER <-> snb_dep_abast_agua",
+        "classe_ida":"AM070",
+        "classe_volta":"snb_dep_abast_agua",
         "filtro_ida":[
             {
                 "nome_atributo":"PPO",
@@ -1913,7 +1919,7 @@
             },
             {
                 "nome_atributo":"tratamento",
-                "valor":0 balao
+                "valor":0 
             },
             {
                 "nome_atributo":"unidadevolume",
@@ -1957,7 +1963,9 @@
             }
         ]
     },
-    {"__comment":"AM070 STORAGE TANK | DEPOSITO GERAL <-> cbge_deposito_geral", "balao (faltou a geometria do deposito no mgcp)" 
+    {"__comment":"AM070 STORAGE TANK | DEPOSITO GERAL <-> cbge_deposito_geral", 
+        "classe_ida":"AM070",
+        "classe_volta":"cbge_deposito_geral",
         "atributos_default_ida":[
             {
                 "nome_atributo":"estadofisico",
@@ -1985,7 +1993,7 @@
             },
             {
                 "nome_atributo":"tipodepgeral",
-                "valor":19 balao
+                "valor":19 balao colocar 9999 e explicar no obs
             },
             {
                 "nome_atributo":"tipoexposicao",
@@ -2063,6 +2071,8 @@
         ]
     },
     {"__comment":"AQ065 CULVERT <-> dut_galeria_bueiro",
+        "classe_ida":"AQ065",
+        "classe_volta":"dut_galeria_bueiro",
         "atributos_default_ida":[
             {
                 "nome_atributo":"$GEOM_TYPE",
@@ -2078,7 +2088,7 @@
             },
             {
                 "nome_atributo":"mattransp",
-                "valor":8 balao, foi definido por mim
+                "valor":0
             },
             {
                 "nome_atributo":"operacional",
@@ -2102,7 +2112,7 @@
             },
             {
                 "nome_atributo":"tipotrechoduto",
-                "valor":4 balao (definido por mim)
+                "valor":4 
             }
         ],
         "atributos_default_volta":[
@@ -2116,7 +2126,9 @@
             }
         ]
     },
-    {"__comment":"BH170 NATURAL POOL <-> hid_massa_dagua | LAGO",
+    {"__comment":"BH170 NATURAL POOL <-> hid_massa_dagua | LAGO", balao ver texto
+        "classe_ida":"BH170",
+        "classe_volta":"hid_massa_dagua",
         "filtro_ida":[
             {
                 "$NOT":
@@ -2137,7 +2149,7 @@
             },
             {
                 "nome_atributo":"$GEOM_TYPE",
-                "valor":"POINT" balao
+                "valor":"POINT" 
             },
             {
                 "nome_atributo":"possuitrechodrenagem",
@@ -2200,6 +2212,8 @@
         ]
     },
     {"__comment":"BH170 NATURAL POOL | VERTEDOURO <->  hid_sumidouro_vertedouro",
+        "classe_ida":"BH170",
+        "classe_volta":"hid_sumidouro_vertedouro",
         "filtro_ida":[
             {
                 "nome_atributo":"SWT",
@@ -2260,6 +2274,8 @@
         ]
     },
     {"__comment":"BI010 CISTERN <-> cbge_deposito_geral | CISTERNA",
+        "classe_ida":"BI010",
+        "classe_volta":"cbge_deposito_geral",
         "atributos_default_ida":[
             {
                 "nome_atributo":"estadofisico",
@@ -2310,6 +2326,8 @@
         ]
     },
     {"__comment":"AP050 TRAIL <-> tra_trilha_picada",
+        "classe_ida":"AP050",
+        "classe_volta":"tra_trilha_picada",
         "atributos_default_volta":[
             {
                 "nome_atributo":"WTC",
@@ -2318,6 +2336,8 @@
         ]
     },
     {"__comment":"AQ070 FERRY CROSSING <-> tra_travessia",
+        "classe_ida":"AQ070",
+        "classe_volta":"tra_travessia",
         "atributos_default_ida":[
             {
                 "nome_atributo":"tipotravessia",
@@ -2344,6 +2364,8 @@
         ]
     },
     {"__comment":"GB055 RUNWAY <-> aer_pista_ponto_pouso",
+        "classe_ida":"GB055",
+        "classe_volta":"aer_pista_pouso",
         "atributos_default_ida":[
             {
                 "nome_atributo":"homologacao",
@@ -2381,7 +2403,7 @@
             },
             {
                 "nome_atributo":"LEN",
-                "valor": balao
+                "valor": -32767.0
             },
             {
                 "nome_atributo":"PRM",
@@ -2430,6 +2452,8 @@
         ]
     },
     {"__comment":"EB010 GRASSLAND <-> veg_campo",
+        "classe_ida":"EB010",
+        "classe_volta":"veg_campo",
         "atributos_default_ida":[
             {
                 "nome_atributo":"antropizada",
@@ -2474,7 +2498,9 @@
             }
         ]
     },
-    {"__comment":"EB020 THICKET <-> veg_campinarana | balao (campinarana é amazonica segundo a edgv, pode ser campo sujo)",
+    {"__comment":"EB020 THICKET <-> veg_cerrado",
+        "classe_ida":"EB020",
+        "classe_volta":"veg_cerrado",
         "atributos_default_ida":[
             {
                 "nome_atributo":"antropizada",
@@ -2482,7 +2508,7 @@
             },
             {
                 "nome_atributo":"classificacaoporte",
-                "valor":95 "balao"
+                "valor":95 
             },
             {
                 "nome_atributo":"densidade",
@@ -2491,6 +2517,10 @@
             {
                 "nome_atributo":"secundaria",
                 "valor":95
+            },
+            {
+                "nome_atributo":"vereda",
+                "valor":9999
             }
         ],
         "atributos_default_volta":[
@@ -2501,6 +2531,8 @@
         ]
     },
     {"__comment":"ED010 MARSH <-> veg_brejo_pantano",
+        "classe_ida":"ED010",
+        "classe_volta":"veg_brejo_pantano",
         "atributos_default_ida":[
             {
                 "nome_atributo":"antropizada",
@@ -2534,6 +2566,8 @@
         ]
     },
     {"__comment":"ED020 SWAMP <-> veg_brejo_pantano",
+        "classe_ida":"ED020",
+        "classe_volta":"veg_brejo_pantano",
         "atributos_default_ida":[
             {
                 "nome_atributo":"antropizada",
@@ -2569,15 +2603,17 @@
             },
             {
                 "nome_atributo":"VEG",
-                "valor":50 balao
+                "valor":50 
             },
             {
                 "nome_atributo":"VSP",
                 "valor":0
             }
         ]
-    }
+    },
     {"__comment":"EA010 CROP LAND <-> veg_veg_cultivada",
+        "classe_ida":"EA010",
+        "classe_volta":"veg-veg_cultivada",
         "atributos_default_ida":[
             {
                 "nome_atributo":"terreno",
@@ -2622,6 +2658,170 @@
                 ]
             }
         ]
+    },
+    {"__comment":"AJ030 HOLDING PEN <-> edf_edif_agropec_ext_veg_pesca",
+        "classe_ida":"AJ030",
+        "classe_volta":"edf_edif_agropec_ext_veg_pesca",
+        "atributos_default_ida":[
+            {
+                "nome_atributo":"administracao",
+                "valor":95
+            },
+            {
+                "nome_atributo":"classeativecon",
+                "valor":95
+            },
+            {
+                "nome_atributo":"cultura",
+                "valor":95
+            },
+            {
+                "nome_atributo":"divisaoativecon",
+                "valor":1
+            },
+            {
+                "nome_atributo":"grupoativecon",
+                "valor":95
+            },
+            {
+                "nome_atributo":"matconstr",
+                "valor":95
+            },
+            {
+                "nome_atributo":"operacional",
+                "valor":95
+            },
+            {
+                "nome_atributo":"proprioadm",
+                "valor":95
+            },
+            {
+                "nome_atributo":"situacaofisica",
+                "valor":95
+            },
+            {
+                "nome_atributo":"tipoedifagropec",
+                "valor":18
+            },
+            {
+                "nome_atributo":"turistica",
+                "valor":95
+            }
+        ],
+        "filtro_volta":[
+            {
+                "nome_atributo":"tipoedifagropec",
+                "valor":18
+            }
+        ]
+    },
+    {"__comment":"EC030 WOOD | area <-> veg_floresta",
+        "classe_ida":"EC030",
+        "classe_volta":"veg_floresta",
+        "filtro_ida":[
+            {
+                "nome_atributo":"$GEOM_TYPE",
+                "valor":"POLYGON"
+            }
+        ],
+        "atributos_default_ida":[
+            {
+                "nome_atributo":"antropizada",
+                "valor":95
+            },
+            {
+                "nome_atributo":"classificacaoporte",
+                "valor":4
+            },
+            {
+                "nome_atributo":"secundaria",
+                "valor":95
+            }
+        ],
+        "atributos_default_volta":[
+            {
+                "nome_atributo":"TRE",
+                "valor":0
+            }
+        ],
+        "traducao_atributos":[
+            {
+                "attr_ida":"densidade",
+                "attr_volta":"CNP",
+                "traducao":[
+                    {
+                        "valor_ida":1,
+                        "valor_volta":51
+                    },
+                    {
+                        "valor_ida":2,
+                        "valor_volta":25
+                    },
+                    {
+                        "valor_ida":95,
+                        "valor_volta":-32767.0
+                    }
+                ],
+                "attr_ida":"especipredominante",
+                "attr_volta":"VSP",
+                "traducao":[
+                    {
+                        "valor_ida":17,
+                        "valor_volta":25
+                    },
+                    {
+                        "valor_ida":95,
+                        "valor_volta":0
+                    },
+                    {
+                        "valor_ida":96,
+                        "valor_volta":999
+                    },
+                    {
+                        "valor_ida":37,
+                        "valor_volta":0,
+                        "sentido":"volta"
+                    },
+                    {
+                        "valor_ida":10,
+                        "valor_volta":0,
+                        "sentido":"volta"
+                    },
+                    {
+                        "valor_ida":95,
+                        "valor_volta":4,
+                        "sentido":"ida"
+                    },
+                    {
+                        "valor_ida":95,
+                        "valor_volta":6,
+                        "sentido":"ida"
+                    },
+                    {
+                        "valor_ida":95,
+                        "valor_volta":8,
+                        "sentido":"ida"
+                    },
+                    {
+                        "valor_ida":95,
+                        "valor_volta":10, balao eucalipto ref
+                        "sentido":"ida"
+                    },
+                    {
+                        "valor_ida":95,
+                        "valor_volta":11,
+                        "sentido":"ida"
+                    },
+                    {
+                        "valor_ida":95,
+                        "valor_volta":50,
+                        "sentido":"ida"
+                    }
+                ]
+            }
+        ]
+    },
+    {"__comment":"EC030 WOOD | area <-> veg_floresta"
     }
 ]
 }

@@ -1,0 +1,47 @@
+AJ030	Edif_Agropec_Ext_Vegetal_Pesca depois
+AL019	cbge_deposito_geral
+AL099	edf_hab_indigena
+AM070	snb_dep_abast_agua
+AQ065	dut_galeria_bueiro
+BH070	tra_travessia | VAU
+BH145	hid_sumidouro_vertedouro | SUMIDOURO
+BH170	hid_massa_dagua | LAGO / hid_sumidouro_vertedouro | VERTEDOURO
+BI010	cbge_deposito_geral | CISTERNA
+BI020	hid_barragem
+ZD040	hid_ilha ***** foi definido como ilha mas é nome local
+
+AP010	tra_caminho_carrocavel
+AP030	rod_trecho_rodoviario
+AP050	tra_trilha_picada
+AQ040	tra_ponte
+AQ070	tra_travessia
+BH030	hid_canal_vala | vala
+BH140	hid_massa_dagua | Rio
+
+BH080	hid_massa_dagua | Lago
+BH090	hid_terreno_sujeito_inundacao
+BH130	hid_massa_dagua | Açude
+GB055	aer_pista_ponto_pouso
+
+EB010	veg_campo
+EB020	veg_campinarana | campinarana é amazonica segundo a edgv, pode ser campo sujo
+ED010	veg_brejo_pantano
+ED020	veg_brejo_pantano ****** verificar o tipo de vegetação (VEG) e a situação do TID pois seria mangue e não está prevista no benchmark. Sendo necessário revisar Marsh e Swamp pois o TID ficou como atributo default desconhecido e não como filtro para poder ser diferenciado de mangue.
+EA010	veg_veg_cultivada ***** revisão UU
+AL020	lml_area_densamente_edificada / cbge_area_construida / lml_localidade
+BA030	hid_ilha
+BA040	hid_massa_dagua | oceano
+BA050	rel_elemento_fisiografico_natural
+BD120	hid_recife
+BH020	hid_canal
+BH080	hid_massa_dagua |lago
+BB005	hdv_atracadouro_terminal - rever berthing structure
+AN010	fer_trecho_ferroviario
+BH030	hid_canal_vala
+BH120	hid_corredeira
+BH180	hid_queda_dagua
+BH060	dut_trecho_duto
+BI020	hid_barragem
+AA010	eco_ext_mineral
+AA052	eco_ext_mineral | Petroleo
+AT042	enc_torre_energia
