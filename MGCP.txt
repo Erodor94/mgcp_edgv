@@ -1,0 +1,43 @@
+AJ030	ok
+AL015	edif
+AL019	ok
+AL099	edif
+AL241 	vou precisar de ajuda
+AM070	ok
+AQ065	ok
+BH070	ok
+BH145	ok
+BH170	ok
+BI010	ok
+BI020	ok
+ZD040	ok
+
+AP010	ok
+AP030	depois (estrada)
+AP050	ok
+AQ040	depois (ponte) ---- travessia_pedestre, ponte, passagem_elevada_viaduto
+AQ070	ok
+BH030	ok
+BH140	ok
+
+BH080	ok
+BH090	ok
+BH130	ok
+GB055	ok
+
+EB010	ok
+EB020	ok
+EC030	ok
+ED010	ok
+ED020	ok verificar o tipo de vegetação (VEG) e a situação do TID pois seria mangue e não está prevista no benchmark. Sendo necessário revisar Marsh e Swamp pois o TID ficou como atributo default desconhecido e não como filtro para poder ser diferenciado de mangue.
+EA010	revisão UU
+
+20/30
+
+revisar todas densidades de vegetação e espécies de vegetação
+rever áreas mínimas
+aux_conversao - necessária por conta de diferenças semânticas entre modelagens.
+areas aleatorias = area_uso_especifico
+atributo_default é o único que inverte a ordem.
+tradução de atributos = 1x1
+mapeamento de atributos = nxm
