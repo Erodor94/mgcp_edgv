@@ -1436,7 +1436,7 @@
         ],
         "filtro_volta":[
             {
-                "$not":[
+                "$not":
                     {
                         "$or":[
                             {
@@ -1473,7 +1473,6 @@
                             }
                         ]
                     }
-                ]
             }
         ],
         "traducao_atributos":[
