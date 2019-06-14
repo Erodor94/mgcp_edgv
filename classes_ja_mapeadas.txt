@@ -35,7 +35,7 @@ BA050	rel_elemento_fisiografico_natural
 BD120	hid_recife
 BH020	hid_canal
 BH080	hid_massa_dagua |lago
-BB005	hdv_atracadouro_terminal
+BB005	hdv_atracadouro_terminal - rever berthing structure
 AN010	fer_trecho_ferroviario
 BH030	hid_canal_vala
 BH120	hid_corredeira
