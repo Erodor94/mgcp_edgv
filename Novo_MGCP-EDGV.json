@@ -1436,8 +1436,7 @@
         ],
         "filtro_volta":[
             {
-                "$not":[
-                    {
+                "$not":{
                         "$or":[
                             {
                                 "nome_atributo":"tipoextmin",
@@ -1472,8 +1471,7 @@
                                 "valor":31
                             }
                         ]
-                    }
-                ]
+                }
             }
         ],
         "traducao_atributos":[
