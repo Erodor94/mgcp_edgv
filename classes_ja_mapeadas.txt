@@ -45,3 +45,11 @@ BI020	hid_barragem
 AA010	eco_ext_mineral
 AA052	eco_ext_mineral | Petroleo
 AT042	enc_torre_energia
+
+
+
+AL241 Torre
+AL099 Hut/ hab_indigena
+AL015 Edif
+AP030 Estrada
+AQ040 Ponte
