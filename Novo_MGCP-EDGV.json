@@ -2821,5 +2821,26 @@
     },
     {"__comment":"EC030 WOOD | area <-> veg_floresta"
     }
+],
+"mapeamento_atributos":[
+    {"__comment":"ACC <-> geometriaaproximada",
+        "attr_ida":"ACC",
+        "attr_volta":"geometriaaproximada",
+        "traducao":[
+            {
+                "valor_ida":1,
+                "valor_volta":0
+            },
+            {
+                "valor_ida":2,
+                "valor_volta":1
+            },
+            {
+                "valor_ida":9999,
+                "valor_volta":null,
+                "sentido":"ida"
+            }
+        ]
+    }
 ]
 }
