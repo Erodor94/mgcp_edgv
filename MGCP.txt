@@ -1,7 +1,7 @@
 AJ030	ok
 AL015	edif
 AL019	ok
-AL099	edif
+AL099	ok
 AL241 	vou precisar de ajuda
 AM070	ok
 AQ065	ok
@@ -13,9 +13,9 @@ BI020	ok
 ZD040	ok
 
 AP010	ok
-AP030	depois (estrada)
+AP030	ok (estrada)
 AP050	ok
-AQ040	depois (ponte) ---- travessia_pedestre, ponte, passagem_elevada_viaduto
+AQ040	ok (ponte) ---- travessia_pedestre, ponte, passagem_elevada_viaduto
 AQ070	ok
 BH030	ok
 BH140	ok
@@ -24,6 +24,8 @@ BH080	ok
 BH090	ok
 BH130	ok
 GB055	ok
+GB005
+GB015
 
 EB010	ok
 EB020	ok

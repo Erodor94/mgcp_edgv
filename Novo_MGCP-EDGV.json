@@ -670,13 +670,9 @@
             }
         ]
     },
-    {"__comment":"BB005 HARBOUR <-> hdv_atracadouro_terminal", balao ver txt
-        "classe_ida":"BB005",
+    {"__comment":"BB190 BERTHING_STRUCTURE <-> hdv_atracadouro_terminal", 
+        "classe_ida":"BB190",
         "classe_volta":"hdv_atracadouro_terminal",
-        "filtro_ida":{
-            "nome_atributo":"$GEOM_TYPE",
-            "valor":"POLYGON"
-        },
         "atributos_default_ida":[
             {
                 "nome_atributo":"administracao",
@@ -693,16 +689,64 @@
             {
                 "nome_atributo":"aptidaooperacional",
                 "valor":9999
-            },
-            {
-                "nome_atributo":"tipoatracad",
-                "valor":95
             }
         ],
         "atributos_default_volta":[
             {
-                "nome_atributo":"FHC",
+                "nome_atributo":"FAC",
                 "valor":0
+            },
+            {
+                "nome_atributo":"WID",
+                "valor":-32767.0
+            },
+            {
+                "nome_atributo":"WLE",
+                "valor":0
+            }
+        ],
+        "traducao_atributos":[
+            {
+                "attr_ida":"PWC",
+                "attr_volta":"tipoatracad",
+                "traducao":[
+                    {
+                        "valor_ida":0,
+                        "valor_volta":95
+                    },
+                    {
+                        "valor_ida":1,
+                        "valor_volta":42
+                    },
+                    {
+                        "valor_ida":2,
+                        "valor_volta":38
+                    },
+                    {
+                        "valor_ida":3,
+                        "valor_volta":39
+                    },
+                    {
+                        "valor_ida":0,
+                        "valor_volta":40,
+                        "sentido":"volta"
+                    },
+                    {
+                        "valor_ida":0,
+                        "valor_volta":41,
+                        "sentido":"volta"
+                    },
+                    {
+                        "valor_ida":0,
+                        "valor_volta":43,
+                        "sentido":"volta"
+                    },
+                    {
+                        "valor_ida":0,
+                        "valor_volta":44,
+                        "sentido":"volta"
+                    }
+                ]
             }
         ]
     },
@@ -1203,7 +1247,8 @@
                     },
                     {
                         "valor_ida":0,
-                        "valor_volta":97
+                        "valor_volta":97,
+                        "sentido":"volta"
                     }                    
                 ]
             }
@@ -1712,7 +1757,7 @@
         "classe_volta":"enc_torre_comunic",
         "filtro_ida":[
             {
-                "$OR":[
+                "$or":[
                 {
                    "nome_atributo":"TTC",
                     "valor":18
@@ -1834,7 +1879,7 @@
     {"__comment":"AL241 TOWER | FAROL <-> hdv_sinalizacao",
         "classe_ida":"AL241",
         "classe_volta":"hdv_sinalizacao",
-        "filtro":[
+        "filtro_ida":[
             {
                 "nome_atributo":"TTC",
                 "valor":5   
@@ -2839,6 +2884,279 @@
                 "valor_ida":9999,
                 "valor_volta":null,
                 "sentido":"ida"
+            }
+        ]
+    },
+    {"__comment":"MCC <-> matconstr"   ,
+        "attr_ida":"MCC",
+        "attr_volta":"matconst",
+        "traducao":[
+            {
+                "valor_ida":0,
+                "valor_volta":95
+            },
+            {
+                "valor_ida":21,
+                "valor_volta":2
+            },
+            {
+                "valor_ida":77,
+                "valor_volta":2,
+                "sentido":"ida"
+            },
+            {
+                "valor_ida":83,
+                "valor_volta":2,
+                "sentido":"ida"
+            },
+            {
+                "valor_ida":64,
+                "valor_volta":3
+            },
+            {
+                "valor_ida":62,
+                "valor_volta":1 
+            },
+            {
+                "valor_ida":104,
+                "valor_volta":23
+            },
+            {
+                "valor_ida":84,
+                "valor_volta":4
+            },
+            {
+                "valor_ida":108,
+                "valor_volta":4,
+                "sentido":"ida"
+            },
+            {
+                "valor_ida":117,
+                "valor_volta":5
+            },
+            {
+                "valor_ida":999,
+                "valor_volta":99
+            },
+            {
+                "valor_ida":20,
+                "valor_volta":8
+            },
+            {
+                "valor_ida":0,
+                "valor_volta":97,
+                "sentido":"volta"
+            }
+        ],
+        "mapeamento_atributos":[
+            {
+                "sentido":"ida",
+                "tupla_ida":[
+                    {
+                        "nome_atributo":"MCC",
+                        "valor":5
+                    }
+                ],
+                "tupla_volta":[
+                    {
+                        "nome_atributo":"matconstr",
+                        "valor":99
+                    },
+                    {
+                        "nome_atributo":"obs",
+                        "valor":"asfalto"
+                    }
+                ]
+            },
+            {
+                "sentido":"ida",
+                "tupla_ida":[
+                    {
+                        "nome_atributo":"MCC",
+                        "valor":16
+                    }
+                ],
+                "tupla_volta":[
+                    {
+                        "nome_atributo":"matconstr",
+                        "valor":99
+                    },
+                    {
+                        "nome_atributo":"obs",
+                        "valor":"argila"
+                    }
+                ]
+            },
+            {
+                "sentido":"ida",
+                "tupla_ida":[
+                    {
+                        "nome_atributo":"MCC",
+                        "valor":22
+                    }
+                ],
+                "tupla_volta":[
+                    {
+                        "nome_atributo":"matconstr",
+                        "valor":99
+                    },
+                    {
+                        "nome_atributo":"obs",
+                        "valor":"conglomerado"
+                    }
+                ]
+            },
+            {
+                "sentido":"ida",
+                "tupla_ida":[
+                    {
+                        "nome_atributo":"MCC",
+                        "valor":66
+                    }
+                ],
+                "tupla_volta":[
+                    {
+                        "nome_atributo":"matconstr",
+                        "valor":99
+                    },
+                    {
+                        "nome_atributo":"obs",
+                        "valor":"brita"
+                    }
+                ]
+            },
+            {
+                "sentido":"ida",
+                "tupla_ida":[
+                    {
+                        "nome_atributo":"MCC",
+                        "valor":57
+                    }
+                ],
+                "tupla_volta":[
+                    {
+                        "nome_atributo":"matconstr",
+                        "valor":99
+                    },
+                    {
+                        "nome_atributo":"obs",
+                        "valor":"Macadame"
+                    }
+                ]
+            },
+            {
+                "sentido":"ida",
+                "tupla_ida":[
+                    {
+                        "nome_atributo":"MCC",
+                        "valor":72
+                    }
+                ],
+                "tupla_volta":[
+                    {
+                        "nome_atributo":"matconstr",
+                        "valor":99
+                    },
+                    {
+                        "nome_atributo":"obs",
+                        "valor":"Parcialmente metal"
+                    }
+                ]
+            },
+            {
+                "sentido":"ida",
+                "tupla_ida":[
+                    {
+                        "nome_atributo":"MCC",
+                        "valor":73
+                    }
+                ],
+                "tupla_volta":[
+                    {
+                        "nome_atributo":"matconstr",
+                        "valor":99
+                    },
+                    {
+                        "nome_atributo":"obs",
+                        "valor":"Seixo"
+                    }
+                ]
+            },
+            {
+                "sentido":"ida",
+                "tupla_ida":[
+                    {
+                        "nome_atributo":"MCC",
+                        "valor":86
+                    }
+                ],
+                "tupla_volta":[
+                    {
+                        "nome_atributo":"matconstr",
+                        "valor":99
+                    },
+                    {
+                        "nome_atributo":"obs",
+                        "valor":"Destroços"
+                    }
+                ]
+            },
+            {
+                "sentido":"ida",
+                "tupla_ida":[
+                    {
+                        "nome_atributo":"MCC",
+                        "valor":88
+                    }
+                ],
+                "tupla_volta":[
+                    {
+                        "nome_atributo":"matconstr",
+                        "valor":99
+                    },
+                    {
+                        "nome_atributo":"obs",
+                        "valor":"Areia"
+                    }
+                ]
+            },
+            {
+                "sentido":"ida",
+                "tupla_ida":[
+                    {
+                        "nome_atributo":"MCC",
+                        "valor":9
+                    }
+                ],
+                "tupla_volta":[
+                    {
+                        "nome_atributo":"matconstr",
+                        "valor":99
+                    },
+                    {
+                        "nome_atributo":"obs",
+                        "valor":"Tijolo"
+                    }
+                ]
+            },
+            {
+                "sentido":"ida",
+                "tupla_ida":[
+                    {
+                        "nome_atributo":"MCC",
+                        "valor":46
+                    }
+                ],
+                "tupla_volta":[
+                    {
+                        "nome_atributo":"matconstr",
+                        "valor":99
+                    },
+                    {
+                        "nome_atributo":"obs",
+                        "valor":"Cascalho"
+                    }
+                ]
             }
         ]
     }

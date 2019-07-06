@@ -2,7 +2,7 @@
   "mapeamento_classes": [
     {"__comment":"AL020 Built-UP Area | Residencial área <-> lml_area_densamente_edificada",
       "classe_ida": "AL020",
-      "classe_volta": "lml_area_densamente_edificada",
+      "classe_volta": "edgv.lml_area_densamente_edificada",
       "filtro_ida":
         {
             "$and": [
@@ -49,7 +49,7 @@
     },   
     {"__comment":"AL020 Built-UP Area | Não residencial área <-> cbge_area_construida",
         "classe_ida": "AL020",
-        "classe_volta": "cbge_area_construida",
+        "classe_volta": "edgv.cbge_area_construida",
         "filtro_ida":
           {
               "$and": [
@@ -96,7 +96,7 @@
     },   
     {"__comment":"AL020 Built-UP Area | Residencial Ponto <-> lml_localidade",
         "classe_ida":"AL020",
-        "classe_volta":"lml_localidade",
+        "classe_volta":"edgv.lml_localidade",
         "filtro_ida":{
             "$and": [
                 {
@@ -142,7 +142,7 @@
     },
     {"__comment":"BA030 ISLAND <-> hid_ilha",
         "classe_ida":"BA030",
-        "classe_volta":"hid_ilha",
+        "classe_volta":"edgv.hid_ilha",
         "filtro_volta":
         {
             "nome_atributo":"$GEOM_TYPE",
@@ -162,7 +162,7 @@
     {"__comment":"ZD040 Named Location <- hid_ilha",
         "sentido": "volta",
         "classe_ida":"ZD040",
-        "classe_volta":"hid_ilha",
+        "classe_volta":"edgv.hid_ilha",
         "filtro_volta":
         {
             "$and": [
@@ -181,7 +181,7 @@
     },
     {"__comment":"BA040 TIDAL WATER <-> hid_massa_dagua | Oceano",
         "classe_ida":"BA040",
-        "classe_volta":"hid_massa_dagua",
+        "classe_volta":"edgv.hid_massa_dagua",
         "atributos_default_ida":[
             {
                 "nome_atributo":"tipomassadagua",
@@ -216,17 +216,20 @@
     },
     {"__comment":"BA050 BEACH <-> rel_elemento_fisiografico_natural",
         "classe_ida":"BA050",
-        "classe_volta":"rel_elemento_fisiografico_natural",
-        "filtro_volta":[
+        "classe_volta":"edgv.rel_elemento_fisiografico_natural",
+        "filtro_volta":
         {
-            "nome_atributo":"tipoelemnat",
-            "valor":12           
+            "$and":[
+                {
+                "nome_atributo":"tipoelemnat",
+                "valor":12           
+            },
+            {
+                "nome_atributo":"$GEOM_TYPE",
+                "valor":"LINESTRING"
+            }
+        ]
         },
-        {
-            "nome_atributo":"$GEOM_TYPE",
-            "valor":"LINESTRING"
-        }
-    ],
         "atributos_default_ida":{
             "nome_atributo":"tipoelemnat",
             "valor":12
@@ -238,7 +241,7 @@
     },
     {"__comment":"BD120 REEF <-> hid_recife",
         "classe_ida":"BD120",
-        "classe_volta":"hid_recife",
+        "classe_volta":"edgv.hid_recife",
         "traducao_atributos":[
             {
                 "attr_ida":"situacaoemagua",
@@ -288,14 +291,13 @@
                 ]
             }
         ],
-        "filtro_ida":[
+        "filtro_ida":
             {
                 "$not":{
                     "nome_atributo":"$GEOM_TYPE",
                     "valor":"POINT"
                 }
-            }
-        ],
+            },
         "atributos_default_ida":[
             {
                 "nome_atributo":"situacaocosta",
@@ -314,7 +316,7 @@
     {"__comment":"BH020 CANAL -> hid_canal | canal navegação",
         "sentido":"ida",
         "classe_ida":"BH020",
-        "classe_volta":"hid_canal",
+        "classe_volta":"edgv.hid_canal",
         "atributos_default_ida":[
             {
                 "nome_atributo":"operacional",
@@ -358,7 +360,7 @@
     },
     {"__comment":"BH070 FORD <-> tra_travessia",
         "classe_ida":"BH070",
-        "classe_volta":"tra_travessia",
+        "classe_volta":"edgv.tra_travessia",
         "atributos_default_ida":[
             {
                 "nome_atributo":"tipotravessia",
@@ -373,7 +375,7 @@
                 "valor":97
             }
         ],
-        "filtro_volta":[
+        "filtro_volta":
             {
                 "$or":[
                     {
@@ -385,8 +387,7 @@
                         "valor":2
                     }
                 ]
-            }
-        ],
+            },
         "atributos_default_volta":[
             {
                 "nome_atributo":"RST",
@@ -396,7 +397,7 @@
     },
     {"__comment":"BH140 RIVER <-> hid_massa_dagua | Rio",
         "classe_ida":"BH140",
-        "classe_volta":"hid_massa_dagua",
+        "classe_volta":"edgv.hid_massa_dagua",
         "filtro_ida":{
                 "nome_atributo":"$GEOM_TYPE",
                 "valor":"POLYGON"
@@ -423,7 +424,7 @@
                 "valor":1
             }
         ],
-        "filtro_volta":[
+        "filtro_volta":
             {
                 "$or":[
                     {
@@ -435,8 +436,7 @@
                         "valor":0
                     }
                 ]
-            }
-        ],
+            },
         "atributos_default_volta":[
             {
                 "nome_atributo":"CDA",
@@ -488,7 +488,7 @@
     },
     {"__comment":"BH140 RIVER <-> hid_trecho_drenagem | Rio",
         "classe_ida":"BH140",
-        "classe_volta":"hid_trecho_drenagem",
+        "classe_volta":"edgv.hid_trecho_drenagem",
         "filtro_ida":{
                 "nome_atributo":"$GEOM_TYPE",
                 "valor":"LINESTRING"
@@ -503,7 +503,7 @@
                 "valor":95
             }
         ],
-        "filtro_volta":[
+        "filtro_volta":
             {
                 "$or":[
                     {
@@ -511,8 +511,7 @@
                         "valor":5
                     }
                 ]
-            }
-        ],
+            },
         "atributos_default_volta":[
             {
                 "nome_atributo":"TID",
@@ -580,7 +579,7 @@
     },
     {"__comment":"BH080 LAKE <-> hid_massa_dagua | Lago",
         "classe_ida":"BH080",
-        "classe_volta":"hid_massa_dagua",
+        "classe_volta":"edgv.hid_massa_dagua",
         "atributos_default_ida":[
             {
                 "nome_atributo":"tipomassadagua",
@@ -599,7 +598,7 @@
                 "valor":0
             }
         ],
-        "filtro_volta":[
+        "filtro_volta":
             {
                 "$or":[
                     {
@@ -615,8 +614,7 @@
                         "valor":6
                     }
                 ]
-            }
-        ],
+            },
         "traducao_atributos":[
             {
                 "attr_ida":"regime",
@@ -672,7 +670,7 @@
     },
     {"__comment":"BB005 HARBOUR <-> hdv_atracadouro_terminal",
         "classe_ida":"BB005",
-        "classe_volta":"hdv_atracadouro_terminal",
+        "classe_volta":"edgv.hdv_atracadouro_terminal",
         "filtro_ida":{
             "nome_atributo":"$GEOM_TYPE",
             "valor":"POLYGON"
@@ -708,15 +706,14 @@
     },
     {"__comment":"AN010 RAILWAY <-> fer_trecho_ferroviario",
         "classe_ida":"AN010",
-        "classe_volta":"fer_trecho_ferroviario",
-        "filtro_ida":[
+        "classe_volta":"edgv.fer_trecho_ferroviario",
+        "filtro_ida":
             {
                 "$not":{
                     "nome_atributo":"RRC",
                     "valor":15
                 }
-            }
-        ],
+            },
         "atributos_default_ida":[
             {
                 "nome_atributo":"bitola",
@@ -892,7 +889,7 @@
     },
     {"__comment":"BH130 RESERVOIR <-> hid_massa_dagua | Açude",
         "classe_ida":"BH130",
-        "classe_volta":"hid_massa_dagua",
+        "classe_volta":"edgv.hid_massa_dagua",
         "atributos_default_ida":[
             {
                 "nome_atributo":"tipomassadagua",
@@ -915,12 +912,11 @@
                 "valor":0
             }
         ],
-        "filtro_volta":[
+        "filtro_volta":
             {
                 "nome_atributo":"tipomassadagua",
                 "valor":10
-            }
-        ],
+            },
         "traducao_atributos":[
             {
                 "attr_ida":"HYP",
@@ -954,7 +950,7 @@
     },
     {"__comment":"BH030 DITCH <-> hid_canal_vala | vala",
         "classe_ida":"BH030",
-        "classe_volta":"hid_canal_vala",
+        "classe_volta":"edgv.hid_canal_vala",
         "atributos_default_ida":[
             {
                 "nome_atributo":"tipoalterantrop",
@@ -995,7 +991,7 @@
     },
     {"__comment":"BH090 LAND SUBJECT TO INUNDATION <-> hid_terreno_sujeito_inundacao",
         "classe_ida":"BH090",
-        "classe_volta":"hid_terreno_sujeito_inundacao",
+        "classe_volta":"edgv.hid_terreno_sujeito_inundacao",
         "atributos_default_volta":[
             {
                 "nome_atributo":"AZC",
@@ -1009,11 +1005,11 @@
     },
     {"__comment":"BH120 RAPIDS <-> hid_corredeira | outros",
         "classe_ida":"BH120",
-        "classe_volta":"hid_corredeira"
+        "classe_volta":"edgv.hid_corredeira"
     },
     {"__comment":"BH180 WATERFALL <-> hid_queda_dagua",
         "classe_ida":"BH1180",
-        "classe_volta":"hid_queda_dagua",
+        "classe_volta":"edgv.hid_queda_dagua",
         "atributos_default_ida":[
             {
                 "nome_atributo":"tipoqueda",
@@ -1021,9 +1017,9 @@
             }
         ]
     },
-    {"__comment":"BH145 VANISHING POINT <-> hid_sumidouro_vertedouro",
+    {"__comment":"BH145 VANISHING POINT <-> edgv.hid_sumidouro_vertedouro",
         "classe_ida":"BH145",
-        "classe_volta":"hid_sumidouro_vertedouro",
+        "classe_volta":"edgv.hid_sumidouro_vertedouro",
         "atributos_default_ida":[
             {
                 "nome_atributo":"tiposumvert",
@@ -1034,14 +1030,13 @@
                 "valor":95
             }
         ],
-        "filtro_volta":[
+        "filtro_volta":
             {
                 "$not":{
                     "nome_atributo":"tiposumvert",
                     "valor":2
                 }
-            }
-        ],
+            },
         "atributos_default_volta":[
             {
                 "nome_atributo":"WST",
@@ -1052,7 +1047,7 @@
     },
     {"__comment":"BH060 FLUME <-> dut_trecho_duto",
         "classe_ida":"BH060",
-        "classe_volta":"dut_trecho_duto",
+        "classe_volta":"edgv.dut_trecho_duto",
         "atributos_default_ida":[
             {
                 "nome_atributo":"tipotrechoduto",
@@ -1114,7 +1109,7 @@
     },
     {"__comment":"AP010 CART TRACK <-> tra_caminho_carrocavel",
         "classe_ida":"AP010",
-        "classe_volta":"tra_caminho_carrocavel",
+        "classe_volta":"edgv.tra_caminho_carrocavel",
         "atributos_default_volta":[
             {
                 "nome_atributo":"WTC",
@@ -1124,7 +1119,7 @@
     },
     {"__comment":"BI020 DAM <-> hid_barragem",
         "classe_ida":"BI020",
-        "classe_volta":"hid_barragem",
+        "classe_volta":"edgv.hid_barragem",
         "atributos_default_ida":[
             {
                 "nome_atributo":"usoprincipal",
@@ -1403,7 +1398,7 @@
     },
     {"__comment":"AA010 EXTRACTION MINE <-> eco_ext_mineral",
         "classe_ida":"AA010",
-        "classe_volta":"eco_ext_mineral",
+        "classe_volta":"edgv.eco_ext_mineral",
         "atributos_default_ida":[
             {
                 "nome_atributo":"tipoalterantrop",
@@ -1434,7 +1429,7 @@
                 "valor":9
             }
         ],
-        "filtro_volta":[
+        "filtro_volta":
             {
                 "$not":{
                         "$or":[
@@ -1472,8 +1467,7 @@
                             }
                         ]
                 }
-            }
-        ],
+            },
         "traducao_atributos":[
             {
                 "attr_ida":"MZN",
@@ -1600,7 +1594,7 @@
     },
     {"__comment":"AA052 HYDROCARBONS FIELD <-> eco_ext_mineral | Petroleo",
         "classe_ida":"AA052",
-        "classe_volta":"eco_ext_mineral",
+        "classe_volta":"edgv.eco_ext_mineral",
         "atributos_default_ida":[
             {
                 "nome_atributo":"tipoextmin",
@@ -1646,22 +1640,20 @@
                 "valor":95
             }
         ],
-        "filtro_volta":[
+        "filtro_volta":
             {
                 "nome_atributo":"$GEOM_TYPE",
                 "valor":"POLYGON"
             } 
-        ]
     },
     {"__comment":"AL019 SHED | GALPÃO <-> cbge_deposito_geral",
         "classe_ida":"AL019",
-        "classe_volta":"cbge_deposito_geral",
-        "filtro":[
+        "classe_volta":"edgv.cbge_deposito_geral",
+        "filtro_volta":
             {
                 "nome_atribute":"tipodepgeral",
                 "valor":8
-            }
-        ],
+            },
         "atributos_default_ida":[
             {
                 "nome_atributo":"estadofisico",
@@ -1709,10 +1701,10 @@
     },
     {"__comment":"AL241 TOWER | comunicação ou celular <-> enc_torre_comunic",
         "classe_ida":"AL241",
-        "classe_volta":"enc_torre_comunic",
-        "filtro_ida":[
+        "classe_volta":"edgv.enc_torre_comunic",
+        "filtro_ida":
             {
-                "$OR":[
+                "$or":[
                 {
                    "nome_atributo":"TTC",
                     "valor":18
@@ -1722,8 +1714,7 @@
                     "valor":19
                 }
                 ]
-            }
-        ],
+            },
         "atributos_default_ida":[
             {
                 "nome_atributo":"mobilidade",
@@ -1763,7 +1754,7 @@
     },
     {"__comment":"AT042 PYLON <-> enc_torre_energia",
         "classe_ida":"AT042",
-        "classe_volta":"enc_torre_energia",
+        "classe_volta":"edgv.enc_torre_energia",
         "atributos_default_ida":[
             {
                 "nome_atributo":"operacional",
@@ -1793,7 +1784,7 @@
     {"__comment":"AL241 TOWER | turística <- edf_edif_constr_turistica",
         "sentido":"volta",
         "classe_ida":"AL241",
-        "classe_volta":"enc_torre_comunic",
+        "classe_volta":"edgv.enc_torre_comunic",
          "atributos_default_ida":[
             {
                 "nome_atributo":"administracao",
@@ -1833,13 +1824,12 @@
     },
     {"__comment":"AL241 TOWER | FAROL <-> hdv_sinalizacao",
         "classe_ida":"AL241",
-        "classe_volta":"hdv_sinalizacao",
-        "filtro":[
+        "classe_volta":"edgv.hdv_sinalizacao",
+        "filtro_ida":
             {
                 "nome_atributo":"TTC",
                 "valor":5   
-            }
-        ],
+            },
         "atributos_default_ida":[
             {
                 "nome_atributo":"operacional",
@@ -1867,13 +1857,12 @@
     },
     {"__comment":"AM070 STORAGE TANK | WATER <-> snb_dep_abast_agua",
         "classe_ida":"AM070",
-        "classe_volta":"snb_dep_abast_agua",
-        "filtro_ida":[
+        "classe_volta":"edgv.snb_dep_abast_agua",
+        "filtro_ida":
             {
                 "nome_atributo":"PPO",
                 "valor":122
-            }
-        ],
+            },
         "atributos_default_ida":[
             {
                 "nome_atributo":"estadofisico",
@@ -1924,7 +1913,7 @@
                 "valor":95
             }
         ],
-        "filtro_volta":[
+        "filtro_volta":
             {
                 "$or":[
                     {
@@ -1936,8 +1925,7 @@
                         "valor":1
                     }
                 ]
-            }
-        ],
+            },
         "atributos_default_volta":[
             {
                 "nome_atributo":"FUN",
@@ -1963,7 +1951,7 @@
     },
     {"__comment":"AM070 STORAGE TANK | DEPOSITO GERAL <-> cbge_deposito_geral", 
         "classe_ida":"AM070",
-        "classe_volta":"cbge_deposito_geral",
+        "classe_volta":"edgv.cbge_deposito_geral",
         "atributos_default_ida":[
             {
                 "nome_atributo":"estadofisico",
@@ -2006,12 +1994,11 @@
                 "valor":95
             }
         ],
-        "filtro_volta":[
+        "filtro_volta":
             {
                 "nome_atributo":"tipodepgeral",
                 "valor":19
-            }
-        ],
+            },
         "atributos_default_volta":[
             {
                 "nome_atributo":"FUN",
@@ -2070,7 +2057,7 @@
     },
     {"__comment":"AQ065 CULVERT <-> dut_galeria_bueiro",
         "classe_ida":"AQ065",
-        "classe_volta":"dut_galeria_bueiro",
+        "classe_volta":"edgv.dut_galeria_bueiro",
         "atributos_default_ida":[
             {
                 "nome_atributo":"$GEOM_TYPE",
@@ -2126,16 +2113,15 @@
     },
     {"__comment":"BH170 NATURAL POOL <-> hid_massa_dagua | LAGO",
         "classe_ida":"BH170",
-        "classe_volta":"hid_massa_dagua",
-        "filtro_ida":[
+        "classe_volta":"edgv.hid_massa_dagua",
+        "filtro_ida":
             {
-                "$NOT":
+                "$not":
                 {
                     "nome_atributo":"SWT",
                     "valor":4
                 }
-            }
-        ],
+            },
         "atributos_default_ida":[
             {
                 "nome_atributo":"artificial",
@@ -2162,16 +2148,19 @@
                 "valor":7
             }
         ],
-        "filtro_volta":[
+        "filtro_volta":
             {
-                "nome_atributo":"artificial",
-                "valor":0
+                "$and":[
+                    {
+                        "nome_atributo":"artificial",
+                        "valor":0
+                    },
+                    {
+                        "nome_atributo":"tipomassadagua",
+                        "valor":7
+                    }
+                ]
             },
-            {
-                "nome_atributo":"tipomassadagua",
-                "valor":7
-            }
-        ],
         "atributos_default_volta":[
             {
                 "nome_atributo":"SWT",
@@ -2211,13 +2200,12 @@
     },
     {"__comment":"BH170 NATURAL POOL | VERTEDOURO <->  hid_sumidouro_vertedouro",
         "classe_ida":"BH170",
-        "classe_volta":"hid_sumidouro_vertedouro",
-        "filtro_ida":[
+        "classe_volta":"edgv.hid_sumidouro_vertedouro",
+        "filtro_ida":
             {
                 "nome_atributo":"SWT",
                 "valor":4
-            }
-        ],
+            },
         "atributos_default_ida":[
             {
                 "nome_atributo":"causa",
@@ -2228,12 +2216,11 @@
                 "valor":2
             }
         ],
-        "filtro_volta":[
+        "filtro_volta":
             {
                 "nome_atributo":"tiposumvert",
                 "valor":2
-            }
-        ],
+            },
         "atributos_default_volta":[
             {
                 "nome_atributo":"SWT",
@@ -2273,7 +2260,7 @@
     },
     {"__comment":"BI010 CISTERN <-> cbge_deposito_geral | CISTERNA",
         "classe_ida":"BI010",
-        "classe_volta":"cbge_deposito_geral",
+        "classe_volta":"edgv.cbge_deposito_geral",
         "atributos_default_ida":[
             {
                 "nome_atributo":"estadofisico",
@@ -2316,16 +2303,15 @@
                 "valor":95
             }
         ],
-        "filtro_volta":[
+        "filtro_volta":
             {
                 "nome_atributo":"tipodepgeral",
                 "valor":3
             }
-        ]
     },
     {"__comment":"AP050 TRAIL <-> tra_trilha_picada",
         "classe_ida":"AP050",
-        "classe_volta":"tra_trilha_picada",
+        "classe_volta":"edgv.tra_trilha_picada",
         "atributos_default_volta":[
             {
                 "nome_atributo":"WTC",
@@ -2335,7 +2321,7 @@
     },
     {"__comment":"AQ070 FERRY CROSSING <-> tra_travessia",
         "classe_ida":"AQ070",
-        "classe_volta":"tra_travessia",
+        "classe_volta":"edgv.tra_travessia",
         "atributos_default_ida":[
             {
                 "nome_atributo":"tipotravessia",
@@ -2363,7 +2349,7 @@
     },
     {"__comment":"GB055 RUNWAY <-> aer_pista_ponto_pouso",
         "classe_ida":"GB055",
-        "classe_volta":"aer_pista_pouso",
+        "classe_volta":"edgv.aer_pista_pouso",
         "atributos_default_ida":[
             {
                 "nome_atributo":"homologacao",
@@ -2451,7 +2437,7 @@
     },
     {"__comment":"EB010 GRASSLAND <-> veg_campo",
         "classe_ida":"EB010",
-        "classe_volta":"veg_campo",
+        "classe_volta":"edgv.veg_campo",
         "atributos_default_ida":[
             {
                 "nome_atributo":"antropizada",
@@ -2498,7 +2484,7 @@
     },
     {"__comment":"EB020 THICKET <-> veg_cerrado",
         "classe_ida":"EB020",
-        "classe_volta":"veg_cerrado",
+        "classe_volta":"edgv.veg_cerrado",
         "atributos_default_ida":[
             {
                 "nome_atributo":"antropizada",
@@ -2530,7 +2516,7 @@
     },
     {"__comment":"ED010 MARSH <-> veg_brejo_pantano",
         "classe_ida":"ED010",
-        "classe_volta":"veg_brejo_pantano",
+        "classe_volta":"edgv.veg_brejo_pantano",
         "atributos_default_ida":[
             {
                 "nome_atributo":"antropizada",
@@ -2550,12 +2536,11 @@
                 "valor":95
             }
         ],
-        "filtro_volta":[
+        "filtro_volta":
             {
                 "nome_atributo":"classificacaoporte",
                 "valor":3
-            }
-        ],
+            },
         "atributos_default_volta":[
             {
                 "nome_atributo":"TID",
@@ -2565,7 +2550,7 @@
     },
     {"__comment":"ED020 SWAMP <-> veg_brejo_pantano",
         "classe_ida":"ED020",
-        "classe_volta":"veg_brejo_pantano",
+        "classe_volta":"edgv.veg_brejo_pantano",
         "atributos_default_ida":[
             {
                 "nome_atributo":"antropizada",
@@ -2584,12 +2569,11 @@
                 "valor":95
             }
         ],
-        "filtro_volta":[
+        "filtro_volta":
             {
                 "nome_atributo":"classificacaoporte",
                 "valor":4
-            }
-        ],
+            },
         "atributos_default_volta":[
             {
                 "nome_atributo":"TID",
@@ -2611,7 +2595,7 @@
     },
     {"__comment":"EA010 CROP LAND <-> veg_veg_cultivada",
         "classe_ida":"EA010",
-        "classe_volta":"veg-veg_cultivada",
+        "classe_volta":"edgv.veg_veg_cultivada",
         "atributos_default_ida":[
             {
                 "nome_atributo":"terreno",
@@ -2656,7 +2640,7 @@
     },
     {"__comment":"AJ030 HOLDING PEN <-> edf_edif_agropec_ext_veg_pesca",
         "classe_ida":"AJ030",
-        "classe_volta":"edf_edif_agropec_ext_veg_pesca",
+        "classe_volta":"edgv.edf_edif_agropec_ext_veg_pesca",
         "atributos_default_ida":[
             {
                 "nome_atributo":"administracao",
@@ -2703,22 +2687,20 @@
                 "valor":95
             }
         ],
-        "filtro_volta":[
+        "filtro_volta":
             {
                 "nome_atributo":"tipoedifagropec",
                 "valor":18
             }
-        ]
     },
     {"__comment":"EC030 WOOD | area <-> veg_floresta",
         "classe_ida":"EC030",
-        "classe_volta":"veg_floresta",
-        "filtro_ida":[
+        "classe_volta":"edgv.veg_floresta",
+        "filtro_ida":
             {
                 "nome_atributo":"$GEOM_TYPE",
                 "valor":"POLYGON"
-            }
-        ],
+            },
         "atributos_default_ida":[
             {
                 "nome_atributo":"antropizada",
@@ -2813,6 +2795,27 @@
                         "sentido":"ida"
                     }
                 ]
+            }
+        ]
+    }
+],
+"mapeamento_atributos": [
+    {"__comment":"ACC <-> geometriaaproximada",
+        "attr_ida":"ACC",
+        "attr_volta":"geometriaaproximada",
+        "traducao":[
+            {
+                "valor_ida":1,
+                "valor_volta":0
+            },
+            {
+                "valor_ida":2,
+                "valor_volta":1
+            },
+            {
+                "valor_ida":9999,
+                "valor_volta":null,
+                "sentido":"ida"
             }
         ]
     }
