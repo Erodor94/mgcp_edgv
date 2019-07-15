@@ -1,0 +1,368 @@
+2019-07-09 14:27:33|   0.0|  0.0|INFORM|FME 2019.0.1.0 (20190506 - Build 19253 - WIN64)
+2019-07-09 14:27:33|   0.0|  0.0|INFORM|FME_HOME is 'C:\Program Files\FME\'
+2019-07-09 14:27:33|   0.0|  0.0|INFORM|FME Desktop ESRI Edition (floating)
+2019-07-09 14:27:33|   0.0|  0.0|INFORM|Permanent License.
+2019-07-09 14:27:33|   0.0|  0.0|INFORM|Machine host name is: DESKTOP-44OJGQI
+2019-07-09 14:27:33|   0.0|  0.0|INFORM|START - ProcessID: 8512, peak process memory usage: 32612 kB, current process memory usage: 32512 kB
+2019-07-09 14:27:33|   0.0|  0.0|INFORM|FME Configuration: Command line arguments are `C:\Program Files\FME\fme.exe' `C:/Users/Bruno/Documents/PID/Arquivos_finais\wb-xlate-1562693250928_10456' `LOG_STANDARDOUT' `YES' `LogCountServerName' `{fa3d4a18-6905-46e4-95f8-d169b076cd83}'
+2019-07-09 14:27:33|   0.0|  0.0|INFORM|FME Configuration: Connection Storage: 'C:\Users\Bruno\AppData\Roaming\Safe Software\FME\'
+2019-07-09 14:27:33|   0.1|  0.1|INFORM|Shared folders for formats are : C:\Program Files\FME\datasources;C:\Users\Bruno\Documents\FME\Formats
+2019-07-09 14:27:33|   0.1|  0.0|INFORM|Shared folders for transformers are : C:\Users\Bruno\AppData\Roaming\Safe Software\FME\Packages\19253-win64\transformers;C:\Program Files\FME\transformers
+2019-07-09 14:27:33|   0.1|  0.0|INFORM|Shared folders for coordinate systems are : C:\Users\Bruno\Documents\FME\CoordinateSystems
+2019-07-09 14:27:33|   0.1|  0.0|INFORM|Shared folders for coordinate system exceptions are : C:\Users\Bruno\Documents\FME\CoordinateSystemExceptions
+2019-07-09 14:27:33|   0.1|  0.0|INFORM|Shared folders for coordinate system grid overrides are : C:\Users\Bruno\Documents\FME\CoordinateSystemGridOverrides
+2019-07-09 14:27:33|   0.1|  0.0|INFORM|Shared folders for CS-MAP transformation exceptions are : C:\Users\Bruno\Documents\FME\CsmapTransformationExceptions
+2019-07-09 14:27:33|   0.1|  0.0|INFORM|Shared folders for transformer categories are : C:\Users\Bruno\Documents\FME\TransformerCategories
+2019-07-09 14:27:33|   0.1|  0.0|INFORM|FME Configuration: Reader Keyword is `MULTI_READER'
+2019-07-09 14:27:33|   0.1|  0.0|INFORM|FME Configuration: Writer Keyword is `MULTI_WRITER'
+2019-07-09 14:27:33|   0.1|  0.0|INFORM|FME Configuration: Writer Group Definition Keyword is `MULTI_WRITER_DEF'
+2019-07-09 14:27:33|   0.1|  0.0|INFORM|FME Configuration: Reader type is `MULTI_READER'
+2019-07-09 14:27:33|   0.1|  0.0|INFORM|FME Configuration: Writer type is `MULTI_WRITER'
+2019-07-09 14:27:33|   0.1|  0.0|INFORM|FME Configuration: No destination coordinate system set
+2019-07-09 14:27:33|   0.1|  0.0|INFORM|FME Configuration: Current working folder is `C:\Users\Bruno\Documents\PID\Arquivos_finais'
+2019-07-09 14:27:33|   0.1|  0.0|INFORM|FME Configuration: Temporary folder is `C:\Users\Bruno\AppData\Local\Temp', set from environment variable `TEMP'
+2019-07-09 14:27:33|   0.1|  0.0|INFORM|FME Configuration: FME_HOME is `C:\Program Files\FME\'
+2019-07-09 14:27:33|   0.1|  0.0|INFORM|FME Configuration: FME_BASE is 'no'
+2019-07-09 14:27:33|   0.1|  0.0|INFORM|FME Configuration: FME_MF_DIR is 'C:\Users\Bruno\Documents\PID\Arquivos_finais/'
+2019-07-09 14:27:33|   0.1|  0.0|INFORM|FME Configuration: FME_MF_NAME is 'fme_mapeamento_MGCP_2_EDGV_30_ida.fmw'
+2019-07-09 14:27:33|   0.1|  0.0|INFORM|FME Configuration: FME_PRODUCT_NAME is 'FME(R) 2019.0.1.0'
+2019-07-09 14:27:33|   0.1|  0.0|INFORM|System Status: 112.15 GB of disk space available in the FME temporary folder (C:\Users\Bruno\AppData\Local\Temp)
+2019-07-09 14:27:33|   0.1|  0.0|INFORM|System Status: 128.00 TB of virtual memory available
+2019-07-09 14:27:33|   0.1|  0.0|INFORM|Operating System: Microsoft Windows 10 64-bit  (Build 17763)
+2019-07-09 14:27:33|   0.1|  0.0|INFORM|FME Platform: WIN64
+2019-07-09 14:27:33|   0.1|  0.0|INFORM|Locale: pt_BR
+2019-07-09 14:27:33|   0.1|  0.0|INFORM|Code Page: 1252  (ANSI - Latino I)
+2019-07-09 14:27:33|   0.1|  0.0|INFORM|FME Configuration: Process limit is 11.91 GB of physical memory
+2019-07-09 14:27:33|   0.1|  0.0|INFORM|FME Configuration: Start freeing memory when process usage exceeds 35.72 GB of virtual memory
+2019-07-09 14:27:33|   0.1|  0.0|INFORM|FME Configuration: Stop freeing memory when process usage is below 26.79 GB of virtual memory
+2019-07-09 14:27:33|   0.2|  0.0|INFORM|Creating writer for format: 
+2019-07-09 14:27:33|   0.2|  0.0|INFORM|Creating reader for format: 
+2019-07-09 14:27:33|   0.2|  0.0|INFORM|MULTI_READER(MULTI_READER): Will fail with first member reader failure
+2019-07-09 14:27:33|   0.2|  0.0|INFORM|Using Multi Reader with keyword `MULTI_READER' to read multiple datasets
+2019-07-09 14:27:33|   0.2|  0.0|INFORM|Using MultiWriter with keyword `MULTI_WRITER' to output data (ID_ATTRIBUTE is `multi_writer_id')
+2019-07-09 14:27:33|   0.2|  0.0|INFORM|Writer output will be ordered by value of multi_writer_id
+2019-07-09 14:27:33|   0.2|  0.0|INFORM|Loaded module 'LogCount_func' from file 'C:\Program Files\FME\plugins/LogCount_func.dll'
+2019-07-09 14:27:33|   0.2|  0.0|INFORM|FME API version of module 'LogCount_func' matches current internal version (3.8 20181030)
+2019-07-09 14:27:33|   0.2|  0.0|INFORM|Emptying factory pipeline
+2019-07-09 14:27:33|   0.2|  0.0|STATS |Router and Unexpected Input Remover (RoutingFactory): Tested 0 input feature(s), wrote 0 output feature(s): 0 matched merge filters, 0 were routed to output, 0 could not be routed.
+2019-07-09 14:27:33|   0.2|  0.0|STATS |Unexpected Input Remover Nuker (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2019-07-09 14:27:33|   0.2|  0.0|STATS |AAJ030 (ESRISHAPE_1) Splitter (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2019-07-09 14:27:33|   0.4|  0.3|STATS |Restoring 3682 feature(s) from FME feature store file `C:\Users\Bruno\AppData\Local\Temp\wb-cache-fme_mapeamento_MGCP_2_EDGV_30_id-AHIdZt\Main_AttributeCreator_2 -1 7 fo 0 OUTPUT  0  b938ba2882b8742bb072270a5354934bf5f9e8d6.ffs'
+2019-07-09 14:27:33|   0.4|  0.0|STATS |Restoring 12128 feature(s) from FME feature store file `C:\Users\Bruno\AppData\Local\Temp\wb-cache-fme_mapeamento_MGCP_2_EDGV_30_id-AHIdZt\Main_AttributeCreator_3 -1 8 fo 0 OUTPUT  0  49922c20db6bfdf2f4aef01198c9df99214a5791.ffs'
+2019-07-09 14:27:33|   0.5|  0.0|STATS |Restoring 1858 feature(s) from FME feature store file `C:\Users\Bruno\AppData\Local\Temp\wb-cache-fme_mapeamento_MGCP_2_EDGV_30_id-AHIdZt\Main_AttributeCreator -1 9 fo 0 OUTPUT  0  d7738991ff42dc6312f30e62043028b6e8821006.ffs'
+2019-07-09 14:27:33|   0.7|  0.3|INFORM|FME Configuration: Using connection values from 'edgv_pid' for R_1
+2019-07-09 14:27:33|   0.7|  0.0|INFORM|Creating reader for format: PostGIS
+2019-07-09 14:27:33|   0.8|  0.1|INFORM|Trying to find a DYNAMIC plugin for reader named `POSTGIS'
+2019-07-09 14:27:33|   0.8|  0.0|INFORM|Loaded module 'POSTGIS' from file 'C:\Program Files\FME\plugins/POSTGIS.dll'
+2019-07-09 14:27:33|   0.8|  0.0|INFORM|FME API version of module 'POSTGIS' matches current internal version (3.8 20181030)
+2019-07-09 14:27:33|   0.8|  0.0|INFORM|FME Configuration: Using connection values from 'edgv_pid' for R_1
+2019-07-09 14:27:33|   0.8|  0.0|INFORM|Creating reader for format: PostGIS
+2019-07-09 14:27:33|   0.8|  0.0|INFORM|Trying to find a DYNAMIC plugin for reader named `POSTGIS'
+2019-07-09 14:27:33|   0.8|  0.0|INFORM|FME API version of module 'POSTGIS' matches current internal version (3.8 20181030)
+2019-07-09 14:27:33|   0.8|  0.0|INFORM|Opening POSTGIS reader for dataset 'edgv_pid'
+2019-07-09 14:27:33|   0.8|  0.0|INFORM|PostGIS client encoding: 'UTF8'
+2019-07-09 14:27:33|   0.8|  0.0|INFORM|PostgreSQL 11.3, compiled by Visual C++ build 1914, 64-bit
+2019-07-09 14:27:33|   0.8|  0.0|INFORM|2.5 USE_GEOS=1 USE_PROJ=1 USE_STATS=1
+2019-07-09 14:27:38|   1.1|  0.3|INFORM|Successfully closed POSTGIS database reader
+2019-07-09 14:27:38|   1.1|  0.0|INFORM|... Last line repeated 2 times ...
+2019-07-09 14:27:38|   1.1|  0.0|INFORM|Reader `POSTGIS_1' of type `POSTGIS' provided schema for types: edgv.aer_pista_ponto_pouso_a,edgv.aer_pista_ponto_pouso_l,edgv.aer_pista_ponto_pouso_p,edgv.aux_descontinuidade_geometrica_l,edgv.aux_descontinuidade_geometrica_p,edgv.aux_moldura_a,edgv.cbge_area_agropec_ext_veg_pesca_a,edgv.cbge_area_construida_a,edgv.cbge_area_de_propriedade_particular_a,edgv.cbge_area_duto_a,edgv.cbge_area_habitacional_a,edgv.cbge_area_uso_especifico_a,edgv.cbge_canteiro_central_a,edgv.cbge_canteiro_central_l,edgv.cbge_cemiterio_a,edgv.cbge_cemiterio_p,edgv.cbge_delimitacao_fisica_l,edgv.cbge_deposito_geral_a,edgv.cbge_deposito_geral_p,edgv.cbge_entroncamento_area_a,edgv.cbge_espelho_dagua_a,edgv.cbge_estacionamento_a,edgv.cbge_largo_a,edgv.cbge_passeio_a,edgv.cbge_passeio_l,edgv.cbge_poste_p,edgv.cbge_praca_a,edgv.cbge_quadra_a,edgv.cbge_retorno_l,edgv.cbge_retorno_p,edgv.cbge_trecho_arruamento_a,edgv.cbge_trecho_arruamento_l,edgv.dut_galeria_bueiro_l,edgv.dut_galeria_bueiro_p,edgv.dut_trecho_duto_l,edgv.eco_equip_agropec_a,edgv.eco_equip_agropec_l,edgv.eco_equip_agropec_p,edgv.eco_ext_mineral_a,edgv.eco_ext_mineral_p,edgv.eco_plataforma_a,edgv.eco_plataforma_p,edgv.edf_banheiro_publico_a,edgv.edf_banheiro_publico_p,edgv.edf_edif_abast_agua_a,edgv.edf_edif_abast_agua_p,edgv.edf_edif_agropec_ext_veg_pesca_a,edgv.edf_edif_agropec_ext_veg_pesca_p,edgv.edf_edif_comerc_serv_a,edgv.edf_edif_comerc_serv_p,edgv.edf_edif_comunic_a,edgv.edf_edif_comunic_p,edgv.edf_edif_constr_aeroportuaria_a,edgv.edf_edif_constr_aeroportuaria_p,edgv.edf_edif_constr_est_med_fen_a,edgv.edf_edif_constr_est_med_fen_p,edgv.edf_edif_constr_lazer_a,edgv.edf_edif_constr_lazer_p,edgv.edf_edif_constr_portuaria_a,edgv.edf_edif_constr_portuaria_p,edgv.edf_edif_constr_turistica_a,edgv.edf_edif_constr_turistica_p,edgv.edf_edif_desenv_social_a,edgv.edf_edif_desenv_social_p,edgv.edf_edif_energia_a,edgv.edf_edif_energia_p,edgv.edf_edif_ensino_a,edgv.edf_edif_ensino_p,edgv.edf_edif_ext_mineral_a,edgv.edf_edif_ext_mineral_p,edgv.edf_edif_industrial_a,edgv.edf_edif_industrial_p,edgv.edf_edif_metro_ferroviaria_a,edgv.edf_edif_metro_ferroviaria_p,edgv.edf_edif_policia_a,edgv.edf_edif_policia_p,edgv.edf_edif_pub_civil_a,edgv.edf_edif_pub_civil_p,edgv.edf_edif_pub_militar_a,edgv.edf_edif_pub_militar_p,edgv.edf_edif_religiosa_a,edgv.edf_edif_religiosa_p,edgv.edf_edif_residencial_a,edgv.edf_edif_residencial_p,edgv.edf_edif_rodoviaria_a,edgv.edf_edif_rodoviaria_p,edgv.edf_edif_saneamento_a,edgv.edf_edif_saneamento_p,edgv.edf_edif_saude_a,edgv.edf_edif_saude_p,edgv.edf_edif_servico_social_a,edgv.edf_edif_servico_social_p,edgv.edf_edificacao_a,edgv.edf_edificacao_p,edgv.edf_hab_indigena_a,edgv.edf_hab_indigena_p,edgv.edf_posto_combustivel_a,edgv.edf_posto_combustivel_p,edgv.edf_posto_fiscal_a,edgv.edf_posto_fiscal_p,edgv.edf_posto_guarda_municipal_a,edgv.edf_posto_guarda_municipal_p,edgv.edf_posto_policia_militar_a,edgv.edf_posto_policia_militar_p,edgv.edf_posto_policia_rod_federal_a,edgv.edf_posto_policia_rod_federal_p,edgv.edf_representacao_diplomatica_a,edgv.edf_representacao_diplomatica_p,edgv.emu_acesso_a,edgv.emu_acesso_l,edgv.emu_acesso_p,edgv.emu_ciclovia_l,edgv.emu_elevador_a,edgv.emu_elevador_l,edgv.emu_elevador_p,edgv.emu_escadaria_a,edgv.emu_escadaria_l,edgv.emu_escadaria_p,edgv.emu_poste_sinalizacao_p,edgv.emu_rampa_a,edgv.emu_rampa_l,edgv.emu_rampa_p,edgv.enc_aerogerador_p,edgv.enc_antena_comunic_p,edgv.enc_casa_de_forca_p,edgv.enc_central_geradora_eolica_a,edgv.enc_central_geradora_eolica_l,edgv.enc_central_geradora_eolica_p,edgv.enc_est_gerad_energia_eletrica_a,edgv.enc_est_gerad_energia_eletrica_l,edgv.enc_est_gerad_energia_eletrica_p,edgv.enc_grupo_transformadores_a,edgv.enc_grupo_transformadores_p,edgv.enc_hidreletrica_a,edgv.enc_hidreletrica_l,edgv.enc_hidreletrica_p,edgv.enc_subest_transm_distrib_energia_eletrica_a,edgv.enc_termeletrica_a,edgv.enc_termeletrica_p,edgv.enc_torre_comunic_p,edgv.enc_torre_energia_p,edgv.enc_trecho_comunic_l,edgv.enc_trecho_energia_l,edgv.enc_zona_linhas_energia_comunicacao_a,edgv.fer_cremalheira_l,edgv.fer_cremalheira_p,edgv.fer_girador_ferroviario_p,edgv.fer_trecho_ferroviario_l,edgv.hdv_atracadouro_terminal_a,edgv.hdv_atracadouro_terminal_l,edgv.hdv_atracadouro_terminal_p,edgv.hdv_eclusa_a,edgv.hdv_eclusa_l,edgv.hdv_eclusa_p,edgv.hdv_fundeadouro_a,edgv.hdv_fundeadouro_p,edgv.hdv_obstaculo_navegacao_a,edgv.hdv_obstaculo_navegacao_l,edgv.hdv_obstaculo_navegacao_p,edgv.hdv_sinalizacao_p,edgv.hdv_trecho_hidroviario_l,edgv.hid_area_umida_a,edgv.hid_banco_areia_a,edgv.hid_banco_areia_l,edgv.hid_barragem_a,edgv.hid_barragem_l,edgv.hid_barragem_p,edgv.hid_canal_a,edgv.hid_canal_l,edgv.hid_comporta_l,edgv.hid_comporta_p,edgv.hid_corredeira_a,edgv.hid_corredeira_l,edgv.hid_corredeira_p,edgv.hid_dique_a,edgv.hid_dique_l,edgv.hid_dique_p,edgv.hid_fonte_dagua_p,edgv.hid_foz_maritima_a,edgv.hid_foz_maritima_l,edgv.hid_foz_maritima_p,edgv.hid_ilha_a,edgv.hid_ilha_p,edgv.hid_massa_dagua_a,edgv.hid_quebramar_molhe_a,edgv.hid_quebramar_molhe_l,edgv.hid_queda_dagua_a,edgv.hid_queda_dagua_l,edgv.hid_queda_dagua_p,edgv.hid_recife_a,edgv.hid_recife_l,edgv.hid_recife_p,edgv.hid_rocha_em_agua_a,edgv.hid_rocha_em_agua_p,edgv.hid_sumidouro_vertedouro_p,edgv.hid_terreno_sujeito_inundacao_a,edgv.hid_trecho_drenagem_l,edgv.hid_vala_a,edgv.hid_vala_l,edgv.laz_arquibancada_a,edgv.laz_arquibancada_l,edgv.laz_campo_quadra_a,edgv.laz_campo_quadra_p,edgv.laz_piscina_a,edgv.laz_pista_competicao_a,edgv.laz_pista_competicao_l,edgv.laz_pista_competicao_p,edgv.laz_ruina_a,edgv.laz_ruina_p,edgv.laz_sitio_arqueologico_a,edgv.laz_sitio_arqueologico_p,edgv.lim_limite_area_especial_l,edgv.lim_limite_politico_adm_l,edgv.lml_area_densamente_edificada_a,edgv.lml_area_pub_militar_a,edgv.lml_area_urbana_isolada_a,edgv.lml_distrito_a,edgv.lml_municipio_a,edgv.lml_nome_local_p,edgv.lml_pais_a,edgv.lml_posic_geo_localidade_p,edgv.lml_terra_indigena_a,edgv.lml_terra_publica_a,edgv.lml_unidade_conservacao_a,edgv.lml_unidade_federacao_a,edgv.lml_unidade_protecao_integral_a,edgv.lml_unidade_uso_sustentavel_a,edgv.pto_marco_de_limite_p,edgv.pto_pto_est_med_fenomenos_p,edgv.pto_pto_geod_topo_controle_p,edgv.pto_pto_ref_geod_topo_p,edgv.rel_alteracao_fisiografica_antropica_a,edgv.rel_alteracao_fisiografica_antropica_l,edgv.rel_alteracao_fisiografica_antropica_p,edgv.rel_aterro_a,edgv.rel_aterro_l,edgv.rel_aterro_p,edgv.rel_corte_a,edgv.rel_corte_l,edgv.rel_corte_p,edgv.rel_curva_batimetrica_l,edgv.rel_curva_nivel_l,edgv.rel_dolina_a,edgv.rel_dolina_p,edgv.rel_duna_a,edgv.rel_duna_l,edgv.rel_duna_p,edgv.rel_elemento_fisiografico_natural_a,edgv.rel_elemento_fisiografico_natural_l,edgv.rel_elemento_fisiografico_natural_p,edgv.rel_gruta_caverna_l,edgv.rel_gruta_caverna_p,edgv.rel_pico_p,edgv.rel_ponto_cotado_altimetrico_p,edgv.rel_ponto_cotado_batimetrico_p,edgv.rel_rocha_a,edgv.rel_rocha_l,edgv.rel_rocha_p,edgv.rel_terreno_exposto_a,edgv.rod_trecho_rodoviario_a,edgv.rod_trecho_rodoviario_l,edgv.snb_barragem_calcadao_a,edgv.snb_dep_abast_agua_a,edgv.snb_dep_abast_agua_p,edgv.snb_dep_saneamento_a,edgv.snb_dep_saneamento_p,edgv.tra_caminho_aereo_l,edgv.tra_caminho_carrocavel_l,edgv.tra_entroncamento_pto_p,edgv.tra_funicular_l,edgv.tra_passagem_elevada_viaduto_a,edgv.tra_passagem_elevada_viaduto_l,edgv.tra_passagem_elevada_viaduto_p,edgv.tra_passagem_nivel_p,edgv.tra_patio_a,edgv.tra_ponte_a,edgv.tra_ponte_l,edgv.tra_ponte_p,edgv.tra_travessia_l,edgv.tra_travessia_p,edgv.tra_travessia_pedestre_l,edgv.tra_travessia_pedestre_p,edgv.tra_travessia_pedrestre_a,edgv.tra_trilha_picada_l,edgv.tra_tunel_a,edgv.tra_tunel_l,edgv.tra_tunel_p,edgv.veg_brejo_pantano_a,edgv.veg_caatinga_a,edgv.veg_campinarana_a,edgv.veg_campo_a,edgv.veg_cerrado_a,edgv.veg_floresta_a,edgv.veg_mangue_a,edgv.veg_reflorestamento_a,edgv.veg_veg_area_contato_a,edgv.veg_veg_cultivada_a,edgv.veg_veg_restinga_a,edgv.ver_arvore_isolada_p,edgv.ver_jardim_a
+2019-07-09 14:27:38|   1.3|  0.2|INFORM|FME Configuration: Using connection values from 'edgv_pid' for POSTGIS_2
+2019-07-09 14:27:38|   1.3|  0.0|INFORM|Creating writer for format: PostGIS
+2019-07-09 14:27:38|   1.3|  0.0|INFORM|Trying to find a DYNAMIC plugin for writer named `POSTGIS'
+2019-07-09 14:27:38|   1.3|  0.0|INFORM|FME API version of module 'POSTGIS' matches current internal version (3.8 20181030)
+2019-07-09 14:27:38|   1.3|  0.0|INFORM|FME Configuration: No destination coordinate system set
+2019-07-09 14:27:38|   1.3|  0.0|INFORM|FME API version of module 'POSTGIS' matches current internal version (3.8 20181030)
+2019-07-09 14:27:38|   1.3|  0.0|INFORM|Writer `POSTGIS_2' of type `POSTGIS' using group definition keyword `POSTGIS_2_DEF'
+2019-07-09 14:27:38|   1.3|  0.0|INFORM|FME API version of module 'POSTGIS' matches current internal version (3.8 20181030)
+2019-07-09 14:27:38|   1.3|  0.0|INFORM|Opening POSTGIS writer for dataset 'edgv_pid'...
+2019-07-09 14:27:38|   1.3|  0.0|INFORM|PostGIS client encoding: 'UTF8'
+2019-07-09 14:27:38|   1.3|  0.0|INFORM|PostgreSQL 11.3, compiled by Visual C++ build 1914, 64-bit
+2019-07-09 14:27:38|   1.3|  0.0|INFORM|2.5 USE_GEOS=1 USE_PROJ=1 USE_STATS=1
+2019-07-09 14:27:38|   1.4|  0.1|INFORM|Testing for the existence of table 'edgv.edf_edif_agropec_ext_veg_pesca_p'...
+2019-07-09 14:27:38|   1.4|  0.0|INFORM|Using existing table 'edgv.edf_edif_agropec_ext_veg_pesca_p'
+2019-07-09 14:27:38|   1.4|  0.0|INFORM|POSTGIS Writer: Creating 'unquoted WKB' geometry processor for feature type 'edgv.edf_edif_agropec_ext_veg_pesca_p'
+2019-07-09 14:27:38|   1.4|  0.0|INFORM|POSTGIS Writer: Creating 'streaming Bulk Copy' feature type processor for feature type 'edgv.edf_edif_agropec_ext_veg_pesca_p'
+2019-07-09 14:27:38|   1.5|  0.1|INFORM|Testing for the existence of table 'edgv.edf_edif_residencial_p'...
+2019-07-09 14:27:38|   1.5|  0.0|INFORM|Using existing table 'edgv.edf_edif_residencial_p'
+2019-07-09 14:27:38|   1.5|  0.0|INFORM|POSTGIS Writer: Creating 'unquoted WKB' geometry processor for feature type 'edgv.edf_edif_residencial_p'
+2019-07-09 14:27:38|   1.5|  0.0|INFORM|POSTGIS Writer: Creating 'batched Bulk Copy' feature type processor for feature type 'edgv.edf_edif_residencial_p'
+2019-07-09 14:27:38|   1.5|  0.0|INFORM|Testing for the existence of table 'edgv.edf_edificacao_p'...
+2019-07-09 14:27:38|   1.5|  0.0|INFORM|Using existing table 'edgv.edf_edificacao_p'
+2019-07-09 14:27:38|   1.5|  0.0|INFORM|POSTGIS Writer: Creating 'unquoted WKB' geometry processor for feature type 'edgv.edf_edificacao_p'
+2019-07-09 14:27:38|   1.5|  0.0|INFORM|POSTGIS Writer: Creating 'batched Bulk Copy' feature type processor for feature type 'edgv.edf_edificacao_p'
+2019-07-09 14:27:38|   1.5|  0.0|INFORM|AttributeCreator_OUTPUT_-1_34_Player (RecorderFactory): Playing back feature 500
+2019-07-09 14:27:38|   1.6|  0.1|INFORM|Committed transaction at feature '1000'
+2019-07-09 14:27:39|   1.6|  0.0|INFORM|Testing for the existence of table 'edgv.edf_edif_pub_civil_p'...
+2019-07-09 14:27:39|   1.6|  0.0|INFORM|Using existing table 'edgv.edf_edif_pub_civil_p'
+2019-07-09 14:27:39|   1.6|  0.0|INFORM|POSTGIS Writer: Creating 'unquoted WKB' geometry processor for feature type 'edgv.edf_edif_pub_civil_p'
+2019-07-09 14:27:39|   1.6|  0.0|INFORM|POSTGIS Writer: Creating 'batched Bulk Copy' feature type processor for feature type 'edgv.edf_edif_pub_civil_p'
+2019-07-09 14:27:39|   1.6|  0.0|INFORM|Testing for the existence of table 'edgv.cbge_deposito_geral_p'...
+2019-07-09 14:27:39|   1.6|  0.0|INFORM|Using existing table 'edgv.cbge_deposito_geral_p'
+2019-07-09 14:27:39|   1.6|  0.0|INFORM|POSTGIS Writer: Creating 'unquoted WKB' geometry processor for feature type 'edgv.cbge_deposito_geral_p'
+2019-07-09 14:27:39|   1.6|  0.0|INFORM|POSTGIS Writer: Creating 'batched Bulk Copy' feature type processor for feature type 'edgv.cbge_deposito_geral_p'
+2019-07-09 14:27:39|   1.7|  0.0|INFORM|Testing for the existence of table 'edgv.lml_posic_geo_localidade_p'...
+2019-07-09 14:27:39|   1.7|  0.0|INFORM|Using existing table 'edgv.lml_posic_geo_localidade_p'
+2019-07-09 14:27:39|   1.7|  0.0|INFORM|POSTGIS Writer: Creating 'unquoted WKB' geometry processor for feature type 'edgv.lml_posic_geo_localidade_p'
+2019-07-09 14:27:39|   1.7|  0.0|INFORM|POSTGIS Writer: Creating 'batched Bulk Copy' feature type processor for feature type 'edgv.lml_posic_geo_localidade_p'
+2019-07-09 14:27:39|   1.7|  0.0|INFORM|Testing for the existence of table 'edgv.edf_hab_indigena_p'...
+2019-07-09 14:27:39|   1.7|  0.0|INFORM|Using existing table 'edgv.edf_hab_indigena_p'
+2019-07-09 14:27:39|   1.7|  0.0|INFORM|POSTGIS Writer: Creating 'unquoted WKB' geometry processor for feature type 'edgv.edf_hab_indigena_p'
+2019-07-09 14:27:39|   1.7|  0.0|INFORM|POSTGIS Writer: Creating 'batched Bulk Copy' feature type processor for feature type 'edgv.edf_hab_indigena_p'
+2019-07-09 14:27:39|   1.7|  0.0|INFORM|Testing for the existence of table 'edgv.enc_torre_comunic_p'...
+2019-07-09 14:27:39|   1.7|  0.0|INFORM|Using existing table 'edgv.enc_torre_comunic_p'
+2019-07-09 14:27:39|   1.7|  0.0|INFORM|POSTGIS Writer: Creating 'unquoted WKB' geometry processor for feature type 'edgv.enc_torre_comunic_p'
+2019-07-09 14:27:39|   1.7|  0.0|INFORM|POSTGIS Writer: Creating 'batched Bulk Copy' feature type processor for feature type 'edgv.enc_torre_comunic_p'
+2019-07-09 14:27:39|   1.7|  0.0|INFORM|Testing for the existence of table 'edgv.snb_dep_abast_agua_p'...
+2019-07-09 14:27:39|   1.7|  0.0|INFORM|Using existing table 'edgv.snb_dep_abast_agua_p'
+2019-07-09 14:27:39|   1.7|  0.0|INFORM|POSTGIS Writer: Creating 'unquoted WKB' geometry processor for feature type 'edgv.snb_dep_abast_agua_p'
+2019-07-09 14:27:39|   1.7|  0.0|INFORM|POSTGIS Writer: Creating 'batched Bulk Copy' feature type processor for feature type 'edgv.snb_dep_abast_agua_p'
+2019-07-09 14:27:39|   1.7|  0.0|INFORM|Testing for the existence of table 'edgv.dut_galeria_bueiro_p'...
+2019-07-09 14:27:39|   1.7|  0.0|INFORM|Using existing table 'edgv.dut_galeria_bueiro_p'
+2019-07-09 14:27:39|   1.7|  0.0|INFORM|POSTGIS Writer: Creating 'unquoted WKB' geometry processor for feature type 'edgv.dut_galeria_bueiro_p'
+2019-07-09 14:27:39|   1.7|  0.0|INFORM|POSTGIS Writer: Creating 'batched Bulk Copy' feature type processor for feature type 'edgv.dut_galeria_bueiro_p'
+2019-07-09 14:27:39|   1.7|  0.0|INFORM|Testing for the existence of table 'edgv.tra_travessia_p'...
+2019-07-09 14:27:39|   1.7|  0.0|INFORM|Using existing table 'edgv.tra_travessia_p'
+2019-07-09 14:27:39|   1.7|  0.0|INFORM|POSTGIS Writer: Creating 'unquoted WKB' geometry processor for feature type 'edgv.tra_travessia_p'
+2019-07-09 14:27:39|   1.7|  0.0|INFORM|POSTGIS Writer: Creating 'batched Bulk Copy' feature type processor for feature type 'edgv.tra_travessia_p'
+2019-07-09 14:27:39|   1.7|  0.0|INFORM|Testing for the existence of table 'edgv.hid_sumidouro_vertedouro_p'...
+2019-07-09 14:27:39|   1.7|  0.0|INFORM|Using existing table 'edgv.hid_sumidouro_vertedouro_p'
+2019-07-09 14:27:39|   1.7|  0.0|INFORM|POSTGIS Writer: Creating 'unquoted WKB' geometry processor for feature type 'edgv.hid_sumidouro_vertedouro_p'
+2019-07-09 14:27:39|   1.7|  0.0|INFORM|POSTGIS Writer: Creating 'batched Bulk Copy' feature type processor for feature type 'edgv.hid_sumidouro_vertedouro_p'
+2019-07-09 14:27:39|   1.7|  0.0|INFORM|Testing for the existence of table 'edgv.edf_edif_constr_aeroportuaria_p'...
+2019-07-09 14:27:39|   1.7|  0.0|INFORM|Using existing table 'edgv.edf_edif_constr_aeroportuaria_p'
+2019-07-09 14:27:39|   1.7|  0.0|INFORM|POSTGIS Writer: Creating 'unquoted WKB' geometry processor for feature type 'edgv.edf_edif_constr_aeroportuaria_p'
+2019-07-09 14:27:39|   1.7|  0.0|INFORM|POSTGIS Writer: Creating 'batched Bulk Copy' feature type processor for feature type 'edgv.edf_edif_constr_aeroportuaria_p'
+2019-07-09 14:27:39|   1.7|  0.0|INFORM|Testing for the existence of table 'edgv.lml_nome_local_p'...
+2019-07-09 14:27:39|   1.7|  0.0|INFORM|Using existing table 'edgv.lml_nome_local_p'
+2019-07-09 14:27:39|   1.7|  0.0|INFORM|POSTGIS Writer: Creating 'unquoted WKB' geometry processor for feature type 'edgv.lml_nome_local_p'
+2019-07-09 14:27:39|   1.7|  0.0|INFORM|POSTGIS Writer: Creating 'batched Bulk Copy' feature type processor for feature type 'edgv.lml_nome_local_p'
+2019-07-09 14:27:39|   1.8|  0.0|INFORM|AttributeCreator_OUTPUT_-1_34_Player (RecorderFactory): Played back 1858 feature(s) from file `C:\Users\Bruno\AppData\Local\Temp\wb-cache-fme_mapeamento_MGCP_2_EDGV_30_id-AHIdZt\Main_AttributeCreator -1 9 fo 0 OUTPUT  0  d7738991ff42dc6312f30e62043028b6e8821006.ffs'
+2019-07-09 14:27:39|   1.8|  0.0|INFORM|Testing for the existence of table 'edgv.edf_edif_agropec_ext_veg_pesca_a'...
+2019-07-09 14:27:39|   1.8|  0.0|INFORM|Using existing table 'edgv.edf_edif_agropec_ext_veg_pesca_a'
+2019-07-09 14:27:39|   1.8|  0.0|INFORM|POSTGIS Writer: Creating 'unquoted WKB' geometry processor for feature type 'edgv.edf_edif_agropec_ext_veg_pesca_a'
+2019-07-09 14:27:39|   1.8|  0.0|INFORM|POSTGIS Writer: Creating 'batched Bulk Copy' feature type processor for feature type 'edgv.edf_edif_agropec_ext_veg_pesca_a'
+2019-07-09 14:27:39|   1.8|  0.0|INFORM|Testing for the existence of table 'edgv.edf_edif_residencial_a'...
+2019-07-09 14:27:39|   1.8|  0.0|INFORM|Using existing table 'edgv.edf_edif_residencial_a'
+2019-07-09 14:27:39|   1.8|  0.0|INFORM|POSTGIS Writer: Creating 'unquoted WKB' geometry processor for feature type 'edgv.edf_edif_residencial_a'
+2019-07-09 14:27:39|   1.8|  0.0|INFORM|POSTGIS Writer: Creating 'batched Bulk Copy' feature type processor for feature type 'edgv.edf_edif_residencial_a'
+2019-07-09 14:27:39|   1.8|  0.0|INFORM|Testing for the existence of table 'edgv.edf_edificacao_a'...
+2019-07-09 14:27:39|   1.8|  0.0|INFORM|Using existing table 'edgv.edf_edificacao_a'
+2019-07-09 14:27:39|   1.8|  0.0|INFORM|POSTGIS Writer: Creating 'unquoted WKB' geometry processor for feature type 'edgv.edf_edificacao_a'
+2019-07-09 14:27:39|   1.8|  0.0|INFORM|POSTGIS Writer: Creating 'batched Bulk Copy' feature type processor for feature type 'edgv.edf_edificacao_a'
+2019-07-09 14:27:39|   1.8|  0.0|INFORM|Testing for the existence of table 'edgv.hid_ilha_a'...
+2019-07-09 14:27:39|   1.8|  0.0|INFORM|Using existing table 'edgv.hid_ilha_a'
+2019-07-09 14:27:39|   1.8|  0.0|INFORM|POSTGIS Writer: Creating 'unquoted WKB' geometry processor for feature type 'edgv.hid_ilha_a'
+2019-07-09 14:27:39|   1.8|  0.0|INFORM|POSTGIS Writer: Creating 'batched Bulk Copy' feature type processor for feature type 'edgv.hid_ilha_a'
+2019-07-09 14:27:39|   1.8|  0.0|INFORM|Testing for the existence of table 'edgv.hid_massa_dagua_a'...
+2019-07-09 14:27:39|   1.8|  0.0|INFORM|Using existing table 'edgv.hid_massa_dagua_a'
+2019-07-09 14:27:39|   1.8|  0.0|INFORM|POSTGIS Writer: Creating 'unquoted WKB' geometry processor for feature type 'edgv.hid_massa_dagua_a'
+2019-07-09 14:27:39|   1.8|  0.0|INFORM|POSTGIS Writer: Creating 'batched Bulk Copy' feature type processor for feature type 'edgv.hid_massa_dagua_a'
+2019-07-09 14:27:39|   1.9|  0.1|INFORM|Committed transaction at feature '2000'
+2019-07-09 14:27:39|   1.9|  0.0|INFORM|POSTGIS Writer: Promoting feature type 'edgv.cbge_deposito_geral_p' to streaming Bulk Copy and demoting feature type 'edgv.edf_edif_agropec_ext_veg_pesca_p' for optimization
+2019-07-09 14:27:39|   1.9|  0.0|INFORM|POSTGIS Writer: Creating 'unquoted WKB' geometry processor for feature type 'edgv.edf_edif_agropec_ext_veg_pesca_p'
+2019-07-09 14:27:39|   1.9|  0.0|INFORM|POSTGIS Writer: Creating 'unquoted WKB' geometry processor for feature type 'edgv.cbge_deposito_geral_p'
+2019-07-09 14:27:39|   1.9|  0.0|INFORM|Testing for the existence of table 'edgv.hid_terreno_sujeito_inundacao_a'...
+2019-07-09 14:27:39|   1.9|  0.0|INFORM|Using existing table 'edgv.hid_terreno_sujeito_inundacao_a'
+2019-07-09 14:27:39|   1.9|  0.0|INFORM|POSTGIS Writer: Creating 'unquoted WKB' geometry processor for feature type 'edgv.hid_terreno_sujeito_inundacao_a'
+2019-07-09 14:27:39|   1.9|  0.0|INFORM|POSTGIS Writer: Creating 'batched Bulk Copy' feature type processor for feature type 'edgv.hid_terreno_sujeito_inundacao_a'
+2019-07-09 14:27:39|   1.9|  0.0|INFORM|AttributeCreator_3_OUTPUT_-1_37_Player (RecorderFactory): Playing back feature 500
+2019-07-09 14:27:40|   2.1|  0.2|INFORM|Committed transaction at feature '3000'
+2019-07-09 14:27:40|   2.1|  0.0|INFORM|POSTGIS Writer: Promoting feature type 'edgv.hid_terreno_sujeito_inundacao_a' to streaming Bulk Copy and demoting feature type 'edgv.cbge_deposito_geral_p' for optimization
+2019-07-09 14:27:40|   2.1|  0.0|INFORM|POSTGIS Writer: Creating 'unquoted WKB' geometry processor for feature type 'edgv.cbge_deposito_geral_p'
+2019-07-09 14:27:40|   2.1|  0.0|INFORM|POSTGIS Writer: Creating 'unquoted WKB' geometry processor for feature type 'edgv.hid_terreno_sujeito_inundacao_a'
+2019-07-09 14:27:41|   2.5|  0.4|INFORM|Committed transaction at feature '4000'
+2019-07-09 14:27:41|   2.5|  0.0|INFORM|Testing for the existence of table 'edgv.veg_campo_a'...
+2019-07-09 14:27:41|   2.5|  0.0|INFORM|Using existing table 'edgv.veg_campo_a'
+2019-07-09 14:27:41|   2.5|  0.0|INFORM|POSTGIS Writer: Creating 'unquoted WKB' geometry processor for feature type 'edgv.veg_campo_a'
+2019-07-09 14:27:41|   2.5|  0.0|INFORM|POSTGIS Writer: Creating 'batched Bulk Copy' feature type processor for feature type 'edgv.veg_campo_a'
+2019-07-09 14:27:41|   2.7|  0.2|INFORM|Committed transaction at feature '5000'
+2019-07-09 14:27:41|   2.7|  0.0|INFORM|POSTGIS Writer: Promoting feature type 'edgv.veg_campo_a' to streaming Bulk Copy and demoting feature type 'edgv.hid_terreno_sujeito_inundacao_a' for optimization
+2019-07-09 14:27:41|   2.7|  0.0|INFORM|POSTGIS Writer: Creating 'unquoted WKB' geometry processor for feature type 'edgv.hid_terreno_sujeito_inundacao_a'
+2019-07-09 14:27:41|   2.7|  0.0|INFORM|POSTGIS Writer: Creating 'unquoted WKB' geometry processor for feature type 'edgv.veg_campo_a'
+2019-07-09 14:27:41|   3.0|  0.3|INFORM|Committed transaction at feature '6000'
+2019-07-09 14:27:42|   3.4|  0.4|INFORM|Testing for the existence of table 'edgv.veg_cerrado_a'...
+2019-07-09 14:27:42|   3.4|  0.0|INFORM|Using existing table 'edgv.veg_cerrado_a'
+2019-07-09 14:27:42|   3.4|  0.0|INFORM|POSTGIS Writer: Creating 'unquoted WKB' geometry processor for feature type 'edgv.veg_cerrado_a'
+2019-07-09 14:27:42|   3.4|  0.0|INFORM|POSTGIS Writer: Creating 'batched Bulk Copy' feature type processor for feature type 'edgv.veg_cerrado_a'
+2019-07-09 14:27:42|   3.4|  0.0|INFORM|Committed transaction at feature '7000'
+2019-07-09 14:27:43|   3.5|  0.2|INFORM|Committed transaction at feature '8000'
+2019-07-09 14:27:43|   3.5|  0.0|INFORM|POSTGIS Writer: Promoting feature type 'edgv.veg_cerrado_a' to streaming Bulk Copy and demoting feature type 'edgv.veg_campo_a' for optimization
+2019-07-09 14:27:43|   3.5|  0.0|INFORM|POSTGIS Writer: Creating 'unquoted WKB' geometry processor for feature type 'edgv.veg_campo_a'
+2019-07-09 14:27:43|   3.5|  0.0|INFORM|POSTGIS Writer: Creating 'unquoted WKB' geometry processor for feature type 'edgv.veg_cerrado_a'
+2019-07-09 14:27:43|   3.8|  0.2|INFORM|Committed transaction at feature '9000'
+2019-07-09 14:27:43|   4.0|  0.2|INFORM|Committed transaction at feature '10000'
+2019-07-09 14:27:43|   4.2|  0.2|INFORM|Committed transaction at feature '11000'
+2019-07-09 14:27:43|   4.2|  0.0|INFORM|Testing for the existence of table 'edgv.veg_floresta_a'...
+2019-07-09 14:27:44|   4.2|  0.0|INFORM|Using existing table 'edgv.veg_floresta_a'
+2019-07-09 14:27:44|   4.2|  0.0|INFORM|POSTGIS Writer: Creating 'unquoted WKB' geometry processor for feature type 'edgv.veg_floresta_a'
+2019-07-09 14:27:44|   4.2|  0.0|INFORM|POSTGIS Writer: Creating 'batched Bulk Copy' feature type processor for feature type 'edgv.veg_floresta_a'
+2019-07-09 14:27:44|   4.2|  0.0|INFORM|AttributeCreator_3_OUTPUT_-1_37_Player (RecorderFactory): Playing back feature 9500
+2019-07-09 14:27:44|   4.3|  0.1|INFORM|Committed transaction at feature '12000'
+2019-07-09 14:27:44|   4.3|  0.0|INFORM|POSTGIS Writer: Promoting feature type 'edgv.veg_floresta_a' to streaming Bulk Copy and demoting feature type 'edgv.veg_cerrado_a' for optimization
+2019-07-09 14:27:44|   4.3|  0.0|INFORM|POSTGIS Writer: Creating 'unquoted WKB' geometry processor for feature type 'edgv.veg_cerrado_a'
+2019-07-09 14:27:44|   4.3|  0.0|INFORM|POSTGIS Writer: Creating 'unquoted WKB' geometry processor for feature type 'edgv.veg_floresta_a'
+2019-07-09 14:27:44|   4.6|  0.3|INFORM|Committed transaction at feature '13000'
+2019-07-09 14:27:45|   4.8|  0.2|INFORM|Testing for the existence of table 'edgv.veg_brejo_pantano_a'...
+2019-07-09 14:27:45|   4.8|  0.0|INFORM|Using existing table 'edgv.veg_brejo_pantano_a'
+2019-07-09 14:27:45|   4.8|  0.0|INFORM|POSTGIS Writer: Creating 'unquoted WKB' geometry processor for feature type 'edgv.veg_brejo_pantano_a'
+2019-07-09 14:27:45|   4.8|  0.0|INFORM|POSTGIS Writer: Creating 'batched Bulk Copy' feature type processor for feature type 'edgv.veg_brejo_pantano_a'
+2019-07-09 14:27:45|   4.8|  0.0|INFORM|Testing for the existence of table 'edgv.cbge_area_uso_especifico_a'...
+2019-07-09 14:27:45|   4.8|  0.0|INFORM|Using existing table 'edgv.cbge_area_uso_especifico_a'
+2019-07-09 14:27:45|   4.8|  0.0|INFORM|POSTGIS Writer: Creating 'unquoted WKB' geometry processor for feature type 'edgv.cbge_area_uso_especifico_a'
+2019-07-09 14:27:45|   4.8|  0.0|INFORM|POSTGIS Writer: Creating 'batched Bulk Copy' feature type processor for feature type 'edgv.cbge_area_uso_especifico_a'
+2019-07-09 14:27:45|   4.8|  0.0|INFORM|Testing for the existence of table 'edgv.tra_patio_a'...
+2019-07-09 14:27:45|   4.8|  0.0|INFORM|Using existing table 'edgv.tra_patio_a'
+2019-07-09 14:27:45|   4.8|  0.0|INFORM|POSTGIS Writer: Creating 'unquoted WKB' geometry processor for feature type 'edgv.tra_patio_a'
+2019-07-09 14:27:45|   4.8|  0.0|INFORM|POSTGIS Writer: Creating 'batched Bulk Copy' feature type processor for feature type 'edgv.tra_patio_a'
+2019-07-09 14:27:45|   4.8|  0.0|INFORM|Testing for the existence of table 'edgv.aer_pista_ponto_pouso_a'...
+2019-07-09 14:27:45|   4.8|  0.0|INFORM|Using existing table 'edgv.aer_pista_ponto_pouso_a'
+2019-07-09 14:27:45|   4.8|  0.0|INFORM|POSTGIS Writer: Creating 'unquoted WKB' geometry processor for feature type 'edgv.aer_pista_ponto_pouso_a'
+2019-07-09 14:27:45|   4.8|  0.0|INFORM|POSTGIS Writer: Creating 'batched Bulk Copy' feature type processor for feature type 'edgv.aer_pista_ponto_pouso_a'
+2019-07-09 14:27:45|   4.8|  0.0|INFORM|AttributeCreator_3_OUTPUT_-1_37_Player (RecorderFactory): Played back 12128 feature(s) from file `C:\Users\Bruno\AppData\Local\Temp\wb-cache-fme_mapeamento_MGCP_2_EDGV_30_id-AHIdZt\Main_AttributeCreator_3 -1 8 fo 0 OUTPUT  0  49922c20db6bfdf2f4aef01198c9df99214a5791.ffs'
+2019-07-09 14:27:45|   4.8|  0.0|INFORM|Testing for the existence of table 'edgv.tra_caminho_carrocavel_l'...
+2019-07-09 14:27:45|   4.8|  0.0|INFORM|Using existing table 'edgv.tra_caminho_carrocavel_l'
+2019-07-09 14:27:45|   4.8|  0.0|INFORM|POSTGIS Writer: Creating 'unquoted WKB' geometry processor for feature type 'edgv.tra_caminho_carrocavel_l'
+2019-07-09 14:27:45|   4.8|  0.0|INFORM|POSTGIS Writer: Creating 'batched Bulk Copy' feature type processor for feature type 'edgv.tra_caminho_carrocavel_l'
+2019-07-09 14:27:45|   4.9|  0.0|INFORM|Committed transaction at feature '14000'
+2019-07-09 14:27:45|   4.9|  0.1|INFORM|AttributeCreator_2_OUTPUT_-1_35_Player (RecorderFactory): Playing back feature 500
+2019-07-09 14:27:45|   4.9|  0.0|INFORM|Testing for the existence of table 'edgv.rod_trecho_rodoviario_l'...
+2019-07-09 14:27:45|   4.9|  0.0|INFORM|Using existing table 'edgv.rod_trecho_rodoviario_l'
+2019-07-09 14:27:45|   4.9|  0.0|INFORM|POSTGIS Writer: Creating 'unquoted WKB' geometry processor for feature type 'edgv.rod_trecho_rodoviario_l'
+2019-07-09 14:27:45|   4.9|  0.0|INFORM|POSTGIS Writer: Creating 'batched Bulk Copy' feature type processor for feature type 'edgv.rod_trecho_rodoviario_l'
+2019-07-09 14:27:45|   5.0|  0.1|INFORM|Committed transaction at feature '15000'
+2019-07-09 14:27:45|   5.0|  0.0|INFORM|POSTGIS Writer: Promoting feature type 'edgv.tra_caminho_carrocavel_l' to streaming Bulk Copy and demoting feature type 'edgv.veg_floresta_a' for optimization
+2019-07-09 14:27:45|   5.0|  0.0|INFORM|POSTGIS Writer: Creating 'unquoted WKB' geometry processor for feature type 'edgv.veg_floresta_a'
+2019-07-09 14:27:45|   5.0|  0.0|INFORM|POSTGIS Writer: Creating 'unquoted WKB' geometry processor for feature type 'edgv.tra_caminho_carrocavel_l'
+2019-07-09 14:27:45|   5.1|  0.0|INFORM|Testing for the existence of table 'edgv.tra_trilha_picada_l'...
+2019-07-09 14:27:45|   5.1|  0.0|INFORM|Using existing table 'edgv.tra_trilha_picada_l'
+2019-07-09 14:27:45|   5.1|  0.0|INFORM|POSTGIS Writer: Creating 'unquoted WKB' geometry processor for feature type 'edgv.tra_trilha_picada_l'
+2019-07-09 14:27:45|   5.1|  0.0|INFORM|POSTGIS Writer: Creating 'batched Bulk Copy' feature type processor for feature type 'edgv.tra_trilha_picada_l'
+2019-07-09 14:27:45|   5.1|  0.0|INFORM|Testing for the existence of table 'edgv.tra_ponte_l'...
+2019-07-09 14:27:45|   5.1|  0.0|INFORM|Using existing table 'edgv.tra_ponte_l'
+2019-07-09 14:27:45|   5.1|  0.0|INFORM|POSTGIS Writer: Creating 'unquoted WKB' geometry processor for feature type 'edgv.tra_ponte_l'
+2019-07-09 14:27:45|   5.1|  0.0|INFORM|POSTGIS Writer: Creating 'batched Bulk Copy' feature type processor for feature type 'edgv.tra_ponte_l'
+2019-07-09 14:27:45|   5.1|  0.0|INFORM|Testing for the existence of table 'edgv.tra_travessia_l'...
+2019-07-09 14:27:45|   5.1|  0.0|INFORM|Using existing table 'edgv.tra_travessia_l'
+2019-07-09 14:27:45|   5.1|  0.0|INFORM|POSTGIS Writer: Creating 'unquoted WKB' geometry processor for feature type 'edgv.tra_travessia_l'
+2019-07-09 14:27:45|   5.1|  0.0|INFORM|POSTGIS Writer: Creating 'batched Bulk Copy' feature type processor for feature type 'edgv.tra_travessia_l'
+2019-07-09 14:27:45|   5.1|  0.0|INFORM|Testing for the existence of table 'edgv.hid_vala_l'...
+2019-07-09 14:27:45|   5.1|  0.0|INFORM|Using existing table 'edgv.hid_vala_l'
+2019-07-09 14:27:45|   5.1|  0.0|INFORM|POSTGIS Writer: Creating 'unquoted WKB' geometry processor for feature type 'edgv.hid_vala_l'
+2019-07-09 14:27:45|   5.1|  0.0|INFORM|POSTGIS Writer: Creating 'batched Bulk Copy' feature type processor for feature type 'edgv.hid_vala_l'
+2019-07-09 14:27:45|   5.1|  0.0|INFORM|Testing for the existence of table 'edgv.hid_trecho_drenagem_l'...
+2019-07-09 14:27:45|   5.1|  0.0|INFORM|Using existing table 'edgv.hid_trecho_drenagem_l'
+2019-07-09 14:27:45|   5.1|  0.0|INFORM|POSTGIS Writer: Creating 'unquoted WKB' geometry processor for feature type 'edgv.hid_trecho_drenagem_l'
+2019-07-09 14:27:45|   5.1|  0.0|INFORM|POSTGIS Writer: Creating 'batched Bulk Copy' feature type processor for feature type 'edgv.hid_trecho_drenagem_l'
+2019-07-09 14:27:46|   5.3|  0.2|INFORM|Committed transaction at feature '16000'
+2019-07-09 14:27:46|   5.3|  0.0|INFORM|POSTGIS Writer: Promoting feature type 'edgv.hid_trecho_drenagem_l' to streaming Bulk Copy and demoting feature type 'edgv.tra_caminho_carrocavel_l' for optimization
+2019-07-09 14:27:46|   5.3|  0.0|INFORM|POSTGIS Writer: Creating 'unquoted WKB' geometry processor for feature type 'edgv.tra_caminho_carrocavel_l'
+2019-07-09 14:27:46|   5.3|  0.0|INFORM|POSTGIS Writer: Creating 'unquoted WKB' geometry processor for feature type 'edgv.hid_trecho_drenagem_l'
+2019-07-09 14:27:46|   5.5|  0.2|INFORM|Committed transaction at feature '17000'
+2019-07-09 14:27:46|   5.6|  0.1|INFORM|Testing for the existence of table 'edgv.hid_barragem_l'...
+2019-07-09 14:27:46|   5.6|  0.0|INFORM|Using existing table 'edgv.hid_barragem_l'
+2019-07-09 14:27:46|   5.6|  0.0|INFORM|POSTGIS Writer: Creating 'unquoted WKB' geometry processor for feature type 'edgv.hid_barragem_l'
+2019-07-09 14:27:46|   5.6|  0.0|INFORM|POSTGIS Writer: Creating 'batched Bulk Copy' feature type processor for feature type 'edgv.hid_barragem_l'
+2019-07-09 14:27:46|   5.6|  0.0|INFORM|AttributeCreator_2_OUTPUT_-1_35_Player (RecorderFactory): Played back 3682 feature(s) from file `C:\Users\Bruno\AppData\Local\Temp\wb-cache-fme_mapeamento_MGCP_2_EDGV_30_id-AHIdZt\Main_AttributeCreator_2 -1 7 fo 0 OUTPUT  0  b938ba2882b8742bb072270a5354934bf5f9e8d6.ffs'
+2019-07-09 14:27:46|   5.6|  0.0|STATS |Destination Feature Type Routing Correlator (RoutingFactory): Tested 17668 input feature(s), wrote 17668 output feature(s): 0 matched merge filters, 17668 were routed to output, 0 could not be routed.
+2019-07-09 14:27:46|   5.6|  0.0|STATS |Final Output Nuker (TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2019-07-09 14:27:46|   5.6|  0.0|INFORM|Successfully closed POSTGIS database writer
+2019-07-09 14:27:46|   5.6|  0.0|INFORM|=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2019-07-09 14:27:46|   5.6|  0.0|INFORM|Feature output statistics for `POSTGIS' writer using keyword `POSTGIS_2':
+2019-07-09 14:27:46|   5.6|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2019-07-09 14:27:46|   5.6|  0.0|STATS |                               Features Written
+2019-07-09 14:27:46|   5.6|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.aer_pista_ponto_pouso_a                                                61
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.cbge_area_uso_especifico_a                                             61
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.cbge_deposito_geral_p                                                 270
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.dut_galeria_bueiro_p                                                   93
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.edf_edif_agropec_ext_veg_pesca_a                                       20
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.edf_edif_agropec_ext_veg_pesca_p                                      708
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.edf_edif_constr_aeroportuaria_p                                         1
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.edf_edif_pub_civil_p                                                    1
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.edf_edif_residencial_a                                                  2
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.edf_edif_residencial_p                                                490
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.edf_edificacao_a                                                        4
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.edf_edificacao_p                                                       21
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.edf_hab_indigena_p                                                      5
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.enc_torre_comunic_p                                                    33
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.hid_barragem_l                                                        118
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.hid_ilha_a                                                             43
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.hid_massa_dagua_a                                                     461
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.hid_sumidouro_vertedouro_p                                              5
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.hid_terreno_sujeito_inundacao_a                                      1813
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.hid_trecho_drenagem_l                                                2409
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.hid_vala_l                                                              1
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.lml_nome_local_p                                                      156
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.lml_posic_geo_localidade_p                                              3
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.rod_trecho_rodoviario_l                                               309
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.snb_dep_abast_agua_p                                                    2
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.tra_caminho_carrocavel_l                                              762
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.tra_patio_a                                                             2
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.tra_ponte_l                                                            65
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.tra_travessia_l                                                        13
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.tra_travessia_p                                                        70
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.tra_trilha_picada_l                                                     5
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.veg_brejo_pantano_a                                                   118
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.veg_campo_a                                                          2694
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.veg_cerrado_a                                                        4242
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.veg_floresta_a                                                       2607
+2019-07-09 14:27:46|   5.6|  0.0|STATS |==============================================================================
+2019-07-09 14:27:46|   5.6|  0.0|STATS |Total Features Written                                                   17668
+2019-07-09 14:27:46|   5.6|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2019-07-09 14:27:46|   5.6|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2019-07-09 14:27:46|   5.6|  0.0|STATS |                            Features Read Summary
+2019-07-09 14:27:46|   5.6|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2019-07-09 14:27:46|   5.6|  0.0|STATS |==============================================================================
+2019-07-09 14:27:46|   5.6|  0.0|STATS |Total Features Read                                                          0
+2019-07-09 14:27:46|   5.6|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2019-07-09 14:27:46|   5.6|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2019-07-09 14:27:46|   5.6|  0.0|STATS |                           Features Written Summary
+2019-07-09 14:27:46|   5.6|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.aer_pista_ponto_pouso_a                                                61
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.cbge_area_uso_especifico_a                                             61
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.cbge_deposito_geral_p                                                 270
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.dut_galeria_bueiro_p                                                   93
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.edf_edif_agropec_ext_veg_pesca_a                                       20
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.edf_edif_agropec_ext_veg_pesca_p                                      708
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.edf_edif_constr_aeroportuaria_p                                         1
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.edf_edif_pub_civil_p                                                    1
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.edf_edif_residencial_a                                                  2
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.edf_edif_residencial_p                                                490
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.edf_edificacao_a                                                        4
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.edf_edificacao_p                                                       21
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.edf_hab_indigena_p                                                      5
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.enc_torre_comunic_p                                                    33
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.hid_barragem_l                                                        118
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.hid_ilha_a                                                             43
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.hid_massa_dagua_a                                                     461
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.hid_sumidouro_vertedouro_p                                              5
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.hid_terreno_sujeito_inundacao_a                                      1813
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.hid_trecho_drenagem_l                                                2409
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.hid_vala_l                                                              1
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.lml_nome_local_p                                                      156
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.lml_posic_geo_localidade_p                                              3
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.rod_trecho_rodoviario_l                                               309
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.snb_dep_abast_agua_p                                                    2
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.tra_caminho_carrocavel_l                                              762
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.tra_patio_a                                                             2
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.tra_ponte_l                                                            65
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.tra_travessia_l                                                        13
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.tra_travessia_p                                                        70
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.tra_trilha_picada_l                                                     5
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.veg_brejo_pantano_a                                                   118
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.veg_campo_a                                                          2694
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.veg_cerrado_a                                                        4242
+2019-07-09 14:27:46|   5.6|  0.0|STATS |edgv.veg_floresta_a                                                       2607
+2019-07-09 14:27:46|   5.6|  0.0|STATS |==============================================================================
+2019-07-09 14:27:46|   5.6|  0.0|STATS |Total Features Written                                                   17668
+2019-07-09 14:27:46|   5.6|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2019-07-09 14:27:46|   5.6|  0.0|WARN  |-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-
+2019-07-09 14:27:46|   5.6|  0.0|WARN  |-~                                                                             ~-
+2019-07-09 14:27:46|   5.6|  0.0|WARN  |-~    Feature caches have been recorded at every stage of the translation.     ~-
+2019-07-09 14:27:46|   5.6|  0.0|WARN  |-~                      To inspect the recorded features,                      ~-
+2019-07-09 14:27:46|   5.6|  0.0|WARN  |-~              click the feature cache icons next to the ports.               ~-
+2019-07-09 14:27:46|   5.6|  0.0|WARN  |-~                                                                             ~-
+2019-07-09 14:27:46|   5.6|  0.0|WARN  |-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-
+2019-07-09 14:27:46|   5.6|  0.0|INFORM|Translation was SUCCESSFUL with 7 warning(s) (17668 feature(s) output)
+2019-07-09 14:27:47|   5.6|  0.0|INFORM|FME Session Duration: 14.0 seconds. (CPU: 4.7s user, 0.9s system)
+2019-07-09 14:27:47|   5.6|  0.0|INFORM|END - ProcessID: 8512, peak process memory usage: 156056 kB, current process memory usage: 96224 kB
